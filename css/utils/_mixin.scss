@@ -1,0 +1,23 @@
+@mixin hint() {
+  color: white;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 0.7vw;
+  right: 1vw;
+  text-shadow: rgb(134, 134, 134) 1px 0 10px;
+  @media all and (max-width: 1920px) {
+    font-size: 0.85vw;
+  }
+  @media all and (max-width: 1024px) {
+    bottom: 3%;
+    font-size: 18px;
+    right: 2%;
+  }
+  @media all and (max-width: 500px) {
+    font-size: 2.8vw;
+    bottom: 4%;
+    right: 2%;
+  }
+}

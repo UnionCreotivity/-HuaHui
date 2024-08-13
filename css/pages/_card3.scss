@@ -1,0 +1,173 @@
+.card3 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  //   background-color: #d1d1d1;
+  overflow: hidden;
+  display: flex;
+  z-index: 30;
+  justify-content: center;
+  .c3-slider {
+    width: 80%;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    .c3-content-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+
+      .c3-content {
+        position: relative;
+        width: 100%;
+        // clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+      }
+
+      .c3-content1 {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
+      .c3-slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .c3-slide-img {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .c3-slide1 {
+        .img-text-mix1 {
+          position: absolute;
+          z-index: 10;
+          bottom: 27%;
+          width: 31%;
+          left: 34%;
+          mix-blend-mode: soft-light;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        .img-text1 {
+          position: absolute;
+          z-index: 10;
+          bottom: 22%;
+          width: 12%;
+          left: 42.8%;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .c3-content2 {
+        position: absolute;
+
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+        .c3-slide-absolute2 {
+          .c3-slide-img {
+            width: 102%;
+          }
+          .img-text-mix2 {
+            position: absolute;
+            z-index: 10;
+            bottom: 24%;
+            width: 28%;
+            left: 34.5%;
+
+            mix-blend-mode: screen;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+          }
+          // .img-text-mix2 {
+          //   position: absolute;
+          //   z-index: 10;
+          //   bottom: 24%;
+          //   width: 28%;
+          //   left: 34.5%;
+          //   mix-blend-mode: screen;
+          //   // opacity: 0;
+          // }
+          .img-text2 {
+            position: absolute;
+            z-index: 10;
+            bottom: 19.3%;
+            width: 12%;
+            left: 43.5%;
+            overflow: hidden;
+            // opacity: 0;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .c3-content3 {
+        position: absolute;
+
+        top: 0px;
+        width: 100%;
+        left: 0px;
+        // clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+        .c3-slide-absolute3 {
+          .c3-slide-img {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+          .img-text-mix3 {
+            position: absolute;
+            z-index: 10;
+            top: 12%;
+            width: 35%;
+            left: 32.5%;
+            mix-blend-mode: darken;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+          }
+          .img-text3 {
+            position: absolute;
+            z-index: 10;
+            top: 19.5%;
+            width: 12%;
+            left: 43.5%;
+            // opacity: 0;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+          }
+          .img-text3-2 {
+            position: absolute;
+            z-index: 10;
+            top: 34.5%;
+            width: 5.8%;
+            left: 46.7%;
+            // opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

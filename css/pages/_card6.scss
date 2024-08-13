@@ -1,0 +1,71 @@
+.card6 {
+  width: 100%;
+  // height: 100vh;
+  position: relative;
+  padding-top: 5%;
+
+  .c6-bg-earth-circle-box {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: overlay;
+    width: 33.9vw;
+    z-index: 1;
+    opacity: 0.5;
+    img {
+      width: 100%;
+    }
+  }
+
+  .c6-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-top: 5vw;
+    .c6-item-box {
+      width: 29%;
+      margin-bottom: -1.7vw;
+      margin-left: 3vw;
+      img {
+        width: 100%;
+      }
+    }
+    .c6-title1 {
+      width: 50%;
+      margin-bottom: 3.5vw;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .c6-title2 {
+      width: 23%;
+      margin-bottom: 1vw;
+      img {
+        width: 100%;
+      }
+    }
+
+    .c6-title3 {
+      width: 63%;
+      margin-bottom: 1.6vw;
+      img {
+        width: 100%;
+      }
+    }
+
+    .c6-title4 {
+      width: 38%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
