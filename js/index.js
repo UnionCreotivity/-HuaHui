@@ -3,12 +3,34 @@ window.onload = function () {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     var window_width = window.innerWidth;
+    gsap.registerPlugin(DrawSVGPlugin)
 
     function c1Ani() {
         let tl = gsap.timeline({
-            delay: 1
+            scrollTrigger: {
+                trigger: ".card1",
+                start: "top top",
+                end: "+=260%",
+                scrub: 2,
+                pin: ".card1",
+                pinSpacing: true,
+
+            },
         });
-        tl.from('.c1-content .logo-box', { duration: 1, opacity: '0', filter: 'blur(5px)', ease: "power1.inOut", })
+
+        tl.from('.first-ani-box .logo,.logo-white', { duration: 1, opacity: 0, scale: '1.3', filter: 'blur(10px)', ease: "power1.Out", })
+            .from('.first-ani-box .logo-shadow', { duration: 0.5, opacity: 0, filter: 'blur(10px)', ease: "power0.inOut", }, '<0.2')
+
+            .from('.first-ani-box .people', { duration: 1, opacity: 0, ease: "power0.inOut", }, '<0.5')
+            .from('.first-ani-box .first-big', { duration: 1, y: '70', opacity: 0, filter: 'blur(10px)', ease: "power1.Out", }, '<0.3')
+            .from('.first-ani-box .first-cover', { duration: 1, y: '-70', opacity: 0, filter: 'blur(10px)', ease: "power1.Out", }, '<0.3')
+            .from('.first-ani-box .shining', { duration: 0.5, opacity: 0, ease: "power0.inOut", }, '<0.3')
+
+
+            .to('.c1-video', { duration: 1.2, opacity: 1, ease: "power0.inOut", }, '>0.6')
+            .to('.first-ani-box .logo,.shining,.logo-white,.logo-shadow,.people,.city,.first-video-bg,.first-cover,.first-big', { duration: 1, opacity: 0, }, '<')
+            .to('.c1-content', { duration: 1, opacity: 1, }, '<')
+            .from('.c1-content .logo-box', { duration: 1, opacity: '0', filter: 'blur(5px)', ease: "power1.inOut", }, '<0.7')
             .from('.c1-content .title1,.c1-content .title2-box,.company-box', {
                 duration: 1,
                 opacity: 0,
@@ -42,17 +64,30 @@ window.onload = function () {
             },
         });
 
-        tl
-            // .to('.c2-bg-earth', { duration: 2, ease: "power1.inOut", mask: 'radial-gradient(circle at 50% 50%, black 100%, transparent 25%)' })
-            .from('.c2-title1,.c2-title2,.c2-title3,.c2-title4', {
+        tl.from('.c2-bg-earth', { duration: 1, opacity: 0, ease: "power0.inOut", })
+            .from('.c2-title1,.c2-title2,.c2-title3', {
                 duration: 1,
-                opacity: 0,
                 filter: 'blur(5px)',
+                opacity: 0,
+                y: 80,
                 ease: "power1.inOut",
                 stagger: {
                     each: 0.25,
-                }
-            }, '<0.4')
+                },
+            }, '<0.3')
+            .from('.c2-title4 .cover', {
+                duration: 1,
+                opacity: 0,
+                y: '50',
+                ease: "power1.inOut",
+            }, '<0.6')
+            .from('.c2-title4 .long-text', {
+                duration: 1,
+                opacity: 0,
+                y: '-50',
+                ease: "power1.inOut",
+            }, '<')
+            .fromTo('.circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.3')
 
     }
     c2Ani();
@@ -65,8 +100,7 @@ window.onload = function () {
                 end: "+=2000",
                 scrub: 2,
                 pin: true,
-                // pinSpacing: true,
-                // invalidateOnRefresh: true
+
             },
         });
         const c3img1 = document.querySelector('.c3-content1')
@@ -136,16 +170,31 @@ window.onload = function () {
             },
         });
 
-        tl.from('.c4-title1,.c4-title2,.c4-title3,.c4-title4', {
-            duration: 1,
-            opacity: 0,
-            filter: 'blur(5px)',
-            ease: "power1.inOut",
 
-            stagger: {
-                each: 0.25,
-            }
-        })
+        tl.from('.c4-item', { duration: 1, opacity: 0, ease: "power0.inOut", })
+            .from('.c4-title1,.c4-title2,.c4-title3', {
+                duration: 1,
+                filter: 'blur(5px)',
+                opacity: 0,
+                y: 80,
+                ease: "power1.inOut",
+                stagger: {
+                    each: 0.25,
+                },
+            }, '<0.3')
+            .from('.c4-title4 .cover', {
+                duration: 1,
+                opacity: 0,
+                y: '50',
+                ease: "power1.inOut",
+            }, '<0.6')
+            .from('.c4-title4 .long-text', {
+                duration: 1,
+                opacity: 0,
+                y: '-50',
+                ease: "power1.inOut",
+            }, '<')
+            .fromTo('.c4-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.3')
 
     }
     c4Ani();
@@ -183,6 +232,7 @@ window.onload = function () {
 
     // }
     // c5Ani();
+
     const c5swiper = new Swiper(".card5-swiper", {
 
         speed: 1500,
@@ -200,31 +250,58 @@ window.onload = function () {
         // },
 
     });
+
     function c6Ani() {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card6",
-                start: "-40%",
+                start: "-50%",
             },
         });
 
-        tl.from('.c6-title1,.c6-title2,.c6-title3,.c6-title4', {
-            duration: 1,
-            opacity: 0,
-            filter: 'blur(5px)',
-            ease: "power1.inOut",
-            stagger: {
-                each: 0.25,
-            }
-        })
+        tl.from('.c6-item', { duration: 1, opacity: 0, ease: "power0.inOut", })
+            .from('.c6-title1,.c6-title2,.c6-title3', {
+                duration: 1,
+                filter: 'blur(5px)',
+                opacity: 0,
+                y: 80,
+                ease: "power1.inOut",
+                stagger: {
+                    each: 0.25,
+                },
+            }, '<0.3')
+            .from('.c6-title4 .cover', {
+                duration: 1,
+                opacity: 0,
+                y: '50',
+                ease: "power1.inOut",
+            }, '<0.6')
+            .from('.c6-title4 .long-text', {
+                duration: 1,
+                opacity: 0,
+                y: '-50',
+                ease: "power1.inOut",
+            }, '<')
+            .fromTo('.c6-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.3')
 
     }
     c6Ani();
 
-
+    function c6Pin() {
+        gsap.to(".card6", {
+            scrollTrigger: {
+                trigger: ".card6",
+                start: "top top",
+                end: "bottom top",
+                pin: true,
+                pinSpacing: false,
+                scrub: true,
+            },
+        });
+    }
+    c6Pin();
 
     const c7swiper = new Swiper(".card7-swiper", {
-
         speed: 1500,
         effect: 'fade',
         loop: true,
@@ -281,36 +358,32 @@ window.onload = function () {
                 start: "-40%",
             },
         });
-
-        tl.from('.c9-title1,.c9-title2,.c9-title3,.c9-title4', {
-            duration: 1,
-            opacity: 0,
-            filter: 'blur(5px)',
-            ease: "power1.inOut",
-
-            stagger: {
-                each: 0.25,
-            }
-        })
+        tl.from('.c9-item', { duration: 1, opacity: 0, ease: "power0.inOut", })
+            .from('.c9-title1,.c9-title2,.c9-title3', {
+                duration: 1,
+                filter: 'blur(5px)',
+                opacity: 0,
+                y: 80,
+                ease: "power1.inOut",
+                stagger: {
+                    each: 0.25,
+                },
+            }, '<0.3')
+            .from('.c9-title4 .cover', {
+                duration: 1,
+                opacity: 0,
+                y: '50',
+                ease: "power1.inOut",
+            }, '<0.6')
+            .from('.c9-title4 .long-text', {
+                duration: 1,
+                opacity: 0,
+                y: '-50',
+                ease: "power1.inOut",
+            }, '<')
+            .fromTo('.c9-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.3')
 
     }
     c9Ani();
 
-    const c10swiper = new Swiper(".card10-swiper", {
-
-        speed: 1500,
-        effect: 'fade',
-        loop: true,
-        fadeEffect: {
-            crossFade: true,
-        },
-        autoplay: {
-            delay: 2500,
-        },
-        // pagination: {
-        //     el: '.c10-swiper-pagination',
-        //     clickable: true,
-        // },
-
-    });
 }

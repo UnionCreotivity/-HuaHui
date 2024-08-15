@@ -8,7 +8,7 @@
   z-index: 30;
   justify-content: center;
   .c3-slider {
-    width: 80%;
+    width: 100%;
     position: relative;
     z-index: 20;
     display: flex;
@@ -18,13 +18,18 @@
     justify-content: center;
     align-items: center;
     padding-top: 1%;
+    background-color: white;
     .c3-content-box {
       width: 100%;
       display: flex;
       justify-content: center;
       overflow: hidden;
       position: relative;
-
+      .hint {
+        @include hint();
+        bottom: 1.5vw;
+        z-index: 20;
+      }
       .c3-content {
         position: relative;
         width: 100%;
@@ -50,8 +55,8 @@
         .img-text-mix1 {
           position: absolute;
           z-index: 10;
-          bottom: 27%;
-          width: 31%;
+          bottom: 28%;
+          width: 32%;
           left: 34%;
           mix-blend-mode: soft-light;
           overflow: hidden;
@@ -62,9 +67,9 @@
         .img-text1 {
           position: absolute;
           z-index: 10;
-          bottom: 22%;
-          width: 12%;
-          left: 42.8%;
+          bottom: 23%;
+          width: 12.4%;
+          left: 43.8%;
           overflow: hidden;
           img {
             width: 100%;
@@ -81,36 +86,30 @@
         clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
         .c3-slide-absolute2 {
           .c3-slide-img {
-            width: 102%;
+            width: 100%;
+            position: relative;
+            height: 100%;
+            object-fit: cover;
           }
           .img-text-mix2 {
             position: absolute;
             z-index: 10;
-            bottom: 24%;
+            bottom: 28%;
             width: 28%;
-            left: 34.5%;
-
+            left: 35%;
             mix-blend-mode: screen;
             overflow: hidden;
             img {
               width: 100%;
             }
           }
-          // .img-text-mix2 {
-          //   position: absolute;
-          //   z-index: 10;
-          //   bottom: 24%;
-          //   width: 28%;
-          //   left: 34.5%;
-          //   mix-blend-mode: screen;
-          //   // opacity: 0;
-          // }
+
           .img-text2 {
             position: absolute;
             z-index: 10;
-            bottom: 19.3%;
-            width: 12%;
-            left: 43.5%;
+            bottom: 22.5%;
+            width: 12.5%;
+            left: 43%;
             overflow: hidden;
             // opacity: 0;
             img {
@@ -128,6 +127,7 @@
         left: 0px;
         // clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
         .c3-slide-absolute3 {
+          // background-color: white;
           .c3-slide-img {
             position: relative;
             height: 100%;
@@ -149,7 +149,7 @@
           .img-text3 {
             position: absolute;
             z-index: 10;
-            top: 19.5%;
+            top: 19%;
             width: 12%;
             left: 43.5%;
             // opacity: 0;

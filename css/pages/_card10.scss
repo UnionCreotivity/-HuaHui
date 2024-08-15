@@ -7,32 +7,4 @@
   z-index: 30;
   align-items: center;
   margin-top: 4.5vw;
-  .card10-swiper {
-    position: relative;
-    width: 100%;
-
-    .swiper-slide {
-      width: 100%;
-      overflow: hidden;
-
-      display: flex;
-      justify-content: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    .swiper-pagination {
-      position: absolute;
-      bottom: 0%;
-      opacity: 0;
-    }
-
-    .swiper-pagination-bullet-active {
-      background-color: #fff !important;
-    }
-  }
 }

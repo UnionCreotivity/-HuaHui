@@ -2,37 +2,28 @@
   width: 100%;
   // height: 100vh;
   position: relative;
-  padding-top: 5vw;
-
+  padding-top: 0vw;
+  margin-bottom: 5vw;
   .c2-bg-earth-box {
     position: absolute;
-    top: 43%;
-    left: 47.3%;
+    top: 36%;
+    left: 49.5%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 20.5%;
+    width: 20%;
     img {
       width: 100%;
-      // -webkit-mask: radial-gradient(
-      //   circle at 50% 50%,
-      //   black 0%,
-      //   transparent 25%
-      // );
-      // mask: radial-gradient(circle at 50% 50%, black 0%, transparent 6%);
     }
   }
 
   .c2-bg-earth-circle-box {
     position: absolute;
-    top: 54%;
-    left: 49.5%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     mix-blend-mode: overlay;
     width: 34.5%;
     z-index: 1;
-    img {
-      width: 100%;
-    }
   }
 
   .c2-content {
@@ -46,33 +37,58 @@
     padding-top: 14vw;
     .c2-title1 {
       width: 42%;
-      margin-bottom: 2vw;
+
       img {
         width: 100%;
       }
     }
 
     .c2-title2 {
-      width: 23%;
-      margin-bottom: 1.5vw;
-      img {
-        width: 100%;
+      font-family: "Noto Sans TC Medium";
+      margin-bottom: 1vw;
+      text-align: center;
+      margin-top: -1.5vw;
+      :first-child {
+        font-size: 3vw;
+        letter-spacing: 0.12em;
+      }
+      :last-child {
+        font-size: 1.9vw;
+        letter-spacing: 1em;
+        font-family: "Noto Sans TC Medium";
+        margin-right: -1vw;
       }
     }
 
     .c2-title3 {
-      width: 50%;
       margin-bottom: 1.6vw;
-      img {
-        width: 100%;
+      text-align: center;
+      letter-spacing: 0.06em;
+      font-size: 1.25vw;
+      line-height: 2;
+      font-family: "Noto Sans TC Regular";
+      :last-child {
+        font-size: 1.7vw;
+        letter-spacing: 0.07em;
+        font-family: "Noto Sans TC Regular";
       }
     }
 
     .c2-title4 {
       width: 38%;
-
-      img {
+      position: relative;
+      align-items: center;
+      text-align: center;
+      .cover {
+        position: relative;
+        width: 28.5%;
+        margin-left: 0.5vw;
+      }
+      .long-text {
+        position: absolute;
         width: 100%;
+        left: 0vw;
+        top: 1vw;
       }
     }
   }

@@ -1,0 +1,22 @@
+.new-card {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  z-index: 30;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7vw;
+  .new-card-img-box {
+    width: 80%;
+    display: flex;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .hint {
+      @include hint();
+      z-index: 10;
+    }
+  }
+}

@@ -15,7 +15,10 @@
     .card7-swiper {
       position: relative;
       width: 100%;
-
+      .hint {
+        @include hint();
+        z-index: 20;
+      }
       .swiper-slide {
         width: 100%;
         overflow: hidden;

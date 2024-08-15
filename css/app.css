@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +54,145 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: #067bf0;
+  background-color: #1b6a7b;
+}
+@keyframes shining {
+  0% {
+    scale: 0;
+    rotate: 0;
+  }
+  30% {
+    scale: 1;
+  }
+  60% {
+    scale: 0;
+    rotate: 360deg;
+  }
+  100% {
+    scale: 0;
+    rotate: 360deg;
+  }
+}
+.card1 .first-ani-box {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.card1 .first-ani-box .first-video-bg {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card1 .first-ani-box .first-video-bg source {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.card1 .first-ani-box .city {
+  position: absolute;
+  z-index: 100;
+  width: 29vw;
+  top: 16.5vw;
+  left: 36vw;
+  mix-blend-mode: luminosity;
+}
+.card1 .first-ani-box .people {
+  position: absolute;
+  z-index: 120;
+  width: 28vw;
+  top: 23vw;
+  left: 34.3vw;
+}
+.card1 .first-ani-box .logo {
+  position: absolute;
+  z-index: 110;
+  width: 20vw;
+  top: 11.5vw;
+  left: 39.5vw;
+}
+.card1 .first-ani-box .logo {
+  position: absolute;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+72,a9afaa+82,a5c1c2+100,a5c1c2+100 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+72,a9afaa+82,a5c1c2+100,a5c1c2+100 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+62,a9afaa+73,a5c1c2+100,a5c1c2+100 */
+  background: linear-gradient(to bottom, #f6efed 0%, #fdd3c4 21%, #b27b6a 32%, #814a39 50%, #83675c 62%, #a9afaa 73%, #a5c1c2 100%, #a5c1c2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-mask-image: url(../../images/logo.png);
+  mask-image: url(../../images/logo.png);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  overflow: hidden;
+  top: 11.5vw;
+  left: 39.5vw;
+  height: 22vw;
+  width: 20vw;
+  overflow: hidden;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+}
+.card1 .first-ani-box .logo .light {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  height: 200%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: rotate(34deg) translateX(-355%);
+  animation-name: lightMv;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes lightMv {
+  0% {
+    transform: rotate(34deg) translateX(-325%);
+  }
+  100% {
+    transform: rotate(34deg) translateX(300%);
+  }
+}
+.card1 .first-ani-box .logo-white {
+  position: absolute;
+  top: 11.4vw;
+  left: 39.4vw;
+  width: 20vw;
+}
+.card1 .first-ani-box .logo-shadow {
+  position: absolute;
+  z-index: 100;
+  width: 27vw;
+  top: 31.5vw;
+  opacity: 0.7;
+  left: 33.8vw;
+  mix-blend-mode: color-dodge;
+}
+.card1 .first-ani-box .shining {
+  position: absolute;
+  z-index: 100;
+  width: 5.5vw;
+  top: 9vw;
+  left: 46.7vw;
+  animation: shining 4s ease-in-out forwards infinite;
+}
+.card1 .first-ani-box .first-big {
+  position: absolute;
+  z-index: 110;
+  width: 46vw;
+  top: 41.6vw;
+  left: 26vw;
+}
+.card1 .first-ani-box .first-cover {
+  position: absolute;
+  top: 80%;
+  left: 44.6%;
+  width: 9.6%;
+  opacity: 0.3;
+  z-index: 999999;
+}
+@media all and (max-width: 1440px) {
+  .card1 .first-ani-box .first-cover {
+    top: 41%;
+    left: 44.65%;
+    width: 11.2%;
+  }
 }
 .card1 .c1-video {
   display: block;
@@ -64,8 +203,9 @@
      object-fit: cover;
   width: 100%;
   height: 100vh;
-  mix-blend-mode: multiply;
+  mix-blend-mode: luminosity;
   z-index: 3;
+  opacity: 0;
 }
 .card1 .c1-video source {
   -o-object-fit: cover;
@@ -73,14 +213,18 @@
   width: 100%;
 }
 .card1 .c1-content {
-  position: relative;
-  z-index: 10;
+  position: absolute;
+  top: 2vw;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: center;
-  padding-top: 13vw;
+  opacity: 0;
 }
 .card1 .c1-content .logo-box {
   width: 14%;
@@ -112,6 +256,7 @@
   position: relative;
   padding-top: 2vw;
   margin-bottom: 2vw;
+  margin-top: 1vw;
 }
 @media all and (max-width: 1440px) {
   .card1 .c1-content .title2-box {
@@ -121,6 +266,7 @@
 }
 .card1 .c1-content .title2-box .big {
   width: 36%;
+  opacity: 0.4;
 }
 @media all and (max-width: 1440px) {
   .card1 .c1-content .title2-box .big {
@@ -132,6 +278,7 @@
   top: 41%;
   left: 45.1%;
   width: 10.2%;
+  opacity: 0.4;
 }
 @media all and (max-width: 1440px) {
   .card1 .c1-content .title2-box .cover {
@@ -156,30 +303,28 @@
 .card2 {
   width: 100%;
   position: relative;
-  padding-top: 5vw;
+  padding-top: 0vw;
+  margin-bottom: 5vw;
 }
 .card2 .c2-bg-earth-box {
   position: absolute;
-  top: 43%;
-  left: 47.3%;
+  top: 36%;
+  left: 49.5%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 20.5%;
+  width: 20%;
 }
 .card2 .c2-bg-earth-box img {
   width: 100%;
 }
 .card2 .c2-bg-earth-circle-box {
   position: absolute;
-  top: 54%;
-  left: 49.5%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   mix-blend-mode: overlay;
   width: 34.5%;
   z-index: 1;
-}
-.card2 .c2-bg-earth-circle-box img {
-  width: 100%;
 }
 .card2 .c2-content {
   position: relative;
@@ -193,30 +338,55 @@
 }
 .card2 .c2-content .c2-title1 {
   width: 42%;
-  margin-bottom: 2vw;
 }
 .card2 .c2-content .c2-title1 img {
   width: 100%;
 }
 .card2 .c2-content .c2-title2 {
-  width: 23%;
-  margin-bottom: 1.5vw;
+  font-family: "Noto Sans TC Medium";
+  margin-bottom: 1vw;
+  text-align: center;
+  margin-top: -1.5vw;
 }
-.card2 .c2-content .c2-title2 img {
-  width: 100%;
+.card2 .c2-content .c2-title2 :first-child {
+  font-size: 3vw;
+  letter-spacing: 0.12em;
+}
+.card2 .c2-content .c2-title2 :last-child {
+  font-size: 1.9vw;
+  letter-spacing: 1em;
+  font-family: "Noto Sans TC Medium";
+  margin-right: -1vw;
 }
 .card2 .c2-content .c2-title3 {
-  width: 50%;
   margin-bottom: 1.6vw;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-size: 1.25vw;
+  line-height: 2;
+  font-family: "Noto Sans TC Regular";
 }
-.card2 .c2-content .c2-title3 img {
-  width: 100%;
+.card2 .c2-content .c2-title3 :last-child {
+  font-size: 1.7vw;
+  letter-spacing: 0.07em;
+  font-family: "Noto Sans TC Regular";
 }
 .card2 .c2-content .c2-title4 {
   width: 38%;
+  position: relative;
+  align-items: center;
+  text-align: center;
 }
-.card2 .c2-content .c2-title4 img {
+.card2 .c2-content .c2-title4 .cover {
+  position: relative;
+  width: 28.5%;
+  margin-left: 0.5vw;
+}
+.card2 .c2-content .c2-title4 .long-text {
+  position: absolute;
   width: 100%;
+  left: 0vw;
+  top: 1vw;
 }
 
 .card3 {
@@ -229,7 +399,7 @@
   justify-content: center;
 }
 .card3 .c3-slider {
-  width: 80%;
+  width: 100%;
   position: relative;
   z-index: 20;
   display: flex;
@@ -239,6 +409,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 1%;
+  background-color: white;
 }
 .card3 .c3-slider .c3-content-box {
   width: 100%;
@@ -246,6 +417,37 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
+}
+.card3 .c3-slider .c3-content-box .hint {
+  color: white;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 0.7vw;
+  text-shadow: rgb(134, 134, 134) 1px 0 10px;
+  bottom: 1.5vw;
+  z-index: 20;
+}
+@media all and (max-width: 1920px) {
+  .card3 .c3-slider .c3-content-box .hint {
+    font-size: 0.85vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card3 .c3-slider .c3-content-box .hint {
+    bottom: 3%;
+    font-size: 18px;
+    right: 2%;
+  }
+}
+@media all and (max-width: 500px) {
+  .card3 .c3-slider .c3-content-box .hint {
+    font-size: 2.8vw;
+    bottom: 4%;
+    right: 2%;
+  }
 }
 .card3 .c3-slider .c3-content-box .c3-content {
   position: relative;
@@ -270,8 +472,8 @@
 .card3 .c3-slider .c3-content-box .c3-slide1 .img-text-mix1 {
   position: absolute;
   z-index: 10;
-  bottom: 27%;
-  width: 31%;
+  bottom: 28%;
+  width: 32%;
   left: 34%;
   mix-blend-mode: soft-light;
   overflow: hidden;
@@ -282,9 +484,9 @@
 .card3 .c3-slider .c3-content-box .c3-slide1 .img-text1 {
   position: absolute;
   z-index: 10;
-  bottom: 22%;
-  width: 12%;
-  left: 42.8%;
+  bottom: 23%;
+  width: 12.4%;
+  left: 43.8%;
   overflow: hidden;
 }
 .card3 .c3-slider .c3-content-box .c3-slide1 .img-text1 img {
@@ -299,14 +501,18 @@
           clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 .card3 .c3-slider .c3-content-box .c3-content2 .c3-slide-absolute2 .c3-slide-img {
-  width: 102%;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card3 .c3-slider .c3-content-box .c3-content2 .c3-slide-absolute2 .img-text-mix2 {
   position: absolute;
   z-index: 10;
-  bottom: 24%;
+  bottom: 28%;
   width: 28%;
-  left: 34.5%;
+  left: 35%;
   mix-blend-mode: screen;
   overflow: hidden;
 }
@@ -316,9 +522,9 @@
 .card3 .c3-slider .c3-content-box .c3-content2 .c3-slide-absolute2 .img-text2 {
   position: absolute;
   z-index: 10;
-  bottom: 19.3%;
-  width: 12%;
-  left: 43.5%;
+  bottom: 22.5%;
+  width: 12.5%;
+  left: 43%;
   overflow: hidden;
 }
 .card3 .c3-slider .c3-content-box .c3-content2 .c3-slide-absolute2 .img-text2 img {
@@ -352,7 +558,7 @@
 .card3 .c3-slider .c3-content-box .c3-content3 .c3-slide-absolute3 .img-text3 {
   position: absolute;
   z-index: 10;
-  top: 19.5%;
+  top: 19%;
   width: 12%;
   left: 43.5%;
   overflow: hidden;
@@ -372,19 +578,16 @@
   width: 100%;
   position: relative;
   padding-top: 5%;
+  margin-top: 7vw;
 }
 .card4 .c4-bg-earth-circle-box {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   mix-blend-mode: overlay;
-  width: 34vw;
+  width: 34.5%;
   z-index: 1;
-  opacity: 0.5;
-}
-.card4 .c4-bg-earth-circle-box img {
-  width: 100%;
 }
 .card4 .c4-content {
   position: relative;
@@ -396,8 +599,8 @@
   align-self: center;
 }
 .card4 .c4-content .c4-item-box {
-  width: 17%;
-  margin-bottom: -2vw;
+  width: 5%;
+  margin-bottom: 0vw;
 }
 .card4 .c4-content .c4-item-box img {
   width: 100%;
@@ -411,24 +614,48 @@
   width: 100%;
 }
 .card4 .c4-content .c4-title2 {
-  width: 23%;
-  margin-bottom: 1.5vw;
+  font-family: "Noto Sans TC Medium";
+  margin-bottom: 1vw;
+  text-align: center;
+  margin-top: -1.5vw;
 }
-.card4 .c4-content .c4-title2 img {
-  width: 100%;
+.card4 .c4-content .c4-title2 :first-child {
+  font-size: 3vw;
+  letter-spacing: 0.12em;
+}
+.card4 .c4-content .c4-title2 :last-child {
+  font-size: 1.9vw;
+  letter-spacing: 1em;
+  font-family: "Noto Sans TC Medium";
+  margin-right: -1vw;
 }
 .card4 .c4-content .c4-title3 {
-  width: 50%;
   margin-bottom: 1.6vw;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-size: 1.25vw;
+  line-height: 2;
+  font-family: "Noto Sans TC Regular";
 }
-.card4 .c4-content .c4-title3 img {
-  width: 100%;
+.card4 .c4-content .c4-title3 :last-child {
+  font-family: "Noto Sans TC Medium";
 }
 .card4 .c4-content .c4-title4 {
   width: 38%;
+  position: relative;
+  align-items: center;
+  text-align: center;
 }
-.card4 .c4-content .c4-title4 img {
+.card4 .c4-content .c4-title4 .cover {
+  position: relative;
+  width: 28.5%;
+  margin-left: 0.5vw;
+}
+.card4 .c4-content .c4-title4 .long-text {
+  position: absolute;
   width: 100%;
+  left: 0vw;
+  top: 1vw;
 }
 
 .card5 {
@@ -444,6 +671,36 @@
 .card5 .card5-swiper {
   position: relative;
   width: 80%;
+}
+.card5 .card5-swiper .hint {
+  color: white;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 0.7vw;
+  text-shadow: rgb(134, 134, 134) 1px 0 10px;
+  z-index: 20;
+}
+@media all and (max-width: 1920px) {
+  .card5 .card5-swiper .hint {
+    font-size: 0.85vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card5 .card5-swiper .hint {
+    bottom: 3%;
+    font-size: 18px;
+    right: 2%;
+  }
+}
+@media all and (max-width: 500px) {
+  .card5 .card5-swiper .hint {
+    font-size: 2.8vw;
+    bottom: 4%;
+    right: 2%;
+  }
 }
 .card5 .card5-swiper .swiper-slide {
   width: 100%;
@@ -468,19 +725,17 @@
   width: 100%;
   position: relative;
   padding-top: 5%;
+  padding-bottom: 3vw;
+  z-index: 300;
 }
 .card6 .c6-bg-earth-circle-box {
   position: absolute;
-  top: 53%;
+  top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
-  mix-blend-mode: overlay;
-  width: 33.9vw;
+  opacity: 0.7;
+  width: 34.5%;
   z-index: 1;
-  opacity: 0.5;
-}
-.card6 .c6-bg-earth-circle-box img {
-  width: 100%;
 }
 .card6 .c6-content {
   position: relative;
@@ -502,30 +757,54 @@
 }
 .card6 .c6-content .c6-title1 {
   width: 50%;
-  margin-bottom: 3.5vw;
+  margin-bottom: 2vw;
 }
 .card6 .c6-content .c6-title1 img {
   width: 100%;
 }
 .card6 .c6-content .c6-title2 {
-  width: 23%;
+  font-family: "Noto Sans TC Medium";
   margin-bottom: 1vw;
+  text-align: center;
+  margin-top: -1.5vw;
 }
-.card6 .c6-content .c6-title2 img {
-  width: 100%;
+.card6 .c6-content .c6-title2 :first-child {
+  font-size: 3vw;
+  letter-spacing: 0.12em;
+}
+.card6 .c6-content .c6-title2 :last-child {
+  font-size: 1.9vw;
+  letter-spacing: 1em;
+  font-family: "Noto Sans TC Medium";
+  margin-right: -1vw;
 }
 .card6 .c6-content .c6-title3 {
-  width: 63%;
   margin-bottom: 1.6vw;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-size: 1.25vw;
+  line-height: 2;
+  font-family: "Noto Sans TC Regular";
 }
-.card6 .c6-content .c6-title3 img {
-  width: 100%;
+.card6 .c6-content .c6-title3 span {
+  font-family: "Noto Sans TC Medium";
 }
 .card6 .c6-content .c6-title4 {
   width: 38%;
+  position: relative;
+  align-items: center;
+  text-align: center;
 }
-.card6 .c6-content .c6-title4 img {
+.card6 .c6-content .c6-title4 .cover {
+  position: relative;
+  width: 28.5%;
+  margin-left: 0.5vw;
+}
+.card6 .c6-content .c6-title4 .long-text {
+  position: absolute;
   width: 100%;
+  left: 0vw;
+  top: 1vw;
 }
 
 .card7 {
@@ -544,6 +823,36 @@
 .card7 .left-box .card7-swiper {
   position: relative;
   width: 100%;
+}
+.card7 .left-box .card7-swiper .hint {
+  color: white;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 0.7vw;
+  text-shadow: rgb(134, 134, 134) 1px 0 10px;
+  z-index: 20;
+}
+@media all and (max-width: 1920px) {
+  .card7 .left-box .card7-swiper .hint {
+    font-size: 0.85vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card7 .left-box .card7-swiper .hint {
+    bottom: 3%;
+    font-size: 18px;
+    right: 2%;
+  }
+}
+@media all and (max-width: 500px) {
+  .card7 .left-box .card7-swiper .hint {
+    font-size: 2.8vw;
+    bottom: 4%;
+    right: 2%;
+  }
 }
 .card7 .left-box .card7-swiper .swiper-slide {
   width: 100%;
@@ -580,11 +889,45 @@
 .card8 {
   width: 100%;
   position: relative;
-  z-index: 30;
+  z-index: 310;
   overflow: hidden;
+  margin-top: 5vw;
+}
+.card8 .hint {
+  color: white;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 0.7vw;
+  text-shadow: rgb(134, 134, 134) 1px 0 10px;
+  z-index: 20;
+  right: 0.8vw;
+  bottom: 0.8vw;
+}
+@media all and (max-width: 1920px) {
+  .card8 .hint {
+    font-size: 0.85vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card8 .hint {
+    bottom: 3%;
+    font-size: 18px;
+    right: 2%;
+  }
+}
+@media all and (max-width: 500px) {
+  .card8 .hint {
+    font-size: 2.8vw;
+    bottom: 4%;
+    right: 2%;
+  }
 }
 .card8 .overflow {
   overflow: hidden;
+  position: relative;
 }
 .card8 .overflow .bg {
   width: 100vw;
@@ -596,6 +939,12 @@
   width: 10%;
   top: 13%;
   left: 8%;
+}
+.card8 .c8-text {
+  position: absolute;
+  width: 10%;
+  bottom: 34%;
+  right: 11%;
 }
 
 .card9 {
@@ -609,12 +958,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   mix-blend-mode: overlay;
-  width: 33.8vw;
+  width: 34.5%;
   z-index: 1;
-  opacity: 0.5;
-}
-.card9 .c9-bg-earth-circle-box img {
-  width: 100%;
 }
 .card9 .c9-content {
   position: relative;
@@ -634,30 +979,51 @@
 }
 .card9 .c9-content .c9-title1 {
   width: 50%;
-  margin-bottom: 1.5vw;
+  margin-bottom: 0.5vw;
 }
 .card9 .c9-content .c9-title1 img {
   width: 100%;
 }
 .card9 .c9-content .c9-title2 {
-  width: 23%;
-  margin-bottom: 1.2vw;
+  font-family: "Noto Sans TC Medium";
+  margin-bottom: 1vw;
+  text-align: center;
+  margin-top: -1.5vw;
 }
-.card9 .c9-content .c9-title2 img {
-  width: 100%;
+.card9 .c9-content .c9-title2 :first-child {
+  font-size: 3vw;
+  letter-spacing: 0.12em;
+}
+.card9 .c9-content .c9-title2 :last-child {
+  font-size: 1.9vw;
+  letter-spacing: 1em;
+  font-family: "Noto Sans TC Medium";
+  margin-right: -1vw;
 }
 .card9 .c9-content .c9-title3 {
-  width: 59%;
   margin-bottom: 1.6vw;
-}
-.card9 .c9-content .c9-title3 img {
-  width: 100%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-size: 1.25vw;
+  line-height: 2;
+  font-family: "Noto Sans TC Regular";
 }
 .card9 .c9-content .c9-title4 {
   width: 38%;
+  position: relative;
+  align-items: center;
+  text-align: center;
 }
-.card9 .c9-content .c9-title4 img {
+.card9 .c9-content .c9-title4 .cover {
+  position: relative;
+  width: 28.5%;
+  margin-left: 0.5vw;
+}
+.card9 .c9-content .c9-title4 .long-text {
+  position: absolute;
   width: 100%;
+  left: 0vw;
+  top: 1vw;
 }
 
 .card10 {
@@ -670,27 +1036,60 @@
   align-items: center;
   margin-top: 4.5vw;
 }
-.card10 .card10-swiper {
+
+.new-card {
+  width: 100%;
   position: relative;
-  width: 100%;
-}
-.card10 .card10-swiper .swiper-slide {
-  width: 100%;
   overflow: hidden;
   display: flex;
+  z-index: 30;
+  align-items: center;
   justify-content: center;
+  margin-top: 7vw;
 }
-.card10 .card10-swiper .swiper-slide img {
-  display: block;
+.new-card .new-card-img-box {
+  width: 80%;
+  display: flex;
+  position: relative;
+}
+.new-card .new-card-img-box img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-.card10 .card10-swiper .swiper-pagination {
+.new-card .new-card-img-box .hint {
+  color: white;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
   position: absolute;
-  bottom: 0%;
-  opacity: 0;
+  bottom: 0.5vw;
+  right: 0.7vw;
+  text-shadow: rgb(134, 134, 134) 1px 0 10px;
+  z-index: 10;
 }
-.card10 .card10-swiper .swiper-pagination-bullet-active {
-  background-color: #fff !important;
+@media all and (max-width: 1920px) {
+  .new-card .new-card-img-box .hint {
+    font-size: 0.85vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .new-card .new-card-img-box .hint {
+    bottom: 3%;
+    font-size: 18px;
+    right: 2%;
+  }
+}
+@media all and (max-width: 500px) {
+  .new-card .new-card-img-box .hint {
+    font-size: 2.8vw;
+    bottom: 4%;
+    right: 2%;
+  }
+}
+
+.form {
+  background-color: #06103e;
+  z-index: 30;
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
