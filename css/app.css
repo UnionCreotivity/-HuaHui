@@ -816,13 +816,13 @@
   width: 100%;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 5vw;
   overflow: hidden;
   z-index: 30;
 }
 .card7 .left-box {
-  width: 56%;
+  width: 53%;
   overflow: hidden;
 }
 .card7 .left-box .card7-swiper {
@@ -882,7 +882,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-left: -3.9vw;
+  margin-left: 0vw;
   z-index: 50;
 }
 .card7 .right-box .c7-year {
@@ -1033,13 +1033,120 @@
 
 .card10 {
   width: 100%;
-  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   z-index: 30;
   align-items: center;
-  margin-top: 4.5vw;
+  margin-top: 8vw;
+  padding-bottom: 5vw;
+}
+.card10 .swiper-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.card10 .swiper-box .card10-swiper {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .left-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5vw;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .left-box img {
+  width: 45vw;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .right-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3vw;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .right-box .top-text {
+  display: flex;
+  margin-bottom: 2vw;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .right-box .top-text img {
+  width: 28vw;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .right-box .center-line {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vw;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .right-box .center-line img {
+  width: 7%;
+  height: 6vw;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .right-box .button-box {
+  display: flex;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .right-box .button-box .button {
+  margin-right: 0.8vw;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .right-box .button-box .button a .btn-img-box {
+  display: block;
+  width: 7vw;
+  height: 7vw;
+  overflow: hidden;
+}
+.card10 .swiper-box .card10-swiper .swiper-slide .right-box .button-box .button a img {
+  display: block;
+  width: 100%;
+}
+.card10 .swiper-box .card10-swiper .banner6 .top-text {
+  margin-bottom: 1vw !important;
+}
+.card10 .swiper-box .card10-swiper .banner6 .top-text img {
+  width: 25.5vw !important;
+}
+.card10 .swiper-box .card10-swiper .banner6 .center-line {
+  margin-bottom: 1vw !important;
+}
+.card10 .swiper-box .card10-swiper .banner6 .center-line img {
+  height: 3vw !important;
+}
+.card10 .swiper-box .card10-swiper .banner6 .button {
+  margin-right: 0vw !important;
+}
+.card10 .swiper-box .card10-swiper .c10prev {
+  position: absolute;
+  top: 47%;
+  left: 3%;
+  z-index: 999;
+  cursor: pointer;
+  width: 2.5vw;
+}
+@media all and (max-width: 1024px) {
+  .card10 .swiper-box .card10-swiper .c10prev {
+    opacity: 0;
+  }
+}
+.card10 .swiper-box .card10-swiper .c10next {
+  position: absolute;
+  top: 47%;
+  right: 3%;
+  z-index: 999;
+  cursor: pointer;
+  width: 2.5vw;
+}
+@media all and (max-width: 1024px) {
+  .card10 .swiper-box .card10-swiper .c10next {
+    opacity: 0;
+  }
+}
+.card10 .swiper-box .card10-swiper .c10next img {
+  width: 100%;
 }
 
 .new-card {

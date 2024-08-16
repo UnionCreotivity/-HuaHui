@@ -4,7 +4,9 @@ window.onload = function () {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     var window_width = window.innerWidth;
     gsap.registerPlugin(DrawSVGPlugin)
-
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
     function c1Ani() {
         let tl = gsap.timeline({
             scrollTrigger: {
@@ -72,7 +74,7 @@ window.onload = function () {
                 filter: 'blur(5px)',
                 opacity: 0,
                 y: 80,
-                ease: "power1.inOut",
+                ease: "power0.inOut",
                 stagger: {
                     each: 0.25,
                 },
@@ -81,13 +83,13 @@ window.onload = function () {
                 duration: 1,
                 opacity: 0,
                 y: '50',
-                ease: "power1.inOut",
+                ease: "power0.inOut",
             }, '<0.6')
             .from('.c2-title4 .long-text', {
                 duration: 1,
                 opacity: 0,
                 y: '-50',
-                ease: "power1.inOut",
+                ease: "power0.inOut",
             }, '<')
             .fromTo('.circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.3')
 
@@ -168,7 +170,7 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card4",
-                start: "-40%",
+                start: "-50%",
             },
         });
 
@@ -257,7 +259,7 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card6",
-                start: "-50%",
+                start: "-55%",
             },
         });
 
@@ -357,7 +359,7 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card9",
-                start: "-40%",
+                start: "-50%",
             },
         });
         tl.from('.c9-item', { duration: 1, opacity: 0, ease: "power0.inOut", })
@@ -388,4 +390,18 @@ window.onload = function () {
     }
     c9Ani();
 
+
+    const c10swiper = new Swiper(".card10-swiper", {
+        speed: 1500,
+        // effect: 'fade',
+
+
+        navigation: {
+            prevEl: ".c10prev",
+            nextEl: ".c10next"
+        },
+
+
+
+    });
 }
