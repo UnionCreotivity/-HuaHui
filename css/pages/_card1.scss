@@ -43,12 +43,19 @@
       z-index: 100;
       width: 29vw;
       top: 16.5vw;
-      top: 32.5%;
       left: 36vw;
       mix-blend-mode: luminosity;
-
+      @media all and (max-width: 1680px) {
+        top: 30vw;
+      }
       @media all and (max-width: 1440px) {
-        width: 36vw;
+        left: 34vw;
+        width: 37vw;
+        top: 20vw;
+      }
+
+      @media all and (max-width: 1366px) {
+        top: 16vw;
       }
     }
     .people {
@@ -57,6 +64,20 @@
       width: 28vw;
       top: 23vw;
       left: 34.3vw;
+      @media all and (max-width: 1680px) {
+        top: 35.5vw;
+      }
+
+      @media all and (max-width: 1440px) {
+        top: 29.5vw;
+        left: 34vw;
+        width: 32vw;
+      }
+      @media all and (max-width: 1366px) {
+        top: 24.5vw;
+        left: 34.6vw;
+        width: 31vw;
+      }
     }
 
     .logo {
@@ -86,16 +107,25 @@
       -webkit-mask-image: url(../../images/logo.png);
       mask-image: url(../../images/logo.png);
       mask-repeat: no-repeat;
-
       overflow: hidden;
       top: 11.5vw;
       left: 39.5vw;
-
       height: 22vw;
       width: 20vw;
       overflow: hidden;
       mask-size: 100%;
+      @media all and (max-width: 1680px) {
+        top: 24.5vw;
+      }
 
+      @media all and (max-width: 1440px) {
+        height: 25vw;
+        width: 24vw;
+        top: 14.5vw;
+      }
+      @media all and (max-width: 1366px) {
+        top: 10.5vw;
+      }
       .light {
         position: relative;
         z-index: 1;
@@ -128,6 +158,18 @@
       top: 11.4vw;
       left: 39.4vw;
       width: 20vw;
+
+      @media all and (max-width: 1680px) {
+        top: 24.5vw;
+      }
+
+      @media all and (max-width: 1440px) {
+        width: 24vw;
+        top: 14.5vw;
+      }
+      @media all and (max-width: 1366px) {
+        top: 10.5vw;
+      }
     }
     .logo-shadow {
       position: absolute;
@@ -137,6 +179,19 @@
       opacity: 0.7;
       left: 33.8vw;
       mix-blend-mode: color-dodge;
+      @media all and (max-width: 1680px) {
+        top: 44.5vw;
+      }
+      @media all and (max-width: 1440px) {
+        width: 31.5vw;
+        top: 38.5vw;
+        left: 33vw;
+      }
+      @media all and (max-width: 1366px) {
+        width: 32vw;
+        top: 35vw;
+        left: 32.5vw;
+      }
     }
     .shining {
       position: absolute;
@@ -145,6 +200,19 @@
       top: 9vw;
       left: 46.7vw;
       animation: shining 4s ease-in-out forwards infinite;
+      @media all and (max-width: 1680px) {
+        top: 22vw;
+      }
+
+      @media all and (max-width: 1440px) {
+        top: 11vw;
+        width: 7.5vw;
+        left: 47.7vw;
+      }
+
+      @media all and (max-width: 1366px) {
+        top: 7vw;
+      }
     }
 
     .first-big {
@@ -153,19 +221,37 @@
       width: 46vw;
       top: 41.6vw;
       left: 26vw;
+      @media all and (max-width: 1920px) {
+        left: 26.3vw;
+      }
+      @media all and (max-width: 1680px) {
+        top: 53.6vw;
+      }
+      @media all and (max-width: 1440px) {
+        top: 50.9vw;
+        left: 24.2vw;
+        width: 54vw;
+      }
     }
 
     .first-cover {
       position: absolute;
-      top: 80%;
+      top: 40.9vw;
       left: 44.6%;
       width: 9.6%;
       opacity: 0.3;
       z-index: 999999;
+      @media all and (max-width: 1680px) {
+        top: 52.9vw;
+      }
+
       @media all and (max-width: 1440px) {
-        top: 41%;
         left: 44.65%;
         width: 11.2%;
+      }
+      @media all and (max-width: 1440px) {
+        top: 49.9vw;
+        left: 45.65%;
       }
     }
   }
