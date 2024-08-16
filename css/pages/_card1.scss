@@ -43,8 +43,13 @@
       z-index: 100;
       width: 29vw;
       top: 16.5vw;
+      top: 32.5%;
       left: 36vw;
       mix-blend-mode: luminosity;
+
+      @media all and (max-width: 1440px) {
+        width: 36vw;
+      }
     }
     .people {
       position: absolute;
@@ -184,7 +189,7 @@
 
   .c1-content {
     position: absolute;
-    top: 2vw;
+    top: 5vw;
     left: 0px;
     width: 100%;
     height: 100vh;
@@ -224,15 +229,14 @@
       position: relative;
       padding-top: 2vw;
       margin-bottom: 2vw;
-      margin-top: 1vw;
+      margin-top: 1.5vw;
 
       @media all and (max-width: 1440px) {
         padding-top: 2.5vw;
         margin-bottom: 2.3vw;
       }
       .big {
-        width: 36%;
-        opacity: 0.4;
+        width: 46vw;
 
         @media all and (max-width: 1440px) {
           width: 40%;
@@ -242,9 +246,9 @@
       .cover {
         position: absolute;
         top: 41%;
-        left: 45.1%;
-        width: 10.2%;
-        opacity: 0.4;
+        left: 45.3%;
+        width: 9.5%;
+        opacity: 0.3;
         @media all and (max-width: 1440px) {
           top: 41%;
           left: 44.65%;

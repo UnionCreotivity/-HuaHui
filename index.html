@@ -21,6 +21,7 @@
             <video class="first-video-bg" autoplay loop muted playsinline>
                 <source src="./images/long2_3.mp4" type="video/mp4">
             </video>
+
             <img src="./images/city.png" alt="city" class="city">
             <img src="./images/people.png" alt="people" class="people">
             <div class="logo-box logo">
@@ -49,11 +50,11 @@
                 <img src="./images/c1_title1.svg" alt="c1_title1" srcset="">
             </div>
             <div class="title2-box">
-                <img class="big" src="./images/c1_title2.svg" alt="c1_title2" srcset="">
+                <img class="big" src="./images/first_long_title.svg" alt="first_long_title" srcset="">
                 <img class="cover" src="./images/c1_title3.svg" alt="c1_title3" srcset="">
             </div>
             <div class="company-box">
-                <img src="./images/創意家LOGO.svg" alt="創意家LOGO" srcset="">
+                <img src="./images/company_logo2.svg" alt="company_logo2" srcset="">
             </div>
         </div>
 
@@ -335,7 +336,133 @@
     </div>
 
     <div class="form">
+        <div class="title-box">
+            預約鑑賞
+        </div>
+        <div class="form-content">
 
+
+            <div class="cut-3-left">
+
+                <form class="cut-3-form" action="">
+                    <div class="cut-3-form-title">
+                        <!-- <div>
+                        <h5>預約鑑賞</h5>
+                    </div> -->
+
+                    </div>
+                    <p class="danger_p"><span class="text-danger">*</span>必填</p>
+                    <div class="cut-3-form-item">
+                        <span class="text-danger">*</span>
+                        <label for="ca_name">貴賓姓名</label>
+                        <input id="ca_name" type="text" />
+                    </div>
+                    <div class="cut-3-form-item">
+                        <span class="text-danger">*</span>
+                        <label for="ca_phone">聯絡電話</label>
+                        <input id="ca_phone" type="tel" />
+                    </div>
+                    <div class="cut-3-form-item">
+                        <span class="text-danger"></span>
+                        <label for="ca_mail">電子郵件</label>
+                        <input id="ca_mail" type="email" />
+                    </div>
+                    <div class="cut-3-form-item twzipcode">
+                        <div class="cut-3-form-item-in">
+                            <span class="text-danger">*</span>
+                            <label>居住縣市</label>
+                            <div data-role="county" data-name="ca_city"></div>
+                        </div>
+                        <div class="cut-3-form-item-in">
+                            <span class="text-danger">*</span>
+                            <label>居住區域</label>
+                            <div data-role="district" data-name="ca_area"></div>
+                        </div>
+                    </div>
+                    <div class="cut-3-form-item">
+                        <span class="text-danger">*</span>
+                        <label for="ca_square">需求坪數</label>
+                        <select name="ca_square" id="ca_square">
+                            <option value="">-- 選擇坪數 --</option>
+                            <option value="31-34坪 兩房">31~34坪 兩房</option>
+                            <option value="39-44坪 三房">39~44坪 三房</option>
+                        </select>
+                    </div>
+                    <div class="cut-3-form-item">
+                        <label for="ca_memo"><span>留</span><span>言</span></label>
+                        <input id="ca_memo" type="text" />
+                    </div>
+                    <div class="cut-3-form-privacy">
+                        <div>隱私權聲明</div>
+                        <div class="cut-3-form-privacy-line"></div>
+                    </div>
+
+                    <div class="cut-3-form-bottom">
+                        <div class="cut-3-form-bottom-left">
+                            <p class="ex-l">
+                                您所登錄的個人資料將作以下用途1.本網站所載之相關資料通知2.客戶管理與服務
+                            </p>
+                            <p class="ex-l">3.本公司行銷業務之推廣,本案實際內容以現場公佈為準</p>
+                            <p class="ex">
+                                您所登錄的個人資料將作以下用途1.本網站所載之相關資料通知2.客戶管理與服務3.本公司行銷業務之推廣,本案實際內容以現場公佈為準
+                            </p>
+                            <div class="cut-3-form-checkbox">
+                                <input name="check" type="checkbox" id="ca_privacy" checked />
+                                <p>本人已知悉以上個人資料搜集聲明事項及同意隱私權聲明</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="sub_btn1" class="cut-3-form-button" type="button">
+                                送出資料
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="cut-3-left-bottom">
+                    <div class="cut-3-bottom-left">
+                        <a href="https://www.google.com.tw/maps/@25.1043199,121.5118962,15z?hl=zh-TW&entry=ttu"
+                            target="_blank">
+                            <div class="cut-3-left-map">
+                                <img class="map_img" src="./images/替代map.png" alt="替代map" />
+                            </div>
+
+                        </a>
+                        <div class="small-text">
+                            建築外觀設計：陳傳宗建築師事務所
+                        </div>
+                    </div>
+                    <div class="cut-3-bottom-right">
+                        <div class="cut-3-bottom-contact">
+                            <div class="cut-3-bottom-icon">
+                                <img class="cut-3-bottom-const" src="./images/company_logo.svg" alt="company_logo" />
+                                <div class="cut-3-bottom-icon-line"></div>
+                                <img class="cut-3-bottom-creative" src="./images/spHome.svg" alt="spHome" />
+                            </div>
+                            <div class="cut-3-bottom-phone">
+                                <img src="./images/phone.svg" alt="phone" />
+                            </div>
+                            <div class="small-text">
+                                <div>無限多情infinityhouse整合企劃</div>
+                                <div>圖片為情境示意參考</div>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-right-box">
+                <div class="form-logo-box">
+                    <div class="light"></div>
+                </div>
+                <img class="form-text-svg" src="./images/form_text.svg" alt="form_text" srcset="">
+                <div class="img-box">
+                    <img src="./images/form_right_bg.webp" alt="form_right_bg" srcset="">
+                </div>
+
+            </div>
+        </div>
     </div>
 
 
