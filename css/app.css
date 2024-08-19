@@ -1924,9 +1924,9 @@
   margin-bottom: 0.3vw;
 }
 .form-new .left-box .form-box .hint .text-danger {
-  margin-right: 0.7%;
   font-weight: 500;
   font-size: 0.9vw;
+  left: -0.5vw;
   position: absolute;
   color: red;
   font-family: "Noto Sans TC", serif;
