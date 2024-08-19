@@ -2154,8 +2154,8 @@
 .form-new .right-box .form-logo-box {
   position: absolute;
   background: linear-gradient(to bottom, #dacfbb 0%, #bf9e7c 21%, #92644c 45%, #bb8b69 74%, #ceb58e 100%);
-  -webkit-mask-image: url(../../images/form_logo.png);
-  mask-image: url(../../images/form_logo.png);
+  -webkit-mask-image: url(../images/form_logo.png);
+  mask-image: url(../images/form_logo.png);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   overflow: hidden;
