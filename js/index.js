@@ -5,7 +5,7 @@ window.onload = function () {
     var window_width = window.innerWidth;
     gsap.registerPlugin(DrawSVGPlugin)
     Fancybox.bind("[data-fancybox]", {
-        // Your custom options
+
     });
     function c1Ani() {
         let tl = gsap.timeline({
@@ -64,34 +64,49 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card2",
-                start: "-40%",
+                start: "-35%",
             },
         });
 
-        tl.from('.c2-bg-earth', { duration: 1, opacity: 0, ease: "power0.inOut", })
-            .from('.c2-title1,.c2-title2,.c2-title3', {
+        tl.from('.c2-bg-earth', { duration: 1, y: '60', opacity: 0, scale: 1.2, filter: '(15px)', })
+            .from('.c2-title1', {
                 duration: 1,
-                filter: 'blur(5px)',
                 opacity: 0,
-                y: 80,
-                ease: "power0.inOut",
-                stagger: {
-                    each: 0.25,
-                },
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c2-title2', {
+                duration: 1,
+                opacity: 0,
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c2-title3', {
+                duration: 1,
+                opacity: 0,
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c2-title4 .long-text', {
+                duration: 1,
+                opacity: 0,
+                y: '50',
+                filter: "blur(10px)",
             }, '<0.3')
             .from('.c2-title4 .cover', {
                 duration: 1,
                 opacity: 0,
-                y: '50',
-                ease: "power0.inOut",
-            }, '<0.6')
-            .from('.c2-title4 .long-text', {
-                duration: 1,
-                opacity: 0,
+                filter: "blur(10px)",
                 y: '-50',
-                ease: "power0.inOut",
-            }, '<')
-            .fromTo('.circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.3')
+            }, '<0.2')
+
+            .fromTo('.circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.15')
 
     }
     c2Ani();
@@ -170,72 +185,52 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card4",
-                start: "-50%",
+                start: "-40%",
             },
         });
 
-
-        tl.from('.c4-item', { duration: 1, opacity: 0, ease: "power0.inOut", })
-            .from('.c4-title1,.c4-title2,.c4-title3', {
+        tl.from('.c4-item', { duration: 1, y: '60', opacity: 0, scale: 1.2, filter: '(15px)', })
+            .from('.c4-title1', {
                 duration: 1,
-                filter: 'blur(5px)',
                 opacity: 0,
-                y: 80,
-                ease: "power1.inOut",
-                stagger: {
-                    each: 0.25,
-                },
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c4-title2', {
+                duration: 1,
+                opacity: 0,
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c4-title3', {
+                duration: 1,
+                opacity: 0,
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c4-title4 .long-text', {
+                duration: 1,
+                opacity: 0,
+                y: '50',
+                filter: "blur(10px)",
             }, '<0.3')
             .from('.c4-title4 .cover', {
                 duration: 1,
                 opacity: 0,
-                y: '50',
-                ease: "power1.inOut",
-            }, '<0.6')
-            .from('.c4-title4 .long-text', {
-                duration: 1,
-                opacity: 0,
+                filter: "blur(10px)",
                 y: '-50',
-                ease: "power1.inOut",
-            }, '<')
-            .fromTo('.c4-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.3')
+            }, '<0.2')
+
+            .fromTo('.c4-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.15')
 
     }
     c4Ani();
-
-    // function c5Ani() {
-
-    //     let tl = gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: ".card5",
-    //             start: "top top",
-    //             end: "+=2000",
-    //             scrub: 2,
-    //             pin: true,
-    //             pinSpacing: true,
-    //             invalidateOnRefresh: true
-    //         },
-    //     });
-
-    //     tl.fromTo('.c5-content2',
-    //         { filter: 'blur(5px) brightness(2)', },
-    //         {
-    //             duration: 1,
-    //             opacity: 1,
-    //             ease: "power1.inOut",
-    //             filter: 'blur(0px) brightness(1)',
-    //         })
-    //         .fromTo('.c5-content3',
-    //             { filter: 'blur(5px) brightness(2)', },
-    //             {
-    //                 duration: 1,
-    //                 opacity: 1,
-    //                 ease: "power1.inOut",
-    //                 filter: 'blur(0px) brightness(1)',
-    //             })
-
-    // }
-    // c5Ani();
 
     const c5swiper = new Swiper(".card5-swiper", {
 
@@ -259,34 +254,51 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card6",
-                start: "-55%",
+                start: "-45%",
+
             },
         });
 
-        tl.from('.c6-item', { duration: 1, opacity: 0, ease: "power0.inOut", })
-            .from('.c6-title1,.c6-title2,.c6-title3', {
+        tl.from('.c6-item', { duration: 1, y: '60', opacity: 0, scale: 1.2, filter: '(15px)', })
+            .from('.c6-title1', {
                 duration: 1,
-                filter: 'blur(5px)',
                 opacity: 0,
-                y: 80,
-                ease: "power1.inOut",
-                stagger: {
-                    each: 0.25,
-                },
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c6-title2', {
+                duration: 1,
+                opacity: 0,
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c6-title3', {
+                duration: 1,
+                opacity: 0,
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+
+            .from('.c6-title4 .long-text', {
+                duration: 1,
+                opacity: 0,
+                y: '50',
+                filter: "blur(10px)",
             }, '<0.3')
             .from('.c6-title4 .cover', {
                 duration: 1,
                 opacity: 0,
-                y: '50',
-                ease: "power1.inOut",
-            }, '<0.6')
-            .from('.c6-title4 .long-text', {
-                duration: 1,
-                opacity: 0,
+                filter: "blur(10px)",
                 y: '-50',
-                ease: "power1.inOut",
-            }, '<')
-            .fromTo('.c6-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.3')
+            }, '<0.2')
+
+            .fromTo('.c6-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.15')
 
     }
     c6Ani();
@@ -359,33 +371,47 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card9",
-                start: "-50%",
+                start: "-40%",
             },
         });
-        tl.from('.c9-item', { duration: 1, opacity: 0, ease: "power0.inOut", })
-            .from('.c9-title1,.c9-title2,.c9-title3', {
+        tl.from('.c9-item', { duration: 1, y: '60', opacity: 0, scale: 1.2, filter: '(15px)', })
+            .from('.c9-title1', {
                 duration: 1,
-                filter: 'blur(5px)',
                 opacity: 0,
-                y: 80,
-                ease: "power1.inOut",
-                stagger: {
-                    each: 0.25,
-                },
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c9-title2', {
+                duration: 1,
+                opacity: 0,
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c9-title3', {
+                duration: 1,
+                opacity: 0,
+                y: '60',
+                scale: 1.2,
+                filter: "blur(10px)",
+
+            }, '<0.3')
+            .from('.c9-title4 .long-text', {
+                duration: 1,
+                opacity: 0,
+                y: '50',
+                filter: "blur(10px)",
             }, '<0.3')
             .from('.c9-title4 .cover', {
                 duration: 1,
                 opacity: 0,
-                y: '50',
-                ease: "power1.inOut",
-            }, '<0.6')
-            .from('.c9-title4 .long-text', {
-                duration: 1,
-                opacity: 0,
+                filter: "blur(10px)",
                 y: '-50',
-                ease: "power1.inOut",
-            }, '<')
-            .fromTo('.c9-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.3')
+            }, '<0.2')
+            .fromTo('.c9-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.15')
 
     }
     c9Ani();

@@ -35,10 +35,10 @@
       padding-right: 3vw;
       padding-top: 1vw;
       width: 39vw;
+      padding-bottom: 2.5vw;
       .hint {
         display: flex;
         position: relative;
-        margin-bottom: 0;
         margin-top: 2%;
         font-size: 0.8vw;
         margin-bottom: 0.3vw;
@@ -151,11 +151,10 @@
 
       .privacy-notice-send-btn-box {
         display: flex;
-        margin-bottom: 1vw;
-        border: 1px solid red;
+        margin-bottom: 1.5vw;
         width: 100%;
         justify-content: space-between;
-        .left-text-box {
+        .left-text-checkbox-box {
           display: flex;
           flex-direction: column;
           letter-spacing: 0.1vw;
@@ -163,22 +162,34 @@
           font-weight: 500;
           font-size: 0.55vw;
           font-family: "Noto Sans TC", serif;
-          border: 1px solid red;
+
           div {
-            margin-bottom: 0.3vw;
+            margin-bottom: 0.15vw;
+          }
+          .checkbox-box {
+            display: flex;
+            span {
+              letter-spacing: 0.44em;
+              text-indent: 0.25vw;
+              font-size: 0.635vw;
+              font-weight: 600;
+              line-height: 1.5;
+              margin-bottom: 0;
+              color: #595757;
+            }
           }
         }
 
         .right-btn-box {
           .send-btn {
-            font-size: 1vw;
+            font-size: 1.1vw;
             padding-top: 0.35vw;
-            padding-bottom: 0.5vw;
-            padding-left: 1vw;
-            padding-right: 1vw;
+            padding-bottom: 0.6vw;
+            padding-left: 1.25vw;
+            padding-right: 1.25vw;
             border: none;
             color: white;
-            border-radius: 0.45vw;
+            border-radius: 0.5vw;
             text-indent: 0.35vw;
             letter-spacing: 0.23vw;
             background: linear-gradient(
@@ -192,8 +203,94 @@
           }
         }
       }
+
+      .botttom-map-logo-box {
+        display: flex;
+        width: 100%;
+        .left-box {
+          display: flex;
+          width: 50%;
+          flex-direction: column;
+          align-items: flex-start;
+          a {
+            display: flex;
+            width: 100%;
+            .map-box {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .small-text {
+            font-family: "Noto Sans TC", serif;
+            letter-spacing: 0.2em;
+            font-size: 0.7vw;
+            margin-top: 0.5vw;
+          }
+        }
+        .right-box {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          padding-top: 1vw;
+          margin-left: 1vw;
+          .conpany-icon-box {
+            position: relative;
+            display: flex;
+            .company1 {
+              width: 50%;
+            }
+
+            .company2 {
+              width: 42%;
+              margin-left: 1vw;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              background-color: #727171;
+              width: 1px;
+              height: 1.45vw;
+              left: 8.5vw;
+              top: 0.5vw;
+            }
+          }
+
+          .phone-img-box {
+            width: 98%;
+            margin-top: 0.55vw;
+            img {
+              width: 100%;
+            }
+          }
+
+          .small-text {
+            display: flex;
+            font-family: "Noto Sans TC", serif;
+            margin-top: 0.8vw;
+            :first-child {
+              color: #3e3a39;
+              font-size: 0.6vw;
+              letter-spacing: 0.15em;
+              align-self: center;
+            }
+            :last-child {
+              color: #595757;
+              font-size: 0.5vw;
+              letter-spacing: 0.1em;
+              align-self: center;
+              margin-left: 0.5vw;
+            }
+          }
+        }
+      }
     }
   }
+
   .right-box {
     // top: -2.6vw;
     display: flex;
