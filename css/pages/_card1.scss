@@ -89,9 +89,6 @@
     }
     .logo {
       position: absolute;
-      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+72,a9afaa+82,a5c1c2+100,a5c1c2+100 */
-      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+72,a9afaa+82,a5c1c2+100,a5c1c2+100 */
-      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+62,a9afaa+73,a5c1c2+100,a5c1c2+100 */
       background: linear-gradient(
         to bottom,
         #f6efed 0%,
@@ -102,7 +99,7 @@
         #a9afaa 73%,
         #a5c1c2 100%,
         #a5c1c2 100%
-      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      );
 
       -webkit-mask-image: url(../images/logo.png);
       mask-image: url(../images/logo.png);
@@ -179,6 +176,7 @@
       opacity: 0.7;
       left: 33.8vw;
       mix-blend-mode: color-dodge;
+
       @media all and (max-width: 1680px) {
         top: 44.5vw;
       }

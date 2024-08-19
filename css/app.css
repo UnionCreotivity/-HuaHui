@@ -149,10 +149,7 @@
 }
 .card1 .first-ani-box .logo {
   position: absolute;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+72,a9afaa+82,a5c1c2+100,a5c1c2+100 */
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+72,a9afaa+82,a5c1c2+100,a5c1c2+100 */
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+62,a9afaa+73,a5c1c2+100,a5c1c2+100 */
-  background: linear-gradient(to bottom, #f6efed 0%, #fdd3c4 21%, #b27b6a 32%, #814a39 50%, #83675c 62%, #a9afaa 73%, #a5c1c2 100%, #a5c1c2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, #f6efed 0%, #fdd3c4 21%, #b27b6a 32%, #814a39 50%, #83675c 62%, #a9afaa 73%, #a5c1c2 100%, #a5c1c2 100%);
   -webkit-mask-image: url(../images/logo.png);
   mask-image: url(../images/logo.png);
   -webkit-mask-repeat: no-repeat;
@@ -2041,14 +2038,18 @@
 .form-new .left-box .form-box .privacy-notice-send-btn-box .left-text-checkbox-box .checkbox-box {
   display: flex;
 }
-.form-new .left-box .form-box .privacy-notice-send-btn-box .left-text-checkbox-box .checkbox-box span {
+.form-new .left-box .form-box .privacy-notice-send-btn-box .left-text-checkbox-box .checkbox-box label {
   letter-spacing: 0.44em;
-  text-indent: 0.25vw;
-  font-size: 0.635vw;
+  font-size: 0.63vw;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0;
   color: #595757;
+  cursor: pointer;
+}
+.form-new .left-box .form-box .privacy-notice-send-btn-box .left-text-checkbox-box .checkbox-box input#ca_privacy {
+  cursor: pointer;
+  scale: 1.3;
 }
 .form-new .left-box .form-box .privacy-notice-send-btn-box .right-btn-box .send-btn {
   font-size: 1.1vw;
@@ -2097,7 +2098,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding-top: 1vw;
+  padding-top: 1.5vw;
   margin-left: 1vw;
 }
 .form-new .left-box .form-box .botttom-map-logo-box .right-box .conpany-icon-box {

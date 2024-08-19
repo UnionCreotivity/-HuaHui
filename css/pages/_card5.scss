@@ -1,6 +1,5 @@
 .card5 {
   width: 100%;
-
   position: relative;
   overflow: hidden;
   display: flex;
@@ -9,13 +8,10 @@
   justify-content: center;
   margin-top: 8vw;
 
-  @media all and (max-width: 1440px) {
-    // height: auto;
-  }
-
   .card5-swiper {
     position: relative;
     width: 80%;
+
     .hint {
       @include hint();
       z-index: 20;

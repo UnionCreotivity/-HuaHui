@@ -419,15 +419,12 @@ window.onload = function () {
 
     const c10swiper = new Swiper(".card10-swiper", {
         speed: 1500,
-        // effect: 'fade',
 
-
+        loop: true,
         navigation: {
             prevEl: ".c10prev",
             nextEl: ".c10next"
         },
-
-
 
     });
 }
