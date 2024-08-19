@@ -153,8 +153,8 @@
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+72,a9afaa+82,a5c1c2+100,a5c1c2+100 */
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6efed+0,fdd3c4+21,b27b6a+32,814a39+50,83675c+62,a9afaa+73,a5c1c2+100,a5c1c2+100 */
   background: linear-gradient(to bottom, #f6efed 0%, #fdd3c4 21%, #b27b6a 32%, #814a39 50%, #83675c 62%, #a9afaa 73%, #a5c1c2 100%, #a5c1c2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  -webkit-mask-image: url(../../images/logo.png);
-  mask-image: url(../../images/logo.png);
+  -webkit-mask-image: url(../images/logo.png);
+  mask-image: url(../images/logo.png);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   overflow: hidden;
@@ -1349,6 +1349,452 @@
   width: 100%;
   position: relative;
 }
+.form .form-content .cut-3-left {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 39vw;
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+  background-color: white;
+  margin-left: 7vw;
+  margin-top: 4vw;
+}
+.form .form-content .cut-3-left .cut-3-form {
+  width: 81%;
+}
+@media screen and (max-width: 1920px) {
+  .form .form-content .cut-3-left .cut-3-form .cut-3-form-title > :nth-child(1) {
+    letter-spacing: 2px;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .form .form-content .cut-3-left .cut-3-form .cut-3-form-title > :nth-child(2) {
+    margin-left: 3vw;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .form .form-content .cut-3-left .cut-3-form .cut-3-form-title > :nth-child(2) {
+    margin-left: 2vw;
+  }
+}
+.form .form-content .cut-3-left .cut-3-form label {
+  font-family: "Noto Sans TC", serif;
+  letter-spacing: 0.15em;
+}
+.form .form-content .cut-3-left .cut-3-form select {
+  font-size: 1vw;
+  border: none;
+  background-color: transparent;
+  margin-right: 2.5vw;
+  margin-left: 2vw;
+  width: 22vw;
+  font-family: "Noto Sans TC", serif;
+  letter-spacing: 0.15em;
+}
+.form .form-content .cut-3-left .cut-3-form input[type=text] {
+  font-size: 1vw;
+  border: none;
+  background-color: transparent;
+  margin-right: 2.5vw;
+  margin-left: 2vw;
+  width: 22vw;
+  letter-spacing: 0.1em;
+}
+.form .form-content .cut-3-left .cut-3-form input[type=tel] {
+  font-size: 1vw;
+  border: none;
+  background-color: transparent;
+  margin-right: 2.5vw;
+  margin-left: 2vw;
+  width: 22vw;
+}
+.form .form-content .cut-3-left .cut-3-form input[type=email] {
+  font-size: 1vw;
+  border: none;
+  background-color: transparent;
+  margin-right: 2.5vw;
+  margin-left: 2vw;
+  width: 22vw;
+}
+.form .form-content .cut-3-left .cut-3-form .danger_p {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 2%;
+  font-size: 0.8vw;
+}
+@media screen and (max-width: 500px) {
+  .form .form-content .cut-3-left .cut-3-form .danger_p {
+    font-size: 3vw;
+    margin-top: 4%;
+  }
+}
+.form .form-content .cut-3-left .cut-3-form .text-danger {
+  margin-right: 1%;
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: red;
+  position: absolute;
+  left: -2%;
+  top: 10%;
+}
+@media screen and (max-width: 500px) {
+  .form .form-content .cut-3-left .cut-3-form .text-danger {
+    margin-right: 0%;
+  }
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(3) {
+  margin-top: 1vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  position: relative;
+  margin-bottom: 1vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #7d80ad;
+  bottom: -0.5vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(3) label {
+  font-size: 1vw;
+  font-weight: 400;
+  position: relative;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(4) {
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  position: relative;
+  margin-bottom: 1vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(4)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #7d80ad;
+  bottom: -0.5vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(4) label {
+  font-size: 1vw;
+  font-weight: 400;
+  position: relative;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(5) {
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  position: relative;
+  margin-bottom: 1vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(5)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #7d80ad;
+  bottom: -0.5vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(5) label {
+  font-size: 1vw;
+  font-weight: 400;
+  position: relative;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(7) {
+  margin-top: 1vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  position: relative;
+  margin-bottom: 1vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(7)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #7d80ad;
+  bottom: -0.5vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(7) label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1vw;
+  font-weight: 400;
+  position: relative;
+  width: 7vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(7) label span {
+  font-family: "Noto Sans TC", serif;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(8) {
+  margin-top: 1vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  position: relative;
+  margin-bottom: 0.5vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(8) label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1vw;
+  font-weight: 400;
+  position: relative;
+  width: 4vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(8) label span {
+  font-family: "Noto Sans TC", serif;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(8) input {
+  font-size: 1vw;
+  border: none;
+  background-color: transparent;
+  margin-right: 2.5vw;
+  margin-left: 2vw;
+  width: 22vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(9) {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  margin-top: 0vw;
+}
+.form .form-content .cut-3-left .cut-3-form > :nth-child(9)::after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  right: 0px;
+  height: 1px;
+  background-color: #7d80ad;
+  bottom: 0.5vw;
+}
+.form .form-content .cut-3-left .cut-3-form .cut-3-form-item .cut-3-form-item-in {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1vw;
+}
+.form .form-content .cut-3-left .cut-3-form .cut-3-form-item .cut-3-form-item-in::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #7d80ad;
+  bottom: -0.5vw;
+}
+.form .form-content .cut-3-left .cut-3-form .cut-3-form-item .cut-3-form-item-in label {
+  font-size: 1vw;
+  font-weight: 400;
+  position: relative;
+}
+.form .form-content .cut-3-left .cut-3-form .cut-3-form-privacy {
+  display: flex;
+  align-items: center;
+}
+.form .form-content .cut-3-left .cut-3-form .cut-3-form-privacy > :nth-child(1) {
+  font-size: 0.7vw;
+  letter-spacing: 0.1vw;
+  color: #595757;
+  font-weight: 500;
+  font-family: "Noto Sans TC", serif;
+}
+@media screen and (max-width: 1920px) {
+  .form .form-content .cut-3-left .cut-3-form .cut-3-form-privacy > :nth-child(1) {
+    letter-spacing: 2px;
+  }
+}
+.form .form-content .cut-3-left .cut-3-form .cut-3-form-privacy .cut-3-form-privacy-line {
+  display: none;
+  height: 1px;
+  width: 85.5%;
+  background-color: #7d80ad;
+}
+@media screen and (max-width: 1680px) {
+  .form .form-content .cut-3-left .cut-3-form .cut-3-form-privacy .cut-3-form-privacy-line {
+    width: 82%;
+  }
+}
+.form .form-content .cut-3-left .cut-3-form-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0.5vw;
+}
+.form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left .ex-l {
+  display: block;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1680px) {
+  .form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left .ex-l {
+    display: none;
+  }
+}
+.form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left .ex-l:first-child {
+  margin-bottom: 0.2vw;
+}
+.form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left .ex {
+  display: none;
+}
+@media screen and (max-width: 1680px) {
+  .form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left .ex {
+    display: block;
+  }
+}
+.form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left p {
+  color: #474956;
+  font-size: 0.53vw;
+  letter-spacing: 0.19em;
+  margin-bottom: 0vw;
+  font-family: "Noto Sans TC", serif;
+}
+@media screen and (max-width: 1920px) {
+  .form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left p {
+    font-size: 0.57vw;
+    letter-spacing: 0.12em;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left p {
+    font-size: 0.7vw;
+  }
+}
+.form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left .cut-3-form-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2vw;
+}
+.form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left .cut-3-form-checkbox p {
+  letter-spacing: 0.25vw;
+  text-indent: 0.25vw;
+  font-size: 0.635vw;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: #474956;
+}
+@media screen and (max-width: 1920px) {
+  .form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left .cut-3-form-checkbox p {
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-left .cut-3-form-checkbox p {
+    text-indent: 0%;
+    font-size: 0.75vw;
+    margin-left: 0.3vw;
+  }
+}
+.form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-right .cut-3-form-button {
+  font-size: 1vw;
+  padding-top: 0.35vw;
+  padding-bottom: 0.45vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  text-indent: 0.4vw;
+  letter-spacing: 0.23vw;
+  background: linear-gradient(to bottom, #003399 0%, #0a2560 50%, #161f3b 100%);
+  cursor: pointer;
+  font-family: "Noto Sans TC", serif;
+}
+@media screen and (max-width: 1920px) {
+  .form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-right .cut-3-form-button {
+    text-indent: 0.3vw;
+    letter-spacing: 0.3vw;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .form .form-content .cut-3-left .cut-3-form-bottom .cut-3-form-bottom-right .cut-3-form-button {
+    width: 7vw;
+    text-indent: 0.4vw;
+    letter-spacing: 0.4vw;
+  }
+}
+.form .form-content .cut-3-left-bottom {
+  width: 81%;
+  display: flex;
+  margin-top: 2vw;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-left,
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right {
+  width: 50%;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-left .small-text,
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .small-text {
+  font-family: "Noto Sans TC", serif;
+  letter-spacing: 0.2em;
+  font-size: 0.7vw;
+  margin-top: 0.5vw;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-left .cut-3-left-map,
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-left-map {
+  width: 100%;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-left .cut-3-left-map .map_img,
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-left-map .map_img {
+  width: 100%;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right {
+  padding-top: 0.9vw;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact .cut-3-bottom-icon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact .cut-3-bottom-icon .cut-3-bottom-creative {
+  width: 42% !important;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact .cut-3-bottom-icon .cut-3-bottom-const {
+  width: 45% !important;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact .cut-3-bottom-icon .cut-3-bottom-icon-line {
+  background-color: #727171;
+  width: 1px;
+  height: 1vw;
+  margin-left: 0.5vw;
+  margin-right: 0.35vw;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact .cut-3-bottom-phone {
+  width: 92%;
+  margin-top: 1vw;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact .cut-3-bottom-phone img {
+  width: 100%;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact .small-text {
+  display: flex;
+  font-family: "Noto Sans TC", serif;
+  margin-top: 0.8vw;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact .small-text :first-child {
+  color: #3e3a39;
+  font-size: 0.6vw;
+  letter-spacing: 0.1em;
+  align-self: center;
+}
+.form .form-content .cut-3-left-bottom .cut-3-bottom-right .cut-3-bottom-contact .small-text :last-child {
+  color: #595757;
+  font-size: 0.5vw;
+  letter-spacing: 0.1em;
+  align-self: center;
+}
 .form .form-right-box {
   display: flex;
   width: 55%;
@@ -1356,10 +1802,9 @@
 }
 .form .form-right-box .form-logo-box {
   position: absolute;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dacfbb+0,bf9e7c+21,92644c+45,bb8b69+74,ceb58e+100 */
-  background: linear-gradient(to bottom, #dacfbb 0%, #bf9e7c 21%, #92644c 45%, #bb8b69 74%, #ceb58e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  -webkit-mask-image: url(../../images/form_logo.png);
-  mask-image: url(../../images/form_logo.png);
+  background: linear-gradient(to bottom, #dacfbb 0%, #bf9e7c 21%, #92644c 45%, #bb8b69 74%, #ceb58e 100%);
+  -webkit-mask-image: url(../images/form_logo.png);
+  mask-image: url(../images/form_logo.png);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   overflow: hidden;
@@ -1404,671 +1849,7 @@
   width: 100%;
 }
 
-.cut-3-left {
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 39vw;
-  padding-top: 1vw;
-  padding-bottom: 2vw;
-  background-color: white;
-  margin-left: 7vw;
-  margin-top: 4vw;
-}
-
-@media screen and (max-width: 1660px) {
-  .cut-3-left {
-    top: 13%;
-  }
-}
-.cut-3-form {
-  width: 81%;
-}
-.cut-3-form select {
-  font-family: "Noto Sans TC", serif;
-  letter-spacing: 0.15em;
-}
-
-.danger_p {
-  position: relative;
-  margin-bottom: 0;
-  margin-top: 2%;
-  font-size: 0.8vw;
-}
-
-.text-danger {
-  margin-right: 1%;
-  font-weight: 500;
-  font-size: 0.8vw;
-  color: red;
-  position: absolute;
-  left: -2%;
-  top: 10%;
-}
-
 @media screen and (max-width: 500px) {
-  .danger_p {
-    font-size: 3vw;
-    margin-top: 4%;
-  }
-  .text-danger {
-    margin-right: 0%;
-  }
-}
-.cut-3-form-item .text-danger {
-  font-weight: 500;
-  font-size: 0.8vw;
-  color: red;
-  position: absolute;
-  left: -2%;
-  top: 10%;
-}
-
-.cut-3-form label {
-  font-family: "Noto Sans TC", serif;
-  letter-spacing: 0.15em;
-}
-
-.cut-3-form > :nth-child(3) {
-  margin-top: 1vw;
-  display: flex;
-  align-items: baseline;
-  justify-content: left;
-  position: relative;
-  margin-bottom: 1vw;
-}
-
-.cut-3-form > :nth-child(3)::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #7d80ad;
-  bottom: -0.5vw;
-}
-
-.cut-3-form > :nth-child(3) > label {
-  font-size: 1vw;
-  font-weight: 400;
-  position: relative;
-}
-
-.cut-3-form > :nth-child(3) > label::after {
-  /* content: ""; */
-  position: absolute;
-  display: block;
-  background-color: black;
-  transform: rotateZ(23deg);
-  height: 60%;
-  top: 25%;
-  width: 1px;
-  left: 118%;
-}
-
-.cut-3-form input[type=text] {
-  font-size: 1vw;
-  border: none;
-  background-color: transparent;
-  margin-right: 2.5vw;
-  margin-left: 2vw;
-  width: 22vw;
-}
-
-.cut-3-form > :nth-child(4) {
-  display: flex;
-  align-items: baseline;
-  justify-content: left;
-  position: relative;
-  margin-bottom: 1vw;
-}
-
-.cut-3-form > :nth-child(4)::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #7d80ad;
-  bottom: -0.5vw;
-}
-
-.cut-3-form > :nth-child(4) > label {
-  font-size: 1vw;
-  font-weight: 400;
-  position: relative;
-}
-
-.cut-3-form > :nth-child(4) > label::after {
-  /* content: ""; */
-  position: absolute;
-  display: block;
-  background-color: black;
-  transform: rotateZ(23deg);
-  height: 60%;
-  top: 25%;
-  width: 1px;
-  left: 118%;
-}
-
-.cut-3-form input[type=tel] {
-  font-size: 1vw;
-  border: none;
-  background-color: transparent;
-  margin-right: 2.5vw;
-  margin-left: 2vw;
-  width: 22vw;
-}
-
-/*  */
-.cut-3-form > :nth-child(5) {
-  display: flex;
-  align-items: baseline;
-  justify-content: left;
-  position: relative;
-  margin-bottom: 1vw;
-}
-
-.cut-3-form > :nth-child(5)::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #7d80ad;
-  bottom: -0.5vw;
-}
-
-.cut-3-form > :nth-child(5) > label {
-  font-size: 1vw;
-  font-weight: 400;
-  position: relative;
-}
-
-.cut-3-form > :nth-child(5) > label::after {
-  /* content: ""; */
-  position: absolute;
-  display: block;
-  background-color: black;
-  transform: rotateZ(23deg);
-  height: 60%;
-  top: 25%;
-  width: 1px;
-  left: 118%;
-}
-
-.cut-3-form input[type=email] {
-  font-size: 1vw;
-  border: none;
-  background-color: transparent;
-  margin-right: 2.5vw;
-  margin-left: 2vw;
-  width: 22vw;
-}
-
-.cut-3-form-item-in {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 1vw;
-}
-
-.cut-3-form-item-in::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #7d80ad;
-  bottom: -0.5vw;
-}
-
-.cut-3-form-item-in label {
-  font-size: 1vw;
-  font-weight: 400;
-  position: relative;
-}
-
-.cut-3-form-item-in label::after {
-  /* content: ""; */
-  position: absolute;
-  display: block;
-  background-color: black;
-  transform: rotateZ(23deg);
-  height: 60%;
-  top: 25%;
-  width: 1px;
-  left: 118%;
-}
-
-.cut-3-form select {
-  font-size: 1vw;
-  border: none;
-  background-color: transparent;
-  margin-right: 2.5vw;
-  margin-left: 2vw;
-  width: 22vw;
-}
-
-/*  */
-.cut-3-form > :nth-child(7) {
-  margin-top: 1vw;
-  display: flex;
-  align-items: baseline;
-  justify-content: left;
-  position: relative;
-  margin-bottom: 1vw;
-}
-
-.cut-3-form > :nth-child(7)::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #7d80ad;
-  bottom: -0.5vw;
-}
-
-.cut-3-form > :nth-child(7) > label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1vw;
-  font-weight: 400;
-  position: relative;
-  width: 7vw;
-}
-
-.cut-3-form > :nth-child(7) > label > span {
-  font-family: "Noto Sans TC", serif;
-}
-
-.cut-3-form > :nth-child(7) > label::after {
-  /* content: ""; */
-  position: absolute;
-  display: block;
-  background-color: black;
-  transform: rotateZ(23deg);
-  height: 60%;
-  top: 25%;
-  width: 1px;
-  left: 118%;
-}
-
-.cut-3-form > :nth-child(7) > input {
-  font-size: 1vw;
-  border: none;
-  background-color: transparent;
-  margin-right: 2.5vw;
-  margin-left: 2vw;
-  width: 22vw;
-}
-
-/*  */
-.cut-3-form > :nth-child(8) {
-  margin-top: 1vw;
-  display: flex;
-  align-items: baseline;
-  justify-content: left;
-  position: relative;
-  margin-bottom: 0.5vw;
-}
-
-.cut-3-form > :nth-child(8) > label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1vw;
-  font-weight: 400;
-  position: relative;
-  width: 4vw;
-}
-
-.cut-3-form > :nth-child(8) > label > span {
-  font-family: "Noto Sans TC", serif;
-}
-
-.cut-3-form > :nth-child(8) > label::after {
-  /* content: ""; */
-  position: absolute;
-  display: block;
-  background-color: black;
-  transform: rotateZ(23deg);
-  height: 60%;
-  top: 25%;
-  width: 1px;
-  left: 118%;
-}
-
-.cut-3-form > :nth-child(8) > input {
-  font-size: 1vw;
-  border: none;
-  background-color: transparent;
-  margin-right: 2.5vw;
-  margin-left: 2vw;
-  width: 22vw;
-}
-
-/*  */
-.cut-3-form > :nth-child(9) {
-  display: flex;
-  align-items: baseline;
-  position: relative;
-  justify-content: flex-start;
-  margin-bottom: 0;
-  margin-top: 0vw;
-}
-.cut-3-form > :nth-child(9) ::after {
-  content: "";
-  position: absolute;
-  width: 85%;
-  right: 0px;
-  height: 1px;
-  background-color: #7d80ad;
-  bottom: 0.5vw;
-}
-
-.cut-3-form > :nth-child(9) > label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1vw;
-  font-weight: 400;
-  position: relative;
-  width: 4vw;
-}
-
-.cut-3-form > :nth-child(9) > label > span {
-  font-family: "Noto Sans TC", serif;
-}
-
-.cut-3-form > :nth-child(9) > label::after {
-  /* content: ""; */
-  position: absolute;
-  display: block;
-  background-color: black;
-  transform: rotateZ(23deg);
-  height: 60%;
-  top: 25%;
-  width: 1px;
-  left: 118%;
-}
-
-.cut-3-form > :nth-child(9) > input {
-  font-size: 1vw;
-  border: none;
-  background-color: transparent;
-  margin-right: 2.5vw;
-  margin-left: 2vw;
-  width: 22vw;
-}
-
-.cut-3-form-title {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-}
-
-.cut-3-form-title h5 {
-  font-size: 1vw;
-  font-weight: 400;
-  font-family: "Noto Serif TC", serif;
-  font-family: "Noto Sans TC", serif;
-}
-
-.cut-3-form-title > div:nth-of-type(1) {
-  flex: 1 1 20%;
-}
-
-.cut-3-form-title > div:nth-of-type(2) {
-  flex: 1 1 76%;
-}
-
-.cut-3-bird-text {
-  font-size: 1.2vw;
-  display: flex;
-  align-items: baseline;
-  color: #171c61;
-  margin-left: 2.8vw;
-  font-family: "jf-jinxuan";
-}
-
-.cut-3-bird-text > img {
-  width: 1vw;
-}
-
-.cut-3-form-privacy {
-  display: flex;
-  align-items: center;
-}
-
-.cut-3-form-privacy > :nth-child(1) {
-  font-size: 0.7vw;
-  letter-spacing: 0.1vw;
-  color: #595757;
-  font-weight: 500;
-  font-family: "Noto Sans TC", serif;
-}
-
-.cut-3-form-privacy-line {
-  display: none;
-  height: 1px;
-  width: 85.5%;
-  background-color: #7d80ad;
-}
-
-.cut-3-remind {
-  position: absolute;
-  right: 5%;
-  bottom: 9%;
-  color: white;
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-}
-
-.cut-3-form-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.5vw;
-}
-
-.cut-3-form-bottom-left {
-  margin-right: 0.5vw;
-}
-
-.cut-3-form-bottom-left p {
-  color: #474956;
-  font-size: 0.53vw;
-  letter-spacing: 0.11vw;
-  margin-bottom: 0vw;
-  font-family: "Noto Sans TC", serif;
-}
-
-.cut-3-form-checkbox {
-  display: flex;
-  align-items: center;
-  margin-top: 0.2vw;
-}
-
-.cut-3-form-checkbox > p {
-  letter-spacing: 0.25vw;
-  text-indent: 0.25vw;
-  font-size: 0.65vw;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 0;
-  color: #474956;
-}
-
-.cut-3-form-button {
-  font-size: 1vw;
-  padding-top: 0.35vw;
-  padding-bottom: 0.45vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  border: none;
-  color: white;
-  border-radius: 10px;
-  text-indent: 0.4vw;
-  letter-spacing: 0.23vw;
-  background: linear-gradient(to bottom, #003399 0%, #0a2560 50%, #161f3b 100%);
-  cursor: pointer;
-  font-family: "Noto Sans TC", serif;
-}
-
-.cut-3-left-bottom {
-  width: 81%;
-  display: flex;
-  margin-top: 2vw;
-}
-
-.cut-3-bottom-left,
-.cut-3-bottom-right {
-  width: 50%;
-}
-
-.cut-3-bottom-right {
-  padding-top: 0.9vw;
-}
-
-.cut-3-left-map {
-  width: 100%;
-}
-
-.small-text {
-  font-family: "Noto Sans TC", serif;
-  letter-spacing: 0.2em;
-  font-size: 0.7vw;
-  margin-top: 0.5vw;
-}
-
-.cut-3-bottom-contact {
-  display: flex;
-  align-items: end;
-  flex-direction: column;
-}
-.cut-3-bottom-contact .cut-3-bottom-icon {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-.cut-3-bottom-contact .cut-3-bottom-icon .cut-3-bottom-creative {
-  width: 42% !important;
-}
-.cut-3-bottom-contact .cut-3-bottom-icon .cut-3-bottom-const {
-  width: 45% !important;
-}
-.cut-3-bottom-contact .cut-3-bottom-icon .cut-3-bottom-icon-line {
-  background-color: #727171;
-  width: 1px;
-  height: 1vw;
-  margin-left: 0.5vw;
-  margin-right: 0.35vw;
-}
-.cut-3-bottom-contact .cut-3-bottom-phone {
-  width: 92%;
-  margin-top: 1vw;
-}
-.cut-3-bottom-contact .cut-3-bottom-phone img {
-  width: 100%;
-}
-.cut-3-bottom-contact .small-text {
-  display: flex;
-  font-family: "Noto Sans TC", serif;
-  margin-top: 0.8vw;
-}
-.cut-3-bottom-contact .small-text :first-child {
-  color: #3e3a39;
-  font-size: 0.6vw;
-  letter-spacing: 0.1em;
-  align-self: center;
-}
-.cut-3-bottom-contact .small-text :last-child {
-  color: #595757;
-  font-size: 0.5vw;
-  letter-spacing: 0.1em;
-  align-self: center;
-}
-
-.ex-l {
-  display: block;
-  line-height: 1.5;
-}
-.ex-l:first-child {
-  margin-bottom: 0.2vw;
-}
-
-.ex {
-  display: none;
-}
-
-@media screen and (max-width: 1920px) {
-  .cut-3-form-title > :nth-child(2) {
-    margin-left: 3vw;
-  }
-  .cut-3-form-privacy > :nth-child(1) {
-    letter-spacing: 2px;
-  }
-  .cut-3-form-privacy-line {
-    width: 85.5%;
-  }
-  .cut-3-form-button {
-    font-size: 1vw;
-    text-indent: 0.3vw;
-    letter-spacing: 0.3vw;
-  }
-  .cut-3-form-bottom-left p {
-    font-size: 0.57vw;
-    letter-spacing: 2px;
-  }
-  .cut-3-form-checkbox > p {
-    margin-bottom: 0;
-    line-height: 1;
-    font-size: 0.8vw;
-  }
-}
-@media screen and (max-width: 1680px) {
-  .ex-l {
-    display: none;
-  }
-  .ex {
-    display: block;
-  }
-  .cut-3-form-title > :nth-child(2) {
-    margin-left: 2vw;
-  }
-  .cut-3-form-privacy-line {
-    width: 82%;
-  }
-  .cut-3-form-bottom-left > p {
-    font-size: 0.7vw;
-  }
-  .cut-3-form-button {
-    width: 7vw;
-    font-size: 1vw;
-    text-indent: 0.4vw;
-    letter-spacing: 0.4vw;
-  }
-  .cut-3-form-checkbox > p {
-    text-indent: 0%;
-    font-size: 0.75vw;
-    margin-left: 0.3vw;
-  }
-  .cut-3-left-office {
-    font-size: 0.8vw;
-    letter-spacing: 3px;
-  }
-  .cut-3-left-plan > :nth-child(1) {
-    font-size: 0.65vw;
-    letter-spacing: 1px;
-  }
-  .cut-3-left-plan > :nth-child(2) {
-    font-size: 0.53vw;
-  }
-}
-@media screen and (max-width: 500px) {
-  .cut-3-bg-img {
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-    position: relative;
-  }
   .cut-3-left {
     display: none;
   }
@@ -2097,6 +1878,231 @@
     left: 14%;
   }
 }
-.map_img {
+.form-new {
+  background-color: #06103e;
+  z-index: 30;
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding-bottom: 2vw;
+  overflow: hidden;
+  padding-top: 7vw;
+}
+.form-new .left-box {
+  display: flex;
+  width: 45%;
+  position: relative;
+  flex-direction: column;
+  align-items: end;
+}
+.form-new .left-box .title-box {
+  color: white;
+  font-size: 1.3vw;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: -4.2vw;
+  left: 22vw;
+}
+.form-new .left-box .form-box {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vw;
+  width: 39vw;
+}
+.form-new .left-box .form-box .hint {
+  display: flex;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 2%;
+  font-size: 0.8vw;
+  margin-bottom: 0.3vw;
+}
+.form-new .left-box .form-box .hint .text-danger {
+  margin-right: 0.7%;
+  font-weight: 500;
+  font-size: 0.9vw;
+  color: red;
+  font-family: "Noto Sans TC", serif;
+}
+.form-new .left-box .form-box form {
+  display: flex;
+  flex-direction: column;
+}
+.form-new .left-box .form-box form .form-item {
+  font-family: "Noto Sans TC", serif;
+  position: relative;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  display: flex;
+  justify-content: space-between;
+}
+.form-new .left-box .form-box form .form-item .text-danger {
+  position: absolute;
+  font-weight: 500;
+  font-size: 0.9vw;
+  color: red;
+  left: -0.5vw;
+  font-family: "Noto Sans TC", serif;
+}
+.form-new .left-box .form-box form .form-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #7d80ad;
+  bottom: 0vw;
+  left: 0px;
+}
+.form-new .left-box .form-box form .form-item label {
+  letter-spacing: 0.15em;
+  font-size: 1vw;
+  font-family: "Noto Sans TC", serif;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-new .left-box .form-box form .form-item input {
+  font-size: 1vw;
+  border: none;
+  background-color: transparent;
+  width: 81%;
+  letter-spacing: 0.1em;
+  font-family: "Noto Sans TC", serif;
+}
+.form-new .left-box .form-box form .form-item select {
+  font-size: 1vw;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  width: 81%;
+  font-family: "Noto Sans TC", serif;
+  letter-spacing: 0.15em;
+}
+.form-new .left-box .form-box form .memo-item {
+  padding-bottom: 0.3vw;
+}
+.form-new .left-box .form-box form .memo-item label {
+  display: flex;
+  justify-content: space-between;
+  width: 4.7vw;
+}
+.form-new .left-box .form-box form .memo-item::after {
+  display: none;
+}
+.form-new .left-box .form-box .privacy-notice-title-box {
+  display: flex;
+  letter-spacing: 0.13vw;
+  color: #595757;
+  font-weight: 500;
+  font-size: 0.78vw;
+  font-family: "Noto Sans TC", serif;
+  margin-bottom: 0.3vw;
+}
+.form-new .left-box .form-box .privacy-notice-title-box div {
+  position: relative;
+  width: 100%;
+}
+.form-new .left-box .form-box .privacy-notice-title-box div::after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 1px;
+  background-color: #7d80ad;
+  bottom: 0.45vw;
+  right: 0px;
+}
+.form-new .left-box .form-box .privacy-notice-send-btn-box {
+  display: flex;
+  margin-bottom: 1vw;
+  border: 1px solid red;
+  width: 100%;
+  justify-content: space-between;
+}
+.form-new .left-box .form-box .privacy-notice-send-btn-box .left-text-box {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.1vw;
+  color: #595757;
+  font-weight: 500;
+  font-size: 0.55vw;
+  font-family: "Noto Sans TC", serif;
+  border: 1px solid red;
+}
+.form-new .left-box .form-box .privacy-notice-send-btn-box .left-text-box div {
+  margin-bottom: 0.3vw;
+}
+.form-new .left-box .form-box .privacy-notice-send-btn-box .right-btn-box .send-btn {
+  font-size: 1vw;
+  padding-top: 0.35vw;
+  padding-bottom: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border: none;
+  color: white;
+  border-radius: 0.45vw;
+  text-indent: 0.35vw;
+  letter-spacing: 0.23vw;
+  background: linear-gradient(to bottom, #003399 0%, #0a2560 50%, #161f3b 100%);
+  cursor: pointer;
+  font-family: "Noto Sans TC", serif;
+}
+.form-new .right-box {
+  display: flex;
+  width: 55%;
+  position: relative;
+}
+.form-new .right-box .form-logo-box {
+  position: absolute;
+  background: linear-gradient(to bottom, #dacfbb 0%, #bf9e7c 21%, #92644c 45%, #bb8b69 74%, #ceb58e 100%);
+  -webkit-mask-image: url(../../images/form_logo.png);
+  mask-image: url(../../images/form_logo.png);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  overflow: hidden;
+  height: 5vw;
+  width: 5.3vw;
+  left: 21.8vw;
+  top: -2.6vw;
+  overflow: hidden;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+}
+.form-new .right-box .form-logo-box .light {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  height: 200%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: rotate(34deg) translateX(-200%);
+  animation-name: lightMv;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes lightMv {
+  0% {
+    transform: rotate(34deg) translateX(-200%);
+  }
+  100% {
+    transform: rotate(34deg) translateX(200%);
+  }
+}
+.form-new .right-box .form-text-svg {
+  position: absolute;
+  top: 3vw;
+  width: 29vw;
+  left: 10vw;
+}
+.form-new .right-box .img-box {
+  display: flex;
+  width: 100%;
+}
+.form-new .right-box .img-box img {
   width: 100%;
 }
