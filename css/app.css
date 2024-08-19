@@ -856,7 +856,7 @@
   width: 100%;
   position: relative;
   padding-top: 5%;
-  padding-bottom: 3vw;
+  padding-bottom: 0vw;
   z-index: 300;
 }
 .card6 .c6-bg-earth-circle-box {
@@ -1035,7 +1035,7 @@
   text-shadow: rgb(134, 134, 134) 1px 0 10px;
   z-index: 20;
   right: 0.8vw;
-  bottom: 0.8vw;
+  bottom: 1.8vw;
 }
 @media all and (max-width: 1920px) {
   .card8 .hint {
@@ -1927,6 +1927,7 @@
   margin-right: 0.7%;
   font-weight: 500;
   font-size: 0.9vw;
+  position: absolute;
   color: red;
   font-family: "Noto Sans TC", serif;
 }

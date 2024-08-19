@@ -315,7 +315,7 @@ window.onload = function () {
             },
         });
     }
-    c6Pin();
+    // c6Pin();
 
     const c7swiper = new Swiper(".card7-swiper", {
         speed: 1500,
