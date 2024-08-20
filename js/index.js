@@ -8,7 +8,7 @@ window.onload = function () {
 
     });
 
-    var nowDiv = $(window).width() > 1024 ? 'html,body' : '#case_div';
+    var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
     setTimeout(() => {
         $(nowDiv).animate({
             // scrollTop: 3300
@@ -65,13 +65,15 @@ window.onload = function () {
     }
     c1Ani();
 
-    // function c1PinHeight() {
+    function c1PinHeight() {
 
-    //     let pinSpacer = document.querySelectorAll(".pin-spacer")[0];
-    //     console.log(pinSpacer.style)
-    // }
+        let pinSpacer = document.querySelectorAll(".pin-spacer")[0];
+        if (pinSpacer) {
+            pinSpacer.cssRules[0].style;
+        }
+    }
 
-    // c1PinHeight()
+    c1PinHeight()
 
     function bottomBgVideo() {
         let tl = gsap.timeline({
