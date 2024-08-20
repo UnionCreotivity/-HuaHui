@@ -30,6 +30,12 @@
         @include hint();
         bottom: 1.5vw;
         z-index: 20;
+        @media all and (max-width: 1920px) {
+          bottom: 2.8vw;
+        }
+        @media all and (max-width: 1440px) {
+          bottom: 1.5vw;
+        }
       }
       .c3-content {
         position: relative;

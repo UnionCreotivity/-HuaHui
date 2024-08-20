@@ -101,7 +101,11 @@
         left: 3%;
         z-index: 999;
         cursor: pointer;
-        width: 2.5vw;
+        height: 5.5%;
+
+        img {
+          height: 100%;
+        }
         @media all and (max-width: 1024px) {
           opacity: 0;
         }
@@ -113,7 +117,10 @@
         right: 3%;
         z-index: 999;
         cursor: pointer;
-        width: 2.5vw;
+        height: 5.5%;
+        img {
+          height: 100%;
+        }
         @media all and (max-width: 1024px) {
           opacity: 0;
         }

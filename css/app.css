@@ -577,6 +577,16 @@
     right: 2%;
   }
 }
+@media all and (max-width: 1920px) {
+  .card3 .c3-slider .c3-content-box .hint {
+    bottom: 2.8vw;
+  }
+}
+@media all and (max-width: 1440px) {
+  .card3 .c3-slider .c3-content-box .hint {
+    bottom: 1.5vw;
+  }
+}
 .card3 .c3-slider .c3-content-box .c3-content {
   position: relative;
   width: 100%;
@@ -1259,7 +1269,10 @@
   left: 3%;
   z-index: 999;
   cursor: pointer;
-  width: 2.5vw;
+  height: 5.5%;
+}
+.card10 .swiper-box .card10-swiper .c10prev img {
+  height: 100%;
 }
 @media all and (max-width: 1024px) {
   .card10 .swiper-box .card10-swiper .c10prev {
@@ -1272,7 +1285,10 @@
   right: 3%;
   z-index: 999;
   cursor: pointer;
-  width: 2.5vw;
+  height: 5.5%;
+}
+.card10 .swiper-box .card10-swiper .c10next img {
+  height: 100%;
 }
 @media all and (max-width: 1024px) {
   .card10 .swiper-box .card10-swiper .c10next {
