@@ -40,9 +40,9 @@ window.onload = function () {
         });
 
         tl.from('.first-video-bg', { duration: 1, scale: '1.15', ease: "power1.Out", })
-            .fromTo('.city', { scale: '0.9', y: '10%' }, { duration: 1, scale: '1', ease: "power1.Out", y: 0 }, '<')
-            .from('.first-ani-box .logo,.logo-white', { duration: 1, opacity: 0, scale: '1.3', filter: 'blur(10px)', ease: "power1.Out", }, '<0.2')
-            .fromTo('.people', { scale: '1.3', y: '15%' }, { duration: 1.5, scale: '1', ease: "power1.Out", y: 0 }, '<')
+            .fromTo('.city', { scale: '0.75', y: '15%' }, { duration: 1, scale: '1', ease: "power1.Out", y: 0 }, '<')
+            .from('.first-ani-box .logo,.logo-white', { duration: 1, opacity: 0, scale: '1.3', filter: 'blur(10px)', ease: "power1.Out", })
+            .fromTo('.people', { scale: '1.3', y: '20%' }, { duration: 1.5, scale: '1', ease: "power1.Out", y: 0 }, '<')
             .from('.first-ani-box .logo-shadow', { duration: 0.5, opacity: 0, filter: 'blur(10px)', ease: "power0.inOut", }, '<0.2')
             .from('.first-ani-box .people', { duration: 1, opacity: 0, ease: "power0.inOut", }, '<0.5')
             .from('.first-ani-box .shining', { duration: 0.5, opacity: 0, ease: "power0.inOut", }, '<0.2')
@@ -56,14 +56,16 @@ window.onload = function () {
                 duration: 1, opacity: 0,
             }, '<')
             .to('.c1-content', { duration: 1, opacity: 1, }, '<')
-            .from('.c1-content .logo-box', { duration: 1, opacity: '0', filter: 'blur(5px)', ease: "power1.inOut", }, '<0.7')
+            .from('.c1-content .logo-box', { duration: 1, opacity: '0', scale: 1.25, filter: 'blur(10px)', ease: "power1.inOut", }, '<0.6')
             .from('.c1-content .title1,.c1-content .title2-box,.company-box', {
                 duration: 1,
                 opacity: 0,
-                filter: 'blur(5px)',
+                filter: "blur(15px)",
                 ease: "power0.inOut",
+                scale: 1.3,
+
                 stagger: {
-                    each: 0.25,
+                    each: 0.3,
                 }
             }, '<0.4')
 
