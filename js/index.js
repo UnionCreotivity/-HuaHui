@@ -65,15 +65,16 @@ window.onload = function () {
     }
     c1Ani();
 
-    function c1PinHeight() {
+    // function c1PinHeight() {
 
-        let pinSpacer = document.querySelectorAll(".pin-spacer")[0];
-        if (pinSpacer) {
-            pinSpacer.cssRules[0].style;
-        }
-    }
+    //     let pinSpacer = document.querySelectorAll(".pin-spacer")[0];
+    //     if (pinSpacer) {
 
-    c1PinHeight()
+    //         console.log(pinSpacer.cssRules[0].style)
+    //     }
+    // }
+
+    // c1PinHeight()
 
     function bottomBgVideo() {
         let tl = gsap.timeline({
