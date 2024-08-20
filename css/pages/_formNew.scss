@@ -300,6 +300,7 @@
     position: relative;
     .form-logo-box {
       position: absolute;
+      z-index: 30;
       background: linear-gradient(
         to bottom,
         #dacfbb 0%,
@@ -350,10 +351,15 @@
       top: 3vw;
       width: 29vw;
       left: 10vw;
+      z-index: 30;
     }
     .img-box {
       display: flex;
       width: 100%;
+      position: relative;
+      .hint {
+        @include hint();
+      }
       img {
         width: 100%;
       }

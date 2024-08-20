@@ -842,6 +842,7 @@
 .card5 .card5-swiper .swiper-slide {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 .card5 .card5-swiper .swiper-slide img {
   display: block;
@@ -2163,6 +2164,7 @@
 }
 .form-new .right-box .form-logo-box {
   position: absolute;
+  z-index: 30;
   background: linear-gradient(to bottom, #dacfbb 0%, #bf9e7c 21%, #92644c 45%, #bb8b69 74%, #ceb58e 100%);
   -webkit-mask-image: url(../images/form_logo.png);
   mask-image: url(../images/form_logo.png);
@@ -2201,10 +2203,41 @@
   top: 3vw;
   width: 29vw;
   left: 10vw;
+  z-index: 30;
 }
 .form-new .right-box .img-box {
   display: flex;
   width: 100%;
+  position: relative;
+}
+.form-new .right-box .img-box .hint {
+  color: white;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 0.7vw;
+  text-shadow: rgb(134, 134, 134) 1px 0 10px;
+}
+@media all and (max-width: 1920px) {
+  .form-new .right-box .img-box .hint {
+    font-size: 0.85vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .form-new .right-box .img-box .hint {
+    bottom: 3%;
+    font-size: 18px;
+    right: 2%;
+  }
+}
+@media all and (max-width: 500px) {
+  .form-new .right-box .img-box .hint {
+    font-size: 2.8vw;
+    bottom: 4%;
+    right: 2%;
+  }
 }
 .form-new .right-box .img-box img {
   width: 100%;
