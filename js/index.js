@@ -9,13 +9,10 @@ window.onload = function () {
     });
 
 
-
-
     var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
     var card1HalfHeight = window.innerHeight * 1.3;
     setTimeout(() => {
         $(nowDiv).animate({
-
             //1696
             scrollTop: card1HalfHeight
         }, 5000);
@@ -42,7 +39,10 @@ window.onload = function () {
             },
         });
 
-        tl.from('.first-ani-box .logo,.logo-white', { duration: 1, opacity: 0, scale: '1.3', filter: 'blur(10px)', ease: "power1.Out", })
+        tl.from('.first-video-bg', { duration: 1, scale: '1.15', ease: "power1.Out", })
+            .fromTo('.city', { scale: '0.9', y: '10%' }, { duration: 1, scale: '1', ease: "power1.Out", y: 0 }, '<')
+            .from('.first-ani-box .logo,.logo-white', { duration: 1, opacity: 0, scale: '1.3', filter: 'blur(10px)', ease: "power1.Out", }, '<0.2')
+            .fromTo('.people', { scale: '1.3', y: '15%' }, { duration: 1.5, scale: '1', ease: "power1.Out", y: 0 }, '<')
             .from('.first-ani-box .logo-shadow', { duration: 0.5, opacity: 0, filter: 'blur(10px)', ease: "power0.inOut", }, '<0.2')
             .from('.first-ani-box .people', { duration: 1, opacity: 0, ease: "power0.inOut", }, '<0.5')
             .from('.first-ani-box .shining', { duration: 0.5, opacity: 0, ease: "power0.inOut", }, '<0.2')
