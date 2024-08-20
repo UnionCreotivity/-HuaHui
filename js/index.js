@@ -7,6 +7,21 @@ window.onload = function () {
     Fancybox.bind("[data-fancybox]", {
 
     });
+
+    var nowDiv = $(window).width() > 1024 ? 'html,body' : '#case_div';
+    setTimeout(() => {
+        $(nowDiv).animate({
+            scrollTop: 3300
+        }, 6600);
+
+    }, 1200);
+
+
+    $(nowDiv).bind('mousewheel', function (e) {
+        if ($(nowDiv).scrollTop() < 5000) {
+            $(nowDiv).stop();
+        }
+    });
     function c1Ani() {
         let tl = gsap.timeline({
             scrollTrigger: {
@@ -106,7 +121,8 @@ window.onload = function () {
                 y: '-50',
             }, '<0.2')
 
-            .fromTo('.circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.15')
+            .fromTo('.circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.inOut" }, '<-1')
+
 
     }
     c2Ani();
@@ -227,7 +243,7 @@ window.onload = function () {
                 y: '-50',
             }, '<0.2')
 
-            .fromTo('.c4-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.15')
+            .fromTo('.c4-circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.inOut" }, '<-1')
 
     }
     c4Ani();
@@ -298,7 +314,8 @@ window.onload = function () {
                 y: '-50',
             }, '<0.2')
 
-            .fromTo('.c6-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.15')
+            .fromTo('.c6-circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.inOut" }, '<-1')
+
 
     }
     c6Ani();
@@ -411,7 +428,8 @@ window.onload = function () {
                 filter: "blur(10px)",
                 y: '-50',
             }, '<0.2')
-            .fromTo('.c9-circle-fill', { drawSVG: "0% 0%" }, { duration: 1, drawSVG: "100%", ease: "power0.inOut" }, '<0.15')
+            .fromTo('.c9-circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.inOut" }, '<-1')
+
 
     }
     c9Ani();
