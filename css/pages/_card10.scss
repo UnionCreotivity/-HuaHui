@@ -98,34 +98,34 @@
       .c10prev {
         position: absolute;
         top: 47%;
-        left: 3%;
+        left: 2%;
         z-index: 999;
         cursor: pointer;
         height: 5.5%;
-
+        padding-left: 1vw;
+        padding-right: 1vw;
+        @media all and (max-width: 1440px) {
+          height: 7%;
+        }
         img {
           height: 100%;
-        }
-        @media all and (max-width: 1024px) {
-          opacity: 0;
         }
       }
 
       .c10next {
         position: absolute;
         top: 47%;
-        right: 3%;
+        right: 2%;
         z-index: 999;
         cursor: pointer;
         height: 5.5%;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        @media all and (max-width: 1440px) {
+          height: 7%;
+        }
         img {
           height: 100%;
-        }
-        @media all and (max-width: 1024px) {
-          opacity: 0;
-        }
-        img {
-          width: 100%;
         }
       }
     }

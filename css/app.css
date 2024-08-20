@@ -865,6 +865,44 @@
   bottom: 0%;
   opacity: 0;
 }
+.card5 .card5-swiper .c5prev {
+  position: absolute;
+  top: 48%;
+  left: 0%;
+  z-index: 999;
+  cursor: pointer;
+  height: 5%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+@media all and (max-width: 1440px) {
+  .card5 .card5-swiper .c5prev {
+    height: 6.5%;
+    padding-left: 1.5vw;
+  }
+}
+.card5 .card5-swiper .c5prev img {
+  height: 100%;
+}
+.card5 .card5-swiper .c5next {
+  position: absolute;
+  top: 48%;
+  right: 0%;
+  z-index: 999;
+  cursor: pointer;
+  height: 5%;
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+@media all and (max-width: 1440px) {
+  .card5 .card5-swiper .c5next {
+    height: 6.5%;
+    padding-right: 1.5vw;
+  }
+}
+.card5 .card5-swiper .c5next img {
+  height: 100%;
+}
 .card5 .card5-swiper .swiper-pagination-bullet-active {
   background-color: #fff !important;
 }
@@ -1012,13 +1050,53 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card7 .left-box .card7-swiper .swiper-pagination {
+.card7 .c7prev {
   position: absolute;
-  bottom: 0%;
-  opacity: 0;
+  top: 47%;
+  left: 2%;
+  z-index: 999;
+  cursor: pointer;
+  height: 4.5%;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
-.card7 .left-box .card7-swiper .swiper-pagination-bullet-active {
-  background-color: #fff !important;
+@media all and (max-width: 1920px) {
+  .card7 .c7prev {
+    left: 1%;
+  }
+}
+@media all and (max-width: 1440px) {
+  .card7 .c7prev {
+    height: 5.5%;
+    left: 0.8%;
+  }
+}
+.card7 .c7prev img {
+  height: 100%;
+}
+.card7 .c7next {
+  position: absolute;
+  top: 47%;
+  right: 2%;
+  z-index: 999;
+  cursor: pointer;
+  height: 4.5%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+@media all and (max-width: 1920px) {
+  .card7 .c7next {
+    right: 1%;
+  }
+}
+@media all and (max-width: 1440px) {
+  .card7 .c7next {
+    height: 5.5%;
+    right: 0.8%;
+  }
+}
+.card7 .c7next img {
+  height: 100%;
 }
 .card7 .right-box {
   width: 23%;
@@ -1266,37 +1344,38 @@
 .card10 .swiper-box .card10-swiper .c10prev {
   position: absolute;
   top: 47%;
-  left: 3%;
+  left: 2%;
   z-index: 999;
   cursor: pointer;
   height: 5.5%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+@media all and (max-width: 1440px) {
+  .card10 .swiper-box .card10-swiper .c10prev {
+    height: 7%;
+  }
 }
 .card10 .swiper-box .card10-swiper .c10prev img {
   height: 100%;
 }
-@media all and (max-width: 1024px) {
-  .card10 .swiper-box .card10-swiper .c10prev {
-    opacity: 0;
-  }
-}
 .card10 .swiper-box .card10-swiper .c10next {
   position: absolute;
   top: 47%;
-  right: 3%;
+  right: 2%;
   z-index: 999;
   cursor: pointer;
   height: 5.5%;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
-.card10 .swiper-box .card10-swiper .c10next img {
-  height: 100%;
-}
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1440px) {
   .card10 .swiper-box .card10-swiper .c10next {
-    opacity: 0;
+    height: 7%;
   }
 }
 .card10 .swiper-box .card10-swiper .c10next img {
-  width: 100%;
+  height: 100%;
 }
 
 .new-card {

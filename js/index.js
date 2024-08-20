@@ -281,10 +281,10 @@ window.onload = function () {
         autoplay: {
             delay: 2500,
         },
-        // pagination: {
-        //     el: '.c7-swiper-pagination',
-        //     clickable: true,
-        // },
+        navigation: {
+            prevEl: ".c5prev",
+            nextEl: ".c5next"
+        },
 
     });
 
@@ -368,9 +368,9 @@ window.onload = function () {
         autoplay: {
             delay: 2500,
         },
-        pagination: {
-            el: '.c7-swiper-pagination',
-            clickable: true,
+        navigation: {
+            prevEl: ".c7prev",
+            nextEl: ".c7next"
         },
         on: {
             slideChange: function () {

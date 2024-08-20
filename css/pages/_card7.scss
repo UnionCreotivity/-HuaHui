@@ -29,19 +29,49 @@
         width: 100%;
         object-fit: cover;
       }
-
-      .swiper-pagination {
-        position: absolute;
-        bottom: 0%;
-        opacity: 0;
-      }
-
-      .swiper-pagination-bullet-active {
-        background-color: #fff !important;
-      }
+    }
+  }
+  .c7prev {
+    position: absolute;
+    top: 47%;
+    left: 2%;
+    z-index: 999;
+    cursor: pointer;
+    height: 4.5%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    @media all and (max-width: 1920px) {
+      left: 1%;
+    }
+    @media all and (max-width: 1440px) {
+      height: 5.5%;
+      left: 0.8%;
+    }
+    img {
+      height: 100%;
     }
   }
 
+  .c7next {
+    position: absolute;
+    top: 47%;
+    right: 2%;
+    z-index: 999;
+    cursor: pointer;
+    height: 4.5%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    @media all and (max-width: 1920px) {
+      right: 1%;
+    }
+    @media all and (max-width: 1440px) {
+      height: 5.5%;
+      right: 0.8%;
+    }
+    img {
+      height: 100%;
+    }
+  }
   .right-box {
     width: 23%;
     display: flex;
