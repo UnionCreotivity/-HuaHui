@@ -155,7 +155,7 @@
         .left-text-checkbox-box {
           display: flex;
           flex-direction: column;
-          letter-spacing: 0.1vw;
+          letter-spacing: 0.11vw;
           color: #595757;
           font-weight: 500;
           font-size: 0.55vw;
@@ -178,12 +178,20 @@
 
             input#ca_privacy {
               cursor: pointer;
-              scale: 1.3;
+              scale: 1.2;
+              @media all and (max-width: 1440px) {
+                scale: 1;
+                transform: translateY(0.2vw);
+              }
             }
           }
         }
 
         .right-btn-box {
+          @media all and (max-width: 1366px) {
+            padding-top: 1%;
+          }
+
           .send-btn {
             font-size: 1.1vw;
             padding-top: 0.35vw;
@@ -240,6 +248,9 @@
           width: 50%;
           padding-top: 1.5vw;
           margin-left: 1vw;
+          @media all and (max-width: 1366px) {
+            padding-top: 1.3vw;
+          }
           .conpany-icon-box {
             position: relative;
             display: flex;

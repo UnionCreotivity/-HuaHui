@@ -100,7 +100,7 @@ window.onload = function () {
             },
         });
 
-        tl.from('.c2-bg-earth', { duration: 1, y: '60', opacity: 0, scale: 1.2, filter: '(15px)', })
+        tl.from('.c2-bg-earth', { duration: 1, y: '60', opacity: 0, scale: 1.4, filter: '(15px)', })
             .from('.c2-title1', {
                 duration: 1,
                 opacity: 0,
@@ -227,7 +227,7 @@ window.onload = function () {
             },
         });
 
-        tl.from('.c4-item', { duration: 1, y: '60', opacity: 0, scale: 1.2, filter: '(15px)', })
+        tl.from('.c4-item', { duration: 1, y: '60', opacity: 0, scale: 1.4, filter: '(15px)', })
             .from('.c4-title1', {
                 duration: 1,
                 opacity: 0,
