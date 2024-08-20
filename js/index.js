@@ -8,12 +8,16 @@ window.onload = function () {
 
     });
 
+
+
+
     var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
+    var card1HalfHeight = window.innerHeight * 1.3;
     setTimeout(() => {
         $(nowDiv).animate({
-            // scrollTop: 3300
+
             //1696
-            scrollTop: 1700
+            scrollTop: card1HalfHeight
         }, 5000);
 
     }, 1200);
@@ -62,19 +66,12 @@ window.onload = function () {
                     each: 0.25,
                 }
             }, '<0.4')
+
+
     }
     c1Ani();
 
-    // function c1PinHeight() {
 
-    //     let pinSpacer = document.querySelectorAll(".pin-spacer")[0];
-    //     if (pinSpacer) {
-
-    //         console.log(pinSpacer.cssRules[0].style)
-    //     }
-    // }
-
-    // c1PinHeight()
 
     function bottomBgVideo() {
         let tl = gsap.timeline({
