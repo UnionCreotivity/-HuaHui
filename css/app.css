@@ -1030,7 +1030,12 @@
   overflow: hidden;
   margin-top: 5vw;
 }
-.card8 .hint {
+.card8 .overflow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.card8 .overflow .hint {
   color: white;
   font-size: 16px;
   font-family: "微軟正黑體";
@@ -1041,33 +1046,29 @@
   text-shadow: rgb(134, 134, 134) 1px 0 10px;
   z-index: 20;
   right: 0.8vw;
-  bottom: 1.8vw;
+  bottom: 0.8vw;
 }
 @media all and (max-width: 1920px) {
-  .card8 .hint {
+  .card8 .overflow .hint {
     font-size: 0.85vw;
   }
 }
 @media all and (max-width: 1024px) {
-  .card8 .hint {
+  .card8 .overflow .hint {
     bottom: 3%;
     font-size: 18px;
     right: 2%;
   }
 }
 @media all and (max-width: 500px) {
-  .card8 .hint {
+  .card8 .overflow .hint {
     font-size: 2.8vw;
     bottom: 4%;
     right: 2%;
   }
 }
-.card8 .overflow {
-  overflow: hidden;
-  position: relative;
-}
 .card8 .overflow .bg {
-  width: 100vw;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

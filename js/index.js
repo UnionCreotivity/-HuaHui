@@ -11,8 +11,10 @@ window.onload = function () {
     var nowDiv = $(window).width() > 1024 ? 'html,body' : '#case_div';
     setTimeout(() => {
         $(nowDiv).animate({
-            scrollTop: 3300
-        }, 6600);
+            // scrollTop: 3300
+            //1696
+            scrollTop: 1700
+        }, 5000);
 
     }, 1200);
 
@@ -22,6 +24,7 @@ window.onload = function () {
             $(nowDiv).stop();
         }
     });
+
     function c1Ani() {
         let tl = gsap.timeline({
             scrollTrigger: {
@@ -62,6 +65,14 @@ window.onload = function () {
     }
     c1Ani();
 
+    // function c1PinHeight() {
+
+    //     let pinSpacer = document.querySelectorAll(".pin-spacer")[0];
+    //     console.log(pinSpacer.style)
+    // }
+
+    // c1PinHeight()
+
     function bottomBgVideo() {
         let tl = gsap.timeline({
             scrollTrigger: {
@@ -79,7 +90,11 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card2",
-                start: "-35%",
+                // start: "-55%",
+                // end: "+=45%",
+                start: "top 50%",
+                end: '+=50%',
+                scrub: 6,
             },
         });
 
@@ -121,8 +136,7 @@ window.onload = function () {
                 y: '-50',
             }, '<0.2')
 
-            .fromTo('.circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.inOut" }, '<-1')
-
+            .fromTo('.circle-fill', { drawSVG: "0% 0%" }, { duration: 1.65, drawSVG: "100%", ease: "power0.in" }, '<-1')
 
     }
     c2Ani();
@@ -200,8 +214,14 @@ window.onload = function () {
     function c4Ani() {
         let tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".card4",
-                start: "-40%",
+                // toggleActions: "play none none reverse",
+                // trigger: '.card4',
+                // start: "-50% top",
+                // end: '60%',
+                trigger: '.card4',
+                start: "top 60%",
+                end: '+=50%',
+                scrub: 6,
             },
         });
 
@@ -243,7 +263,7 @@ window.onload = function () {
                 y: '-50',
             }, '<0.2')
 
-            .fromTo('.c4-circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.inOut" }, '<-1')
+            .fromTo('.c4-circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.in" }, '<-1')
 
     }
     c4Ani();
@@ -270,8 +290,10 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card6",
-                start: "-45%",
-
+                // start: "-45%",
+                start: "top 50%",
+                end: '+=55%',
+                scrub: 6,
             },
         });
 
@@ -388,7 +410,10 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card9",
-                start: "-40%",
+                start: "top 50%",
+                end: '+=50%',
+                scrub: 6,
+
             },
         });
         tl.from('.c9-item', { duration: 1, y: '60', opacity: 0, scale: 1.2, filter: '(15px)', })

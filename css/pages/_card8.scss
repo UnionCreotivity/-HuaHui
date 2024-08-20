@@ -5,18 +5,20 @@
   z-index: 310;
   overflow: hidden;
   margin-top: 5vw;
-  .hint {
-    @include hint();
-    z-index: 20;
-    right: 0.8vw;
-    bottom: 1.8vw;
-  }
+
   .overflow {
     overflow: hidden;
     position: relative;
+    width: 100%;
 
+    .hint {
+      @include hint();
+      z-index: 20;
+      right: 0.8vw;
+      bottom: 0.8vw;
+    }
     .bg {
-      width: 100vw;
+      width: 100%;
       object-fit: cover;
     }
   }
