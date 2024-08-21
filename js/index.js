@@ -91,12 +91,9 @@ window.onload = function () {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card2",
-                // start: "-55%",
-                // end: "+=45%",
                 start: "top 50%",
                 end: '+=50%',
                 scrub: 6,
-                // markers: true
             },
         });
 
@@ -255,11 +252,24 @@ window.onload = function () {
 
     });
 
+    function c5Ani() {
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".card5",
+                start: "top 70%",
+
+            },
+        });
+
+        tl.fromTo('.card5-swiper .swiper-slide img', { scale: '1.2', filter: 'blur(5px) brightness(1.8)' },
+            { scale: '1', duration: 1, filter: 'blur(0px) brightness(1)', ease: "power1.Out", })
+    }
+    c5Ani();
+
     function c6Ani() {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".card6",
-                // start: "-45%",
                 start: "top 50%",
                 end: '+=50%',
                 scrub: 6,
@@ -424,6 +434,17 @@ window.onload = function () {
     });
 
     function newCardAni() {
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".new-card",
+                start: "top 50%",
+                end: '+=50%',
+                scrub: 1,
+            },
+        });
 
+        tl.fromTo('.new-card-img-box img', { scale: '1.2', filter: 'blur(5px) brightness(1.8)' },
+            { scale: '1', duration: 1, filter: 'blur(0px) brightness(1)', ease: "power1.Out", })
     }
+    newCardAni();
 }
