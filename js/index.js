@@ -9,22 +9,22 @@ window.onload = function () {
     });
 
 
-    // var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
-    // var card1HalfHeight = window.innerHeight * 1.45;
-    // setTimeout(() => {
-    //     $(nowDiv).animate({
+    var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
+    var card1HalfHeight = window.innerHeight * 1.45;
+    setTimeout(() => {
+        $(nowDiv).animate({
 
-    //         scrollTop: card1HalfHeight
-    //     }, 5000);
+            scrollTop: card1HalfHeight
+        }, 5000);
 
-    // }, 1200);
+    }, 1200);
 
 
-    // $(nowDiv).bind('mousewheel', function (e) {
-    //     if ($(nowDiv).scrollTop() < 5000) {
-    //         $(nowDiv).stop();
-    //     }
-    // });
+    $(nowDiv).bind('mousewheel', function (e) {
+        if ($(nowDiv).scrollTop() < 5000) {
+            $(nowDiv).stop();
+        }
+    });
 
     function c1Ani() {
         let tl = gsap.timeline({
@@ -39,7 +39,7 @@ window.onload = function () {
         });
 
         tl.from('.first-video-bg', { duration: 1.5, scale: '1.35', ease: "power1.Out", })
-            .fromTo('.city', { scale: '0.7', y: '15%', opacity: 0.8 }, { opacity: 1, duration: 1.5, scale: '1', ease: "power1.Out", y: 0 }, '<')
+            .fromTo('.city', { scale: '0.7', y: '20%', opacity: 0.8 }, { opacity: 1, duration: 1.5, scale: '1', ease: "power1.Out", y: 0 }, '<')
             .from('.first-ani-box .logo,.logo-white', { duration: 1.6, opacity: 0, scale: '1.3', filter: 'blur(10px)', ease: "power1.Out", })
             .fromTo('.people', { scale: '1.8', y: '30%', filter: 'blur(15px)', }, { duration: 3, scale: '1', filter: 'blur(0px)', ease: "power1.Out", y: 0 }, '<0.2')
             .from('.first-ani-box .logo-shadow', { duration: 0.5, opacity: 0, filter: 'blur(10px)', ease: "power0.inOut", }, '<0.2')
