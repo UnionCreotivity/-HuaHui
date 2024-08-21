@@ -321,7 +321,7 @@
   position: absolute;
   z-index: 110;
   width: 46vw;
-  top: 41.6vw;
+  top: 42.6vw;
   left: 26vw;
 }
 @media all and (max-width: 1920px) {
@@ -350,7 +350,7 @@
 }
 .card1 .first-ani-box .first-cover {
   position: absolute;
-  top: 40.9vw;
+  top: 41.9vw;
   left: 44.6%;
   width: 9.6%;
   opacity: 0.15;
@@ -548,8 +548,9 @@
 .card2 {
   width: 100%;
   position: relative;
-  padding-top: 0vw;
+  padding-top: 6vw;
   margin-bottom: 5vw;
+  padding-bottom: 6vw;
 }
 .card2 .c2-bg-earth-box {
   position: absolute;
@@ -841,7 +842,7 @@
 .card4 {
   width: 100%;
   position: relative;
-  padding-top: 5%;
+  padding-top: 5vw;
   margin-top: 7vw;
 }
 .card4 .c4-bg-earth-circle-box {
@@ -1514,6 +1515,7 @@
   width: 80%;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 .new-card .new-card-img-box img {
   width: 100%;
@@ -2113,6 +2115,16 @@
   overflow: hidden;
   padding-top: 7vw;
 }
+@media all and (max-width: 1440px) {
+  .form-new {
+    flex-direction: column-reverse;
+  }
+}
+@media all and (max-width: 1024px) {
+  .form-new {
+    padding-top: 0vw;
+  }
+}
 .form-new .left-box {
   display: flex;
   width: 45%;
@@ -2120,6 +2132,14 @@
   margin-top: 0.5vw;
   flex-direction: column;
   align-items: end;
+}
+@media all and (max-width: 1024px) {
+  .form-new .left-box {
+    width: 100%;
+    align-items: center;
+    margin-top: 0vw;
+    padding-top: 5vw;
+  }
 }
 .form-new .left-box .title-box {
   color: white;
@@ -2129,6 +2149,15 @@
   position: absolute;
   top: -4.2vw;
   left: 22vw;
+}
+@media all and (max-width: 1024px) {
+  .form-new .left-box .title-box {
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    font-size: 4vw;
+    letter-spacing: 0.3em;
+  }
 }
 .form-new .left-box .form-box {
   display: flex;
@@ -2140,6 +2169,12 @@
   padding-top: 1vw;
   width: 39vw;
   padding-bottom: 2.5vw;
+}
+@media all and (max-width: 1024px) {
+  .form-new .left-box .form-box {
+    width: 90%;
+    margin-top: 5vw;
+  }
 }
 .form-new .left-box .form-box .hint {
   display: flex;
@@ -2230,7 +2265,7 @@
   font-weight: 500;
   font-size: 0.78vw;
   font-family: "Noto Sans TC", serif;
-  margin-bottom: 0.3vw;
+  margin-bottom: 0.4vw;
 }
 .form-new .left-box .form-box .privacy-notice-title-box div {
   position: relative;
@@ -2242,7 +2277,7 @@
   width: 85%;
   height: 1px;
   background-color: #7d80ad;
-  bottom: 0.45vw;
+  bottom: 0.5vw;
   right: 0px;
 }
 .form-new .left-box .form-box .privacy-notice-send-btn-box {
@@ -2284,6 +2319,9 @@
     scale: 1;
     transform: translateY(0.2vw);
   }
+}
+.form-new .left-box .form-box .privacy-notice-send-btn-box .right-btn-box {
+  align-self: center;
 }
 @media all and (max-width: 1366px) {
   .form-new .left-box .form-box .privacy-notice-send-btn-box .right-btn-box {
@@ -2395,6 +2433,11 @@
   width: 55%;
   position: relative;
 }
+@media all and (max-width: 1024px) {
+  .form-new .right-box {
+    width: 100%;
+  }
+}
 .form-new .right-box .form-logo-box {
   position: absolute;
   z-index: 30;
@@ -2411,6 +2454,16 @@
   overflow: hidden;
   -webkit-mask-size: 100%;
           mask-size: 100%;
+}
+@media all and (max-width: 1024px) {
+  .form-new .right-box .form-logo-box {
+    top: 9.3vw;
+    height: 24vw;
+    width: 24vw;
+    left: 38vw;
+    -webkit-mask-image: url(../images/form_logo@2x.png);
+    mask-image: url(../images/form_logo@2x.png);
+  }
 }
 .form-new .right-box .form-logo-box .light {
   position: relative;
@@ -2437,6 +2490,13 @@
   width: 29vw;
   left: 10vw;
   z-index: 30;
+}
+@media all and (max-width: 1024px) {
+  .form-new .right-box .form-text-svg {
+    top: 35vw;
+    width: 68vw;
+    left: 16vw;
+  }
 }
 .form-new .right-box .img-box {
   display: flex;
@@ -2472,6 +2532,17 @@
     right: 2%;
   }
 }
+@media all and (max-width: 1024px) {
+  .form-new .right-box .img-box .hint {
+    bottom: 1%;
+    right: 2%;
+  }
+}
 .form-new .right-box .img-box img {
   width: 100%;
+}
+@media all and (max-width: 1024px) {
+  .form-new .right-box .img-box img {
+    width: 100vw;
+  }
 }

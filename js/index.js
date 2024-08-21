@@ -9,22 +9,22 @@ window.onload = function () {
     });
 
 
-    var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
-    var card1HalfHeight = window.innerHeight * 1.3;
-    setTimeout(() => {
-        $(nowDiv).animate({
+    // var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
+    // var card1HalfHeight = window.innerHeight * 1.45;
+    // setTimeout(() => {
+    //     $(nowDiv).animate({
 
-            scrollTop: card1HalfHeight
-        }, 5000);
+    //         scrollTop: card1HalfHeight
+    //     }, 5000);
 
-    }, 1200);
+    // }, 1200);
 
 
-    $(nowDiv).bind('mousewheel', function (e) {
-        if ($(nowDiv).scrollTop() < 5000) {
-            $(nowDiv).stop();
-        }
-    });
+    // $(nowDiv).bind('mousewheel', function (e) {
+    //     if ($(nowDiv).scrollTop() < 5000) {
+    //         $(nowDiv).stop();
+    //     }
+    // });
 
     function c1Ani() {
         let tl = gsap.timeline({
@@ -38,14 +38,14 @@ window.onload = function () {
             },
         });
 
-        tl.from('.first-video-bg', { duration: 1, scale: '1.15', ease: "power1.Out", })
-            .fromTo('.city', { scale: '0.75', y: '15%' }, { duration: 1, scale: '1', ease: "power1.Out", y: 0 }, '<')
-            .from('.first-ani-box .logo,.logo-white', { duration: 1, opacity: 0, scale: '1.3', filter: 'blur(10px)', ease: "power1.Out", })
-            .fromTo('.people', { scale: '1.5', y: '20%', filter: 'blur(15px)', }, { duration: 1.7, scale: '1', filter: 'blur(0px)', ease: "power1.Out", y: 0 }, '<')
+        tl.from('.first-video-bg', { duration: 1.5, scale: '1.35', ease: "power1.Out", })
+            .fromTo('.city', { scale: '0.7', y: '15%', opacity: 0.8 }, { opacity: 1, duration: 1.5, scale: '1', ease: "power1.Out", y: 0 }, '<')
+            .from('.first-ani-box .logo,.logo-white', { duration: 1.6, opacity: 0, scale: '1.3', filter: 'blur(10px)', ease: "power1.Out", })
+            .fromTo('.people', { scale: '1.8', y: '30%', filter: 'blur(15px)', }, { duration: 3, scale: '1', filter: 'blur(0px)', ease: "power1.Out", y: 0 }, '<0.2')
             .from('.first-ani-box .logo-shadow', { duration: 0.5, opacity: 0, filter: 'blur(10px)', ease: "power0.inOut", }, '<0.2')
             .from('.first-ani-box .people', { duration: 1, opacity: 0, ease: "power0.inOut", }, '<0.5')
             .from('.first-ani-box .shining', { duration: 0.5, opacity: 0, ease: "power0.inOut", }, '<0.2')
-            .from('.first-ani-box .first-big', { duration: 1, y: '70', opacity: 0, filter: 'blur(10px)', ease: "power1.Out", }, '<0.3')
+            .from('.first-ani-box .first-big', { duration: 1, y: '70', opacity: 0, filter: 'blur(10px)', ease: "power1.Out", }, '<1.8')
             .from('.first-ani-box .first-cover', { duration: 1, y: '-70', opacity: 0, filter: 'blur(10px)', ease: "power1.Out", }, '<0.2')
 
 
@@ -55,18 +55,18 @@ window.onload = function () {
                 duration: 1, opacity: 0,
             }, '<')
             .to('.c1-content', { duration: 1, opacity: 1, }, '<')
-            .from('.c1-content .logo-box', { duration: 1, opacity: '0', scale: 1.25, filter: 'blur(10px)', ease: "power1.inOut", }, '<0.6')
+            .from('.c1-content .logo-box', { duration: 1.4, scale: 1.4, opacity: '0', y: 70, filter: 'blur(15px)', ease: "power1.inOut", }, '<0.6')
             .from('.c1-content .title1,.c1-content .title2-box,.company-box', {
                 duration: 1,
                 opacity: 0,
                 filter: "blur(15px)",
                 ease: "power0.inOut",
-                scale: 1.3,
-
+                scale: 1.5,
+                y: 100,
                 stagger: {
-                    each: 0.3,
+                    each: 0.4,
                 }
-            }, '<0.4')
+            }, '<0.7')
 
 
     }
@@ -96,48 +96,36 @@ window.onload = function () {
                 start: "top 50%",
                 end: '+=50%',
                 scrub: 6,
+                // markers: true
             },
         });
 
-        tl.from('.c2-bg-earth', { duration: 1, y: '60', opacity: 0, scale: 1.4, filter: '(15px)', })
-            .from('.c2-title1', {
-                duration: 1,
+        tl.from('.c2-bg-earth', { duration: 2, y: '100', opacity: 0, scale: 2.2, filter: '(15px)', })
+            .from('.c2-title1,.c2-title2-1,.c2-title2-2,.c2-title3-1,.c2-title3-2', {
                 opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
+                filter: "blur(15px)",
+                y: 100,
+                stagger: 0.6,
+                duration: 2.5,
 
-            }, '<0.3')
-            .from('.c2-title2', {
-                duration: 1,
-                opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
+                scale: 1.15,
+            }, '<0.5')
 
-            }, '<0.3')
-            .from('.c2-title3', {
-                duration: 1,
-                opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
-
-            }, '<0.3')
             .from('.c2-title4 .long-text', {
                 duration: 1,
                 opacity: 0,
                 y: '50',
                 filter: "blur(10px)",
-            }, '<0.3')
+
+            }, '<4')
             .from('.c2-title4 .cover', {
                 duration: 1,
                 opacity: 0,
                 filter: "blur(10px)",
                 y: '-50',
-            }, '<0.2')
+            }, '<0.3')
 
-            .fromTo('.circle-fill', { drawSVG: "0% 0%" }, { duration: 1.65, drawSVG: "100%", ease: "power0.in" }, '<-1')
+            .fromTo('.c2-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
 
     }
     c2Ani();
@@ -215,57 +203,37 @@ window.onload = function () {
     function c4Ani() {
         let tl = gsap.timeline({
             scrollTrigger: {
-                // toggleActions: "play none none reverse",
-                // trigger: '.card4',
-                // start: "-50% top",
-                // end: '60%',
                 trigger: '.card4',
-                start: "top 60%",
+                start: "top 70%",
                 end: '+=50%',
                 scrub: 6,
             },
         });
 
-        tl.from('.c4-item', { duration: 1, y: '60', opacity: 0, scale: 1.4, filter: '(15px)', })
-            .from('.c4-title1', {
-                duration: 1,
+        tl.from('.c4-item', { duration: 2, y: '100', opacity: 0, scale: 2.2, filter: '(15px)', })
+            .from('.c4-title1,.c4-title2-1,.c4-title2-2,.c4-title3-1,.c4-title3-2', {
                 opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
+                filter: "blur(15px)",
+                y: 100,
+                stagger: 0.6,
+                duration: 2.5,
 
-            }, '<0.3')
-            .from('.c4-title2', {
-                duration: 1,
-                opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
-
-            }, '<0.3')
-            .from('.c4-title3', {
-                duration: 1,
-                opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
-
-            }, '<0.3')
+                scale: 1.15,
+            }, '<0.5')
             .from('.c4-title4 .long-text', {
                 duration: 1,
                 opacity: 0,
                 y: '50',
                 filter: "blur(10px)",
-            }, '<0.3')
+
+            }, '<4')
             .from('.c4-title4 .cover', {
                 duration: 1,
                 opacity: 0,
                 filter: "blur(10px)",
                 y: '-50',
-            }, '<0.2')
-
-            .fromTo('.c4-circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.in" }, '<-1')
-
+            }, '<0.3')
+            .fromTo('.c4-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
     }
     c4Ani();
 
@@ -293,52 +261,35 @@ window.onload = function () {
                 trigger: ".card6",
                 // start: "-45%",
                 start: "top 50%",
-                end: '+=55%',
+                end: '+=50%',
                 scrub: 6,
             },
         });
 
-        tl.from('.c6-item', { duration: 1, y: '60', opacity: 0, scale: 1.2, filter: '(15px)', })
-            .from('.c6-title1', {
-                duration: 1,
+        tl.from('.c6-item', { duration: 2, y: '100', opacity: 0, scale: 1.7, filter: '(15px)', })
+            .from('.c6-title1,.c6-title2-1,.c6-title2-2,.c6-title3', {
                 opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
-
-            }, '<0.3')
-            .from('.c6-title2', {
-                duration: 1,
-                opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
-
-            }, '<0.3')
-            .from('.c6-title3', {
-                duration: 1,
-                opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
-
-            }, '<0.3')
+                filter: "blur(15px)",
+                y: 100,
+                stagger: 0.6,
+                duration: 2.5,
+                scale: 1.15,
+            }, '<0.5')
 
             .from('.c6-title4 .long-text', {
                 duration: 1,
                 opacity: 0,
                 y: '50',
                 filter: "blur(10px)",
-            }, '<0.3')
+
+            }, '<4')
             .from('.c6-title4 .cover', {
                 duration: 1,
                 opacity: 0,
                 filter: "blur(10px)",
                 y: '-50',
-            }, '<0.2')
-
-            .fromTo('.c6-circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.inOut" }, '<-1')
-
+            }, '<0.3')
+            .fromTo('.c6-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
 
     }
     c6Ani();
@@ -402,7 +353,7 @@ window.onload = function () {
             },
         });
 
-        tl.fromTo('.card8 .overflow .bg', { scale: 1.2, filter: "blur(10px) brightness(1.8)" },
+        tl.fromTo('.card8 .overflow .bg', { scale: 1.35, filter: "blur(10px) brightness(1.8)" },
             { duration: 1, scale: 1, filter: "blur(0px) brightness(1)" })
     }
     c8Ani();
@@ -471,4 +422,8 @@ window.onload = function () {
         },
 
     });
+
+    function newCardAni() {
+
+    }
 }
