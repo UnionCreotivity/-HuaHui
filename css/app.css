@@ -114,6 +114,13 @@
     top: 16vw;
   }
 }
+@media all and (max-width: 1024px) {
+  .card1 .first-ani-box .city {
+    top: 43vw;
+    left: 10vw;
+    width: 80vw;
+  }
+}
 .card1 .first-ani-box .people {
   position: absolute;
   z-index: 120;
@@ -138,6 +145,13 @@
     top: 24.5vw;
     left: 34.6vw;
     width: 31vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card1 .first-ani-box .people {
+    top: 59vw;
+    left: 12vw;
+    width: 72vw;
   }
 }
 .card1 .first-ani-box .logo {
@@ -178,6 +192,14 @@
 @media all and (max-width: 1366px) {
   .card1 .first-ani-box .logo {
     top: 10.5vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card1 .first-ani-box .logo {
+    top: 31vw;
+    height: 48vw;
+    width: 51vw;
+    left: 25.5vw;
   }
 }
 .card1 .first-ani-box .logo .light {
@@ -221,6 +243,13 @@
     top: 10.5vw;
   }
 }
+@media all and (max-width: 1024px) {
+  .card1 .first-ani-box .logo-white {
+    top: 31vw;
+    width: 51vw;
+    left: 25.35vw;
+  }
+}
 .card1 .first-ani-box .logo-shadow {
   position: absolute;
   z-index: 100;
@@ -249,6 +278,13 @@
     left: 32.5vw;
   }
 }
+@media all and (max-width: 1024px) {
+  .card1 .first-ani-box .logo-shadow {
+    width: 69vw;
+    top: 83vw;
+    left: 10.5vw;
+  }
+}
 .card1 .first-ani-box .shining {
   position: absolute;
   z-index: 100;
@@ -272,6 +308,13 @@
 @media all and (max-width: 1366px) {
   .card1 .first-ani-box .shining {
     top: 7vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card1 .first-ani-box .shining {
+    width: 17vw;
+    left: 42.7vw;
+    top: 23vw;
   }
 }
 .card1 .first-ani-box .first-big {
@@ -298,6 +341,13 @@
     width: 54vw;
   }
 }
+@media all and (max-width: 1024px) {
+  .card1 .first-ani-box .first-big {
+    width: 61vw;
+    top: 112vw;
+    left: 20vw;
+  }
+}
 .card1 .first-ani-box .first-cover {
   position: absolute;
   top: 40.9vw;
@@ -321,6 +371,13 @@
   .card1 .first-ani-box .first-cover {
     top: 49.9vw;
     left: 45.65%;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card1 .first-ani-box .first-cover {
+    top: 109.9vw;
+    left: 38.65%;
+    width: 23vw;
   }
 }
 .card1 .c1-video {
@@ -364,6 +421,12 @@
     width: 16%;
   }
 }
+@media all and (max-width: 1024px) {
+  .card1 .c1-content .logo-box {
+    width: 31%;
+    margin-bottom: 20vw;
+  }
+}
 .card1 .c1-content .logo-box img {
   width: 100%;
 }
@@ -375,7 +438,37 @@
     width: 58%;
   }
 }
+@media all and (max-width: 1024px) {
+  .card1 .c1-content .title1 {
+    display: none;
+  }
+}
 .card1 .c1-content .title1 img {
+  width: 100%;
+}
+.card1 .c1-content .title1-mobile {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  .card1 .c1-content .title1-mobile {
+    display: flex;
+    width: 72%;
+    margin-bottom: 5vw;
+  }
+}
+.card1 .c1-content .title1-mobile img {
+  width: 100%;
+}
+.card1 .c1-content .title2-mobile {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  .card1 .c1-content .title2-mobile {
+    display: flex;
+    width: 72%;
+  }
+}
+.card1 .c1-content .title2-mobile img {
   width: 100%;
 }
 .card1 .c1-content .title2-box {
@@ -393,12 +486,23 @@
     margin-bottom: 2.3vw;
   }
 }
+@media all and (max-width: 1024px) {
+  .card1 .c1-content .title2-box {
+    margin-top: 7.5vw;
+    margin-bottom: 7vw;
+  }
+}
 .card1 .c1-content .title2-box .big {
   width: 46vw;
 }
 @media all and (max-width: 1440px) {
   .card1 .c1-content .title2-box .big {
     width: 40%;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card1 .c1-content .title2-box .big {
+    width: 67vw;
   }
 }
 .card1 .c1-content .title2-box .cover {
@@ -415,6 +519,13 @@
     width: 11.2%;
   }
 }
+@media all and (max-width: 1024px) {
+  .card1 .c1-content .title2-box .cover {
+    top: 25%;
+    left: 37%;
+    width: 26%;
+  }
+}
 .card1 .c1-content .company-box {
   width: 7%;
   margin-right: 1vw;
@@ -422,6 +533,12 @@
 @media all and (max-width: 1440px) {
   .card1 .c1-content .company-box {
     width: 8%;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card1 .c1-content .company-box {
+    width: 24%;
+    margin-right: 0vw;
   }
 }
 .card1 .c1-content .company-box img {

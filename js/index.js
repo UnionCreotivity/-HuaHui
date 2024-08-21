@@ -13,7 +13,7 @@ window.onload = function () {
     var card1HalfHeight = window.innerHeight * 1.3;
     setTimeout(() => {
         $(nowDiv).animate({
-            //1696
+
             scrollTop: card1HalfHeight
         }, 5000);
 
@@ -35,7 +35,6 @@ window.onload = function () {
                 scrub: 2,
                 pin: ".card1",
                 pinSpacing: true,
-
             },
         });
 
