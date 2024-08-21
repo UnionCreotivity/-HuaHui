@@ -378,45 +378,30 @@ window.onload = function () {
 
             },
         });
-        tl.from('.c9-item', { duration: 1, y: '60', opacity: 0, scale: 1.2, filter: '(15px)', })
-            .from('.c9-title1', {
-                duration: 1,
+        tl.from('.c9-item', { duration: 2, y: '100', opacity: 0, scale: 1.7, filter: '(15px)', })
+            .from('.c9-title1,.c9-title2-1,.c9-title2-2,.c9-title3', {
                 opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
+                filter: "blur(15px)",
+                y: 100,
+                stagger: 0.6,
+                duration: 2.5,
+                scale: 1.15,
+            }, '<0.5')
 
-            }, '<0.3')
-            .from('.c9-title2', {
-                duration: 1,
-                opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
-
-            }, '<0.3')
-            .from('.c9-title3', {
-                duration: 1,
-                opacity: 0,
-                y: '60',
-                scale: 1.2,
-                filter: "blur(10px)",
-
-            }, '<0.3')
             .from('.c9-title4 .long-text', {
                 duration: 1,
                 opacity: 0,
                 y: '50',
                 filter: "blur(10px)",
-            }, '<0.3')
+
+            }, '<4')
             .from('.c9-title4 .cover', {
                 duration: 1,
                 opacity: 0,
                 filter: "blur(10px)",
                 y: '-50',
-            }, '<0.2')
-            .fromTo('.c9-circle-fill', { drawSVG: "0% 0%" }, { duration: 1.5, drawSVG: "100%", ease: "power0.inOut" }, '<-1')
-
+            }, '<0.3')
+            .fromTo('.c9-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
 
     }
     c9Ani();
