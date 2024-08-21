@@ -9,22 +9,22 @@ window.onload = function () {
     });
 
 
-    var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
-    var card1HalfHeight = window.innerHeight * 1.45;
-    setTimeout(() => {
-        $(nowDiv).animate({
+    // var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
+    // var card1HalfHeight = window.innerHeight * 1.45;
+    // setTimeout(() => {
+    //     $(nowDiv).animate({
 
-            scrollTop: card1HalfHeight
-        }, 5000);
+    //         scrollTop: card1HalfHeight
+    //     }, 5000);
 
-    }, 1200);
+    // }, 1200);
 
 
-    $(nowDiv).bind('mousewheel', function (e) {
-        if ($(nowDiv).scrollTop() < 5000) {
-            $(nowDiv).stop();
-        }
-    });
+    // $(nowDiv).bind('mousewheel', function (e) {
+    //     if ($(nowDiv).scrollTop() < 5000) {
+    //         $(nowDiv).stop();
+    //     }
+    // });
 
     function c1Ani() {
         let tl = gsap.timeline({
@@ -73,7 +73,6 @@ window.onload = function () {
     c1Ani();
 
 
-
     function bottomBgVideo() {
         let tl = gsap.timeline({
             scrollTrigger: {
@@ -94,6 +93,7 @@ window.onload = function () {
                 start: "top 50%",
                 end: '+=50%',
                 scrub: 6,
+                markers: true
             },
         });
 
@@ -122,7 +122,7 @@ window.onload = function () {
                 y: '-50',
             }, '<0.3')
 
-            .fromTo('.c2-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
+            .fromTo('.c2-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 0.5, duration: 1.5, }, '<-1')
 
     }
     c2Ani();
@@ -261,8 +261,8 @@ window.onload = function () {
             },
         });
 
-        tl.fromTo('.card5-swiper .swiper-slide img', { scale: '1.2', filter: 'blur(5px) brightness(1.8)' },
-            { scale: '1', duration: 1, filter: 'blur(0px) brightness(1)', ease: "power1.Out", })
+        tl.fromTo('.card5-swiper .swiper-slide img', { scale: '1.3', },
+            { scale: '1', duration: 1, ease: "power1.Out", })
     }
     c5Ani();
 
@@ -363,8 +363,8 @@ window.onload = function () {
             },
         });
 
-        tl.fromTo('.card8 .overflow .bg', { scale: 1.35, filter: "blur(10px) brightness(1.8)" },
-            { duration: 1, scale: 1, filter: "blur(0px) brightness(1)" })
+        tl.fromTo('.card8 .overflow .bg', { scale: 1.35, },
+            { duration: 1, scale: 1, })
     }
     c8Ani();
 
@@ -427,8 +427,8 @@ window.onload = function () {
             },
         });
 
-        tl.fromTo('.new-card-img-box img', { scale: '1.2', filter: 'blur(5px) brightness(1.8)' },
-            { scale: '1', duration: 1, filter: 'blur(0px) brightness(1)', ease: "power1.Out", })
+        tl.fromTo('.new-card-img-box img', { scale: '1.3' },
+            { scale: '1', duration: 1, ease: "power1.Out", })
     }
     newCardAni();
 

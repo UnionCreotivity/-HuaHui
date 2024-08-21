@@ -569,9 +569,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  mix-blend-mode: overlay;
+  mix-blend-mode: normal;
   width: 34.5%;
   z-index: 1;
+}
+.card2 .c2-bg-earth-circle-box img {
+  opacity: 0.5;
 }
 .card2 .c2-content {
   position: relative;
