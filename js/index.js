@@ -450,7 +450,7 @@ window.onload = function () {
             y: 100,
             stagger: 0.6,
             duration: 2.5,
-
+            scale: 1.1
         })
     }
     formAni()
