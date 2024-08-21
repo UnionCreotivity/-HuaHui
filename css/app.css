@@ -2287,7 +2287,7 @@
 }
 .form-new .left-box .form-box .privacy-notice-send-btn-box {
   display: flex;
-  margin-bottom: 1.5vw;
+  margin-bottom: 0.8vw;
   width: 100%;
   justify-content: space-between;
 }
@@ -2454,7 +2454,7 @@
   overflow: hidden;
   height: 5vw;
   width: 5.3vw;
-  left: 21.8vw;
+  left: 24vw;
   top: -2.6vw;
   overflow: hidden;
   -webkit-mask-size: 100%;
@@ -2489,19 +2489,33 @@
     transform: rotate(34deg) translateX(200%);
   }
 }
-.form-new .right-box .form-text-svg {
+.form-new .right-box .form-text1 {
   position: absolute;
   top: 3vw;
-  width: 29vw;
-  left: 10vw;
+  width: 8vw;
+  left: 22.6vw;
   z-index: 30;
 }
-@media all and (max-width: 1024px) {
-  .form-new .right-box .form-text-svg {
-    top: 35vw;
-    width: 68vw;
-    left: 16vw;
-  }
+.form-new .right-box .form-text2 {
+  position: absolute;
+  top: 5.5vw;
+  width: 29vw;
+  left: 12.2vw;
+  z-index: 30;
+}
+.form-new .right-box .form-text3 {
+  position: absolute;
+  top: 8.5vw;
+  width: 20.5vw;
+  left: 16vw;
+  z-index: 30;
+}
+.form-new .right-box .form-text4 {
+  position: absolute;
+  top: 11vw;
+  width: 21vw;
+  left: 16vw;
+  z-index: 30;
 }
 .form-new .right-box .img-box {
   display: flex;

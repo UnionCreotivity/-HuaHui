@@ -375,7 +375,6 @@ window.onload = function () {
                 start: "top 50%",
                 end: '+=50%',
                 scrub: 6,
-
             },
         });
         tl.from('.c9-item', { duration: 2, y: '100', opacity: 0, scale: 1.7, filter: '(15px)', })
@@ -432,4 +431,27 @@ window.onload = function () {
             { scale: '1', duration: 1, filter: 'blur(0px) brightness(1)', ease: "power1.Out", })
     }
     newCardAni();
+
+
+    function formAni() {
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".form-new",
+                start: "top 50%",
+                end: '+=50%',
+                scrub: 3,
+
+            },
+        });
+
+        tl.from('.form-logo-box,.form-text1,.form-text2,.form-text3,.form-text4', {
+            opacity: 0,
+            filter: "blur(15px)",
+            y: 100,
+            stagger: 0.6,
+            duration: 2.5,
+
+        })
+    }
+    formAni()
 }

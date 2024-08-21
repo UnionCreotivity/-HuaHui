@@ -170,7 +170,7 @@
 
       .privacy-notice-send-btn-box {
         display: flex;
-        margin-bottom: 1.5vw;
+        margin-bottom: 0.8vw;
         width: 100%;
         justify-content: space-between;
         .left-text-checkbox-box {
@@ -351,7 +351,7 @@
       overflow: hidden;
       height: 5vw;
       width: 5.3vw;
-      left: 21.8vw;
+      left: 24vw;
       top: -2.6vw;
       overflow: hidden;
       mask-size: 100%;
@@ -389,18 +389,39 @@
         transform: rotate(34deg) translateX(200%);
       }
     }
-    .form-text-svg {
+
+    .form-text1 {
       position: absolute;
       top: 3vw;
-      width: 29vw;
-      left: 10vw;
+      width: 8vw;
+      left: 22.6vw;
       z-index: 30;
-      @media all and (max-width: 1024px) {
-        top: 35vw;
-        width: 68vw;
-        left: 16vw;
-      }
     }
+
+    .form-text2 {
+      position: absolute;
+      top: 5.5vw;
+      width: 29vw;
+      left: 12.2vw;
+      z-index: 30;
+    }
+
+    .form-text3 {
+      position: absolute;
+      top: 8.5vw;
+      width: 20.5vw;
+      left: 16vw;
+      z-index: 30;
+    }
+
+    .form-text4 {
+      position: absolute;
+      top: 11vw;
+      width: 21vw;
+      left: 16vw;
+      z-index: 30;
+    }
+
     .img-box {
       display: flex;
       width: 100%;
