@@ -93,7 +93,10 @@ window.onload = function () {
                 start: "top 50%",
                 end: '+=50%',
                 scrub: 6,
-                markers: true
+                start: "top 30%",
+                end: "bottom bottom",
+                scrub: 4,
+
             },
         });
 
@@ -122,7 +125,7 @@ window.onload = function () {
                 y: '-50',
             }, '<0.3')
 
-            .fromTo('.c2-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 0.5, duration: 1.5, }, '<-1')
+            .fromTo('.c2-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
 
     }
     c2Ani();
@@ -204,6 +207,9 @@ window.onload = function () {
                 start: "top 70%",
                 end: '+=50%',
                 scrub: 6,
+                start: "top 40%",
+                end: "bottom bottom",
+                scrub: 6,
             },
         });
 
@@ -273,6 +279,9 @@ window.onload = function () {
                 start: "top 50%",
                 end: '+=50%',
                 scrub: 6,
+                start: "top 40%",
+                end: "bottom bottom",
+                scrub: 7,
             },
         });
 
@@ -375,6 +384,10 @@ window.onload = function () {
                 start: "top 50%",
                 end: '+=50%',
                 scrub: 6,
+                // start: "top 50%",
+                // end: "bottom bottom",
+                // scrub: 7,
+                // markers: true
             },
         });
         tl.from('.c9-item', { duration: 2, y: '100', opacity: 0, scale: 1.7, filter: '(15px)', })

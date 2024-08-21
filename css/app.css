@@ -569,12 +569,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  mix-blend-mode: normal;
+  mix-blend-mode: overlay;
   width: 34.5%;
   z-index: 1;
-}
-.card2 .c2-bg-earth-circle-box img {
-  opacity: 0.5;
 }
 .card2 .c2-content {
   position: relative;
@@ -848,7 +845,7 @@
   position: relative;
   padding-top: 5vw;
   margin-top: 9vw;
-  margin-bottom: 9vw;
+  padding-bottom: 3vw;
 }
 .card4 .c4-bg-earth-circle-box {
   position: absolute;
@@ -1033,7 +1030,7 @@
 .card6 {
   width: 100%;
   position: relative;
-  padding-top: 5%;
+  padding-top: 3%;
   padding-bottom: 0vw;
   z-index: 300;
   margin-bottom: 8vw;
