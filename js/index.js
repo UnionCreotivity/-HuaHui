@@ -1,93 +1,87 @@
 window.onload = function () {
 
 
+    // let form_ajax = form_template_new("form.html?1", ".contact_us_div");
 
+    // form_ajax.done(() => {
+    //     console.log("test");
+    //     $(".twzipcode").twzipcode();
+    //     if (window.innerWidth <= 500) {
+    //         $(".cut-3-left").remove();
+    //     } else {
+    //         $(".cut-4-phone").remove();
+    //     }
 
+    //     function formAni() {
+    //         let tl = gsap.timeline({
+    //             scrollTrigger: {
+    //                 trigger: ".form-new",
+    //                 start: "top 50%",
+    //                 end: '+=50%',
+    //                 scrub: 3,
+    //             },
+    //         });
 
-    let form_ajax = form_template_new("form.html?1", ".contact_us_div");
+    //         tl.from('.form-logo-box,.form-text1,.form-text2,.form-text3,.form-text4', {
+    //             opacity: 0,
+    //             filter: "blur(15px)",
+    //             y: 100,
+    //             stagger: 0.6,
+    //             duration: 2.5,
+    //             scale: 1.1
+    //         })
+    //     }
+    //     formAni()
 
-    form_ajax.done(() => {
-        console.log("test");
-        $(".twzipcode").twzipcode();
-        if (window.innerWidth <= 500) {
-            $(".cut-3-left").remove();
-        } else {
-            $(".cut-4-phone").remove();
-        }
+    // });
+    // //-- 表單送出 --
+    // $(".contact_us_div").on("click", "#sub_btn1", function (event) {
+    //     event.preventDefault();
+    //     let err_arr = [
+    //         { DOM_id: "#ca_name", txt: "姓名，" },
+    //         { DOM_id: "#ca_phone", txt: "電話，" },
+    //         { DOM_id: '[name="ca_city"]', txt: "居住縣市，" },
+    //         { DOM_id: '[name="ca_area"]', txt: "居住城市，" },
+    //         { DOM_id: "#ca_square", txt: "坪數，" },
 
-        function formAni() {
-            let tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".form-new",
-                    start: "top 50%",
-                    end: '+=50%',
-                    scrub: 3,
-                },
-            });
-
-            tl.from('.form-logo-box,.form-text1,.form-text2,.form-text3,.form-text4', {
-                opacity: 0,
-                filter: "blur(15px)",
-                y: 100,
-                stagger: 0.6,
-                duration: 2.5,
-                scale: 1.1
-            })
-        }
-        formAni()
-
-    });
-    //-- 表單送出 --
-    $(".contact_us_div").on("click", "#sub_btn1", function (event) {
-        event.preventDefault();
-        let err_arr = [
-            { DOM_id: "#ca_name", txt: "姓名，" },
-            { DOM_id: "#ca_phone", txt: "電話，" },
-            { DOM_id: '[name="ca_city"]', txt: "居住縣市，" },
-            { DOM_id: '[name="ca_area"]', txt: "居住城市，" },
-            { DOM_id: "#ca_square", txt: "坪數，" },
-
-        ];
-        let ajax_data = {
-            name: $("#ca_name").val(),
-            phone: $("#ca_phone").val(),
-            mail: $("#ca_mail").val(),
-            msg: `留言：${$("#ca_memo").val()}｜坪數:${$(
-                "#ca_square"
-            ).val()}`,
-            adds_city: $('[name="ca_city"]').val(),
-            adds_area: $('[name="ca_area"]').val(),
-            case_name: document.title,
-            case_id: $("#case_id").val(),
-            case_aes_id: $("#case_aes_id").val(),
-            //'g-recaptcha-response': grecaptcha.getResponse(g_grecaptcha),
-            test: $("#test").val(),
-            send_list: $("#send_list").val(),
-        };
-        const error_msg = [];
-        console.log($("#ca_phone").val());
-        function checkPhone(phone) {
-            const regP = new RegExp(/^09[0-9]{8}$/);
-            const regC = new RegExp(/^(0)([0-9]{1})([-]?)([0-9]{8})$/);
-            if (regP.test(phone) || regC.test(phone)) {
-                return true;
-            } else {
-                error_msg.push("請輸入正確電話號碼");
-            }
-        }
-        checkPhone(ajax_data.phone);
-        if (!(check_email("#ca_mail") || $("#ca_mail").val() == "")) {
-            error_msg.push("請輸入正確信箱");
-        }
-        if (error_msg.length == 0) {
-            form_submit(err_arr, ajax_data);
-        } else {
-            alert(`${error_msg}`);
-        }
-    });
-
-
-
+    //     ];
+    //     let ajax_data = {
+    //         name: $("#ca_name").val(),
+    //         phone: $("#ca_phone").val(),
+    //         mail: $("#ca_mail").val(),
+    //         msg: `留言：${$("#ca_memo").val()}｜坪數:${$(
+    //             "#ca_square"
+    //         ).val()}`,
+    //         adds_city: $('[name="ca_city"]').val(),
+    //         adds_area: $('[name="ca_area"]').val(),
+    //         case_name: document.title,
+    //         case_id: $("#case_id").val(),
+    //         case_aes_id: $("#case_aes_id").val(),
+    //         //'g-recaptcha-response': grecaptcha.getResponse(g_grecaptcha),
+    //         test: $("#test").val(),
+    //         send_list: $("#send_list").val(),
+    //     };
+    //     const error_msg = [];
+    //     console.log($("#ca_phone").val());
+    //     function checkPhone(phone) {
+    //         const regP = new RegExp(/^09[0-9]{8}$/);
+    //         const regC = new RegExp(/^(0)([0-9]{1})([-]?)([0-9]{8})$/);
+    //         if (regP.test(phone) || regC.test(phone)) {
+    //             return true;
+    //         } else {
+    //             error_msg.push("請輸入正確電話號碼");
+    //         }
+    //     }
+    //     checkPhone(ajax_data.phone);
+    //     if (!(check_email("#ca_mail") || $("#ca_mail").val() == "")) {
+    //         error_msg.push("請輸入正確信箱");
+    //     }
+    //     if (error_msg.length == 0) {
+    //         form_submit(err_arr, ajax_data);
+    //     } else {
+    //         alert(`${error_msg}`);
+    //     }
+    // });
 
 
 
@@ -102,22 +96,21 @@ window.onload = function () {
     });
 
 
-    var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
-    var card1HalfHeight = window.innerHeight * 1.45;
-    setTimeout(() => {
-        $(nowDiv).animate({
+    // var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
+    // var card1HalfHeight = window.innerHeight * 1.45;
+    // setTimeout(() => {
+    //     $(nowDiv).animate({
 
-            scrollTop: card1HalfHeight
-        }, 5000);
+    //         scrollTop: card1HalfHeight
+    //     }, 5000);
 
-    }, 1200);
+    // }, 1200);
 
-
-    $(nowDiv).bind('mousewheel', function (e) {
-        if ($(nowDiv).scrollTop() < 5000) {
-            $(nowDiv).stop();
-        }
-    });
+    // $(nowDiv).bind('mousewheel', function (e) {
+    //     if ($(nowDiv).scrollTop() < 5000) {
+    //         $(nowDiv).stop();
+    //     }
+    // });
 
     function c1Ani() {
         let tl = gsap.timeline({
@@ -221,45 +214,25 @@ window.onload = function () {
             .fromTo('.c2-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
 
     }
-    c2Ani();
+    // c2Ani();
 
     function c3Ani() {
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".card3",
-                start: "top top",
-                end: "+=2000",
-                scrub: 2,
-                pin: true,
+        if (window_width > 1024) {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".card3",
+                    start: "top top",
+                    end: "+=2000",
+                    scrub: 2,
+                    pin: true,
 
-            },
-        });
-        const c3img1 = document.querySelector('.c3-content1')
-        const c3img2 = document.querySelector('.c3-content2')
-        const c3img3 = document.querySelector('.c3-content3')
-        tl.fromTo(
-            c3img2,
-            {
-                clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"
-            },
-            {
-                duration: 1,
-                ease: "power1.inOut",
-                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            }, '<')
-
-            .fromTo('.c3-slide-absolute2 .img-text-mix2 img,.c3-slide-absolute2 .img-text2 img', {
-                y: 250,
-            },
-                {
-                    duration: 1,
-                    y: 0,
-                    stagger: {
-                        each: 0.2,
-                    }
-                }, '<')
-            .fromTo(
-                c3img3,
+                },
+            });
+            const c3img1 = document.querySelector('.c3-content1')
+            const c3img2 = document.querySelector('.c3-content2')
+            const c3img3 = document.querySelector('.c3-content3')
+            tl.fromTo(
+                c3img2,
                 {
                     clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"
                 },
@@ -267,31 +240,70 @@ window.onload = function () {
                     duration: 1,
                     ease: "power1.inOut",
                     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                })
-
-            .fromTo('.c3-slide-absolute3 .img-text-mix3 img', {
-                y: 150,
-            },
-                {
-                    duration: 1,
-                    y: 0,
-                    ease: "power0.inOut",
                 }, '<')
 
-            .fromTo('.c3-slide-absolute3 .img-text3 img', {
-                y: 250,
-            },
-                {
-                    duration: 1,
-                    y: 0,
+                .fromTo('.c3-slide-absolute2 .img-text-mix2 img,.c3-slide-absolute2 .img-text2 img', {
+                    y: 250,
+                },
+                    {
+                        duration: 1,
+                        y: 0,
+                        stagger: {
+                            each: 0.2,
+                        }
+                    }, '<')
+                .fromTo(
+                    c3img3,
+                    {
+                        clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"
+                    },
+                    {
+                        duration: 1,
+                        ease: "power1.inOut",
+                        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                    })
 
-                }, '<0.3')
+                .fromTo('.c3-slide-absolute3 .img-text-mix3 img', {
+                    y: 150,
+                },
+                    {
+                        duration: 1,
+                        y: 0,
+                        ease: "power0.inOut",
+                    }, '<')
+
+                .fromTo('.c3-slide-absolute3 .img-text3 img', {
+                    y: 250,
+                },
+                    {
+                        duration: 1,
+                        y: 0,
+
+                    }, '<0.3')
 
 
-            .to(c3img2, { duration: 1, opacity: 0 }, '<0.3')
-            .to(c3img1, { duration: 1, opacity: 0 }, '<')
+                .to(c3img2, { duration: 1, opacity: 0 }, '<0.3')
+                .to(c3img1, { duration: 1, opacity: 0 }, '<')
+        }
+
     }
     c3Ani();
+
+    if (window_width <= 1024) {
+        const c3swiper = new Swiper(".card3-swiper", {
+            loop: true,
+            speed: 1500,
+            effect: 'fade',
+            loop: true,
+            fadeEffect: {
+                crossFade: true,
+            },
+            pagination: {
+                el: '.c3-swiper-pagination',
+                clickable: true,
+            },
+        });
+    }
 
     function c4Ani() {
         let tl = gsap.timeline({
@@ -331,7 +343,7 @@ window.onload = function () {
             }, '<0.3')
             .fromTo('.c4-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
     }
-    c4Ani();
+    // c4Ani();
 
     const c5swiper = new Swiper(".card5-swiper", {
 
@@ -405,20 +417,6 @@ window.onload = function () {
 
     }
     c6Ani();
-
-    function c6Pin() {
-        gsap.to(".card6", {
-            scrollTrigger: {
-                trigger: ".card6",
-                start: "top top",
-                end: "bottom top",
-                pin: true,
-                pinSpacing: false,
-                scrub: true,
-            },
-        });
-    }
-    // c6Pin();
 
     const c7swiper = new Swiper(".card7-swiper", {
         speed: 1500,
@@ -538,26 +536,4 @@ window.onload = function () {
     }
     newCardAni();
 
-
-    // function formAni() {
-    //     let tl = gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: ".form-new",
-    //             start: "top 50%",
-    //             end: '+=50%',
-    //             scrub: 3,
-
-    //         },
-    //     });
-
-    //     tl.from('.form-logo-box,.form-text1,.form-text2,.form-text3,.form-text4', {
-    //         opacity: 0,
-    //         filter: "blur(15px)",
-    //         y: 100,
-    //         stagger: 0.6,
-    //         duration: 2.5,
-    //         scale: 1.1
-    //     })
-    // }
-    // formAni()
 }

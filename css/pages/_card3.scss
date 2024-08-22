@@ -6,7 +6,9 @@
   display: flex;
   z-index: 30;
   justify-content: center;
-
+  @media all and (max-width: 1024px) {
+    height: initial;
+  }
   .c3-slider {
     width: 100%;
     position: relative;
@@ -19,7 +21,9 @@
     align-items: center;
     padding-top: 1%;
     background-color: white;
-
+    @media all and (max-width: 1024px) {
+      display: none;
+    }
     .c3-content-box {
       width: 100%;
       display: flex;
@@ -184,6 +188,70 @@
             mix-blend-mode: plus-lighter;
           }
         }
+      }
+    }
+  }
+
+  .mobile-swiper-box {
+    display: none;
+    @media all and (max-width: 1024px) {
+      display: flex;
+      width: 90%;
+    }
+
+    .card3-swiper {
+      display: flex;
+      position: relative;
+      width: 100%;
+
+      .hint {
+        @include hint();
+        z-index: 20;
+        bottom: 1% !important;
+        right: 2%;
+      }
+      .swiper-slide {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .light-video {
+        position: absolute;
+        z-index: 10;
+        top: 44.5%;
+        width: 44vw;
+        left: 25.7%;
+        transform: translate3d(0, 0, 0);
+        mix-blend-mode: plus-lighter;
+      }
+      .img-text3-2 {
+        position: absolute;
+        z-index: 10;
+        top: 29%;
+        width: 19vw !important;
+        left: 38.5%;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #fff !important;
+      }
+
+      .swiper-pagination-bullet {
+        width: 0.5vw !important;
+        height: 0.5vw !important;
+        border-radius: 50% !important;
+        margin-right: 10px !important;
+        min-width: 8px;
+        min-height: 8px;
+        background-color: #ffffff63;
+        opacity: 1;
       }
     }
   }

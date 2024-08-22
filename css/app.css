@@ -188,8 +188,6 @@
   background: linear-gradient(to bottom, #f6efed 0%, #fdd3c4 21%, #b27b6a 32%, #814a39 50%, #83675c 62%, #a9afaa 73%, #a5c1c2 100%, #a5c1c2 100%);
   -webkit-mask-image: url(../images/logo.png);
   mask-image: url(../images/logo.png);
-  -webkit-mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210131476.png);
-  mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210131476.png);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   overflow: hidden;
@@ -577,6 +575,11 @@
   margin-bottom: 5vw;
   padding-bottom: 6vw;
 }
+@media all and (max-width: 1024px) {
+  .card2 {
+    margin-bottom: 3vw;
+  }
+}
 .card2 .c2-bg-earth-box {
   position: absolute;
   top: 36%;
@@ -584,6 +587,19 @@
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 17%;
+}
+@media all and (max-width: 1024px) {
+  .card2 .c2-bg-earth-box {
+    top: 32%;
+    left: 55%;
+    width: 49%;
+  }
+}
+@media all and (max-width: 500px) {
+  .card2 .c2-bg-earth-box {
+    top: 32%;
+    width: 51%;
+  }
 }
 .card2 .c2-bg-earth-box img {
   width: 100%;
@@ -597,6 +613,14 @@
   width: 34.5%;
   z-index: 1;
 }
+@media all and (max-width: 1024px) {
+  .card2 .c2-bg-earth-circle-box {
+    top: 3%;
+    width: 90vw;
+    transform: initial;
+    left: 5%;
+  }
+}
 .card2 .c2-content {
   position: relative;
   z-index: 10;
@@ -607,27 +631,56 @@
   align-self: center;
   padding-top: 14vw;
 }
+@media all and (max-width: 1024px) {
+  .card2 .c2-content {
+    padding-top: 9vw;
+  }
+}
 .card2 .c2-content .c2-title1 {
   width: 42%;
+}
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title1 {
+    width: 55%;
+    margin-bottom: 6vw;
+  }
 }
 .card2 .c2-content .c2-title1 img {
   width: 100%;
 }
 .card2 .c2-content .c2-title2 {
   font-family: "Noto Sans TC Medium";
-  margin-bottom: 1vw;
   text-align: center;
+  margin-bottom: 1vw;
   margin-top: -1.5vw;
 }
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title2 {
+    margin-bottom: 6vw;
+  }
+}
 .card2 .c2-content .c2-title2 :first-child {
+  font-family: "Noto Sans TC Medium";
   font-size: 3vw;
   letter-spacing: 0.12em;
 }
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title2 :first-child {
+    font-size: 7.3vw;
+  }
+}
 .card2 .c2-content .c2-title2 :last-child {
-  font-size: 1.9vw;
-  letter-spacing: 1em;
   font-family: "Noto Sans TC Medium";
   margin-right: -1vw;
+  font-family: "Noto Sans TC Medium";
+  font-size: 1.9vw;
+  letter-spacing: 1em;
+}
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title2 :last-child {
+    font-size: 5.3vw;
+    padding-left: 3.5vw;
+  }
 }
 .card2 .c2-content .c2-title3 {
   margin-bottom: 1.6vw;
@@ -637,10 +690,40 @@
   line-height: 2;
   font-family: "Noto Sans TC Regular";
 }
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title3 {
+    font-size: 3.7vw;
+    align-self: center;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title3 {
+    margin-bottom: 8vw;
+  }
+}
 .card2 .c2-content .c2-title3 :last-child {
   font-size: 1.7vw;
   letter-spacing: 0.07em;
   font-family: "Noto Sans TC Regular";
+}
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title3 :last-child {
+    font-size: 4.35vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title3 .c2-title3-1 {
+    display: none;
+  }
+}
+.card2 .c2-content .c2-title3 .c2-title3-1-mobile {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title3 .c2-title3-1-mobile {
+    display: flex;
+    margin-bottom: 2.5vw;
+  }
 }
 .card2 .c2-content .c2-title4 {
   width: 38%;
@@ -648,16 +731,33 @@
   align-items: center;
   text-align: center;
 }
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title4 {
+    width: 100%;
+  }
+}
 .card2 .c2-content .c2-title4 .cover {
   position: relative;
   width: 28.5%;
   margin-left: 0.5vw;
+}
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title4 .cover {
+    width: 28vw;
+  }
 }
 .card2 .c2-content .c2-title4 .long-text {
   position: absolute;
   width: 100%;
   left: 0vw;
   top: 1vw;
+}
+@media all and (max-width: 1024px) {
+  .card2 .c2-content .c2-title4 .long-text {
+    width: 73vw;
+    left: 14vw;
+    top: 2.4vw;
+  }
 }
 
 .card3 {
@@ -668,6 +768,11 @@
   display: flex;
   z-index: 30;
   justify-content: center;
+}
+@media all and (max-width: 1024px) {
+  .card3 {
+    height: initial;
+  }
 }
 .card3 .c3-slider {
   width: 100%;
@@ -681,6 +786,11 @@
   align-items: center;
   padding-top: 1%;
   background-color: white;
+}
+@media all and (max-width: 1024px) {
+  .card3 .c3-slider {
+    display: none;
+  }
 }
 .card3 .c3-slider .c3-content-box {
   width: 100%;
@@ -715,7 +825,7 @@
 }
 @media all and (max-width: 500px) {
   .card3 .c3-slider .c3-content-box .hint {
-    font-size: 2.8vw;
+    font-size: 12px;
     bottom: 4%;
     right: 2%;
   }
@@ -863,6 +973,92 @@
   transform: translate3d(0, 0, 0);
   mix-blend-mode: plus-lighter;
 }
+.card3 .mobile-swiper-box {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  .card3 .mobile-swiper-box {
+    display: flex;
+    width: 90%;
+  }
+}
+.card3 .mobile-swiper-box .card3-swiper {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.card3 .mobile-swiper-box .card3-swiper .hint {
+  color: white;
+  font-size: 16px;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 0.7vw;
+  text-shadow: rgb(134, 134, 134) 1px 0 10px;
+  z-index: 20;
+  bottom: 1% !important;
+  right: 2%;
+}
+@media all and (max-width: 1920px) {
+  .card3 .mobile-swiper-box .card3-swiper .hint {
+    font-size: 0.85vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card3 .mobile-swiper-box .card3-swiper .hint {
+    bottom: 3%;
+    font-size: 18px;
+    right: 2%;
+  }
+}
+@media all and (max-width: 500px) {
+  .card3 .mobile-swiper-box .card3-swiper .hint {
+    font-size: 12px;
+    bottom: 4%;
+    right: 2%;
+  }
+}
+.card3 .mobile-swiper-box .card3-swiper .swiper-slide {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.card3 .mobile-swiper-box .card3-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card3 .mobile-swiper-box .card3-swiper .light-video {
+  position: absolute;
+  z-index: 10;
+  top: 44.5%;
+  width: 44vw;
+  left: 25.7%;
+  transform: translate3d(0, 0, 0);
+  mix-blend-mode: plus-lighter;
+}
+.card3 .mobile-swiper-box .card3-swiper .img-text3-2 {
+  position: absolute;
+  z-index: 10;
+  top: 29%;
+  width: 19vw !important;
+  left: 38.5%;
+}
+.card3 .mobile-swiper-box .card3-swiper .swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+.card3 .mobile-swiper-box .card3-swiper .swiper-pagination-bullet {
+  width: 0.5vw !important;
+  height: 0.5vw !important;
+  border-radius: 50% !important;
+  margin-right: 10px !important;
+  min-width: 8px;
+  min-height: 8px;
+  background-color: rgba(255, 255, 255, 0.3882352941);
+  opacity: 1;
+}
 
 .card4 {
   width: 100%;
@@ -870,6 +1066,12 @@
   padding-top: 5vw;
   margin-top: 9vw;
   padding-bottom: 3vw;
+  z-index: 9999;
+}
+@media all and (max-width: 1024px) {
+  .card4 {
+    padding-top: 16vw;
+  }
 }
 .card4 .c4-bg-earth-circle-box {
   position: absolute;
@@ -879,6 +1081,14 @@
   opacity: 0.85;
   width: 34.5%;
   z-index: 1;
+}
+@media all and (max-width: 1024px) {
+  .card4 .c4-bg-earth-circle-box {
+    top: 3%;
+    width: 90vw;
+    transform: initial;
+    left: 5%;
+  }
 }
 .card4 .c4-content {
   position: relative;
@@ -893,6 +1103,17 @@
   width: 5%;
   margin-bottom: 0vw;
 }
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-item-box {
+    width: 15%;
+    margin-bottom: 6vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .card4 .c4-content .c4-item-box {
+    width: 17%;
+  }
+}
 .card4 .c4-content .c4-item-box img {
   width: 100%;
 }
@@ -900,6 +1121,13 @@
   width: 55%;
   margin-bottom: 2vw;
   margin-left: 2.5vw;
+}
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title1 {
+    width: 75%;
+    margin-bottom: 6vw;
+    margin-left: 0.5vw;
+  }
 }
 .card4 .c4-content .c4-title1 img {
   width: 100%;
@@ -910,15 +1138,32 @@
   text-align: center;
   margin-top: -1.5vw;
 }
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title2 {
+    margin-bottom: 6vw;
+  }
+}
 .card4 .c4-content .c4-title2 :first-child {
+  font-family: "Noto Sans TC Medium";
   font-size: 3vw;
   letter-spacing: 0.12em;
 }
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title2 :first-child {
+    font-size: 7.3vw;
+  }
+}
 .card4 .c4-content .c4-title2 :last-child {
+  margin-right: -1vw;
+  font-family: "Noto Sans TC Medium";
   font-size: 1.9vw;
   letter-spacing: 1em;
-  font-family: "Noto Sans TC Medium";
-  margin-right: -1vw;
+}
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title2 :last-child {
+    font-size: 5.3vw;
+    padding-left: 3.5vw;
+  }
 }
 .card4 .c4-content .c4-title3 {
   margin-bottom: 1.6vw;
@@ -928,8 +1173,48 @@
   line-height: 2;
   font-family: "Noto Sans TC Regular";
 }
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title3 {
+    font-size: 3.7vw;
+    align-self: center;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title3 {
+    margin-bottom: 11vw;
+  }
+}
 .card4 .c4-content .c4-title3 :last-child {
   font-family: "Noto Sans TC Medium";
+}
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title3 .c4-title3-1 {
+    display: none;
+  }
+}
+.card4 .c4-content .c4-title3 .c4-title3-1-mobile {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title3 .c4-title3-1-mobile {
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-size: 1.25vw;
+    line-height: 2;
+    font-family: "Noto Sans TC Regular";
+  }
+}
+@media all and (max-width: 1024px) and (max-width: 1024px) {
+  .card4 .c4-content .c4-title3 .c4-title3-1-mobile {
+    font-size: 3.7vw;
+    align-self: center;
+  }
+}
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title3 .c4-title3-2 {
+    display: none;
+  }
 }
 .card4 .c4-content .c4-title4 {
   width: 38%;
@@ -937,16 +1222,33 @@
   align-items: center;
   text-align: center;
 }
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title4 {
+    width: 100%;
+  }
+}
 .card4 .c4-content .c4-title4 .cover {
   position: relative;
   width: 28.5%;
   margin-left: 0.5vw;
+}
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title4 .cover {
+    width: 28vw;
+  }
 }
 .card4 .c4-content .c4-title4 .long-text {
   position: absolute;
   width: 100%;
   left: 0vw;
   top: 1vw;
+}
+@media all and (max-width: 1024px) {
+  .card4 .c4-content .c4-title4 .long-text {
+    width: 73vw;
+    left: 14vw;
+    top: 2.4vw;
+  }
 }
 
 .card5 {
@@ -988,7 +1290,7 @@
 }
 @media all and (max-width: 500px) {
   .card5 .card5-swiper .hint {
-    font-size: 2.8vw;
+    font-size: 12px;
     bottom: 4%;
     right: 2%;
   }
@@ -1180,7 +1482,7 @@
 }
 @media all and (max-width: 500px) {
   .card7 .left-box .card7-swiper .hint {
-    font-size: 2.8vw;
+    font-size: 12px;
     bottom: 4%;
     right: 2%;
   }
@@ -1296,7 +1598,7 @@
 }
 @media all and (max-width: 500px) {
   .card8 .overflow .hint {
-    font-size: 2.8vw;
+    font-size: 12px;
     bottom: 4%;
     right: 2%;
   }
@@ -1570,7 +1872,7 @@
 }
 @media all and (max-width: 500px) {
   .new-card .new-card-img-box .hint {
-    font-size: 2.8vw;
+    font-size: 12px;
     bottom: 4%;
     right: 2%;
   }
@@ -2482,8 +2784,6 @@
   background: linear-gradient(to bottom, #dacfbb 0%, #bf9e7c 21%, #92644c 45%, #bb8b69 74%, #ceb58e 100%);
   -webkit-mask-image: url(../images/form_logo.png);
   mask-image: url(../images/form_logo.png);
-  -webkit-mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210135988.png);
-  mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210135988.png);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   overflow: hidden;
@@ -2503,8 +2803,6 @@
     left: 38vw;
     -webkit-mask-image: url(../images/form_logo@2x.png);
     mask-image: url(../images/form_logo@2x.png);
-    -webkit-mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210142990.png);
-    mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210142990.png);
   }
 }
 .form-new .right-box .form-logo-box .light {
@@ -2583,7 +2881,7 @@
 }
 @media all and (max-width: 500px) {
   .form-new .right-box .img-box .hint {
-    font-size: 2.8vw;
+    font-size: 12px;
     bottom: 4%;
     right: 2%;
   }

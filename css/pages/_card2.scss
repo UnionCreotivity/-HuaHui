@@ -5,6 +5,12 @@
   margin-bottom: 5vw;
   padding-bottom: 6vw;
 
+  @media all and (max-width: 1024px) {
+    margin-bottom: 3vw;
+  }
+  @media all and (max-width: 500px) {
+    // height: 100vh;
+  }
   .c2-bg-earth-box {
     position: absolute;
     top: 36%;
@@ -12,6 +18,18 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 17%;
+
+    @media all and (max-width: 1024px) {
+      top: 32%;
+      left: 55%;
+      width: 49%;
+    }
+
+    @media all and (max-width: 500px) {
+      top: 32%;
+      width: 51%;
+    }
+
     img {
       width: 100%;
     }
@@ -22,10 +40,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // mix-blend-mode: overlay;
     opacity: 0.85;
     width: 34.5%;
     z-index: 1;
+    @media all and (max-width: 1024px) {
+      top: 3%;
+      width: 90vw;
+      transform: initial;
+      left: 5%;
+    }
   }
 
   .c2-content {
@@ -37,9 +60,16 @@
     align-items: center;
     align-self: center;
     padding-top: 14vw;
+
+    @media all and (max-width: 1024px) {
+      padding-top: 9vw;
+    }
     .c2-title1 {
       width: 42%;
-
+      @media all and (max-width: 1024px) {
+        width: 55%;
+        margin-bottom: 6vw;
+      }
       img {
         width: 100%;
       }
@@ -47,32 +77,50 @@
 
     .c2-title2 {
       font-family: "Noto Sans TC Medium";
-      margin-bottom: 1vw;
       text-align: center;
+      margin-bottom: 1vw;
       margin-top: -1.5vw;
+
+      @media all and (max-width: 1024px) {
+        margin-bottom: 6vw;
+      }
       :first-child {
-        font-size: 3vw;
-        letter-spacing: 0.12em;
+        @include zhBigTitle();
       }
       :last-child {
-        font-size: 1.9vw;
-        letter-spacing: 1em;
         font-family: "Noto Sans TC Medium";
         margin-right: -1vw;
+        @include zhSmallTitle();
       }
     }
 
     .c2-title3 {
       margin-bottom: 1.6vw;
-      text-align: center;
-      letter-spacing: 0.06em;
-      font-size: 1.25vw;
-      line-height: 2;
-      font-family: "Noto Sans TC Regular";
+      @include content();
+
+      @media all and (max-width: 1024px) {
+        margin-bottom: 8vw;
+      }
+
       :last-child {
         font-size: 1.7vw;
         letter-spacing: 0.07em;
         font-family: "Noto Sans TC Regular";
+        @media all and (max-width: 1024px) {
+          font-size: 4.35vw;
+        }
+      }
+      .c2-title3-1 {
+        @media all and (max-width: 1024px) {
+          display: none;
+        }
+      }
+      .c2-title3-1-mobile {
+        display: none;
+        @media all and (max-width: 1024px) {
+          display: flex;
+          margin-bottom: 2.5vw;
+        }
       }
     }
 
@@ -81,16 +129,28 @@
       position: relative;
       align-items: center;
       text-align: center;
+      @media all and (max-width: 1024px) {
+        width: 100%;
+      }
       .cover {
         position: relative;
         width: 28.5%;
         margin-left: 0.5vw;
+        @media all and (max-width: 1024px) {
+          width: 28vw;
+        }
       }
       .long-text {
         position: absolute;
         width: 100%;
         left: 0vw;
         top: 1vw;
+
+        @media all and (max-width: 1024px) {
+          width: 73vw;
+          left: 14vw;
+          top: 2.4vw;
+        }
       }
     }
   }
