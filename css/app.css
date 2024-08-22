@@ -29,6 +29,14 @@
   background-color: rgba(8, 9, 37, 0.8196078431);
 }
 
+.loading_div {
+  z-index: 999 !important;
+}
+
+#top_navbar {
+  z-index: 998;
+}
+
 .loading_div .left_div {
   background-color: #0f1037 !important;
 }
@@ -48,6 +56,10 @@
 
 .loading_div .box {
   background-color: #080925 !important;
+}
+
+.nav-link {
+  color: white !important;
 }
 
 .card1 {
@@ -176,6 +188,8 @@
   background: linear-gradient(to bottom, #f6efed 0%, #fdd3c4 21%, #b27b6a 32%, #814a39 50%, #83675c 62%, #a9afaa 73%, #a5c1c2 100%, #a5c1c2 100%);
   -webkit-mask-image: url(../images/logo.png);
   mask-image: url(../images/logo.png);
+  -webkit-mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210131476.png);
+  mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210131476.png);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   overflow: hidden;
@@ -364,7 +378,7 @@
   left: 44.6%;
   width: 9.6%;
   opacity: 0.15;
-  z-index: 999999;
+  z-index: 400;
 }
 @media all and (max-width: 1680px) {
   .card1 .first-ani-box .first-cover {
@@ -579,7 +593,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  mix-blend-mode: overlay;
+  opacity: 0.85;
   width: 34.5%;
   z-index: 1;
 }
@@ -836,9 +850,9 @@
 .card3 .c3-slider .c3-content-box .c3-content3 .c3-slide-absolute3 .img-text3-2 {
   position: absolute;
   z-index: 10;
-  top: 34.5%;
+  top: 33%;
   width: 5.8%;
-  left: 46.7%;
+  left: 46.55%;
 }
 .card3 .c3-slider .c3-content-box .c3-content3 .c3-slide-absolute3 .light-video {
   position: absolute;
@@ -862,7 +876,7 @@
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
-  mix-blend-mode: overlay;
+  opacity: 0.85;
   width: 34.5%;
   z-index: 1;
 }
@@ -1050,7 +1064,7 @@
   top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.7;
+  opacity: 0.85;
   width: 34.5%;
   z-index: 1;
 }
@@ -1317,7 +1331,7 @@
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  mix-blend-mode: overlay;
+  opacity: 0.85;
   width: 34.5%;
   z-index: 1;
 }
@@ -1394,6 +1408,7 @@
   z-index: 30;
   align-items: center;
   margin-top: 8vw;
+  overflow: hidden;
   padding-bottom: 5vw;
 }
 .card10 .swiper-box {
@@ -2125,14 +2140,22 @@
   overflow: hidden;
   padding-top: 7vw;
 }
-@media all and (max-width: 1440px) {
-  .form-new {
-    flex-direction: column-reverse;
-  }
+.form-new input[name=zipcode] {
+  display: none !important;
+}
+.form-new select[name=ca_area],
+.form-new select[name=ca_city] {
+  width: 100% !important;
+}
+.form-new div[data-name=ca_area],
+.form-new div[data-name=ca_city] {
+  display: flex;
+  width: 81%;
 }
 @media all and (max-width: 1024px) {
   .form-new {
     padding-top: 0vw;
+    flex-direction: column-reverse;
   }
 }
 .form-new .left-box {
@@ -2312,13 +2335,18 @@
   display: flex;
 }
 .form-new .left-box .form-box .privacy-notice-send-btn-box .left-text-checkbox-box .checkbox-box label {
-  letter-spacing: 0.44em;
+  letter-spacing: 0.465em;
   font-size: 0.63vw;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0;
   color: #595757;
   cursor: pointer;
+}
+@media all and (max-width: 1440px) {
+  .form-new .left-box .form-box .privacy-notice-send-btn-box .left-text-checkbox-box .checkbox-box label {
+    letter-spacing: 0.44em;
+  }
 }
 .form-new .left-box .form-box .privacy-notice-send-btn-box .left-text-checkbox-box .checkbox-box input#ca_privacy {
   cursor: pointer;
@@ -2454,6 +2482,8 @@
   background: linear-gradient(to bottom, #dacfbb 0%, #bf9e7c 21%, #92644c 45%, #bb8b69 74%, #ceb58e 100%);
   -webkit-mask-image: url(../images/form_logo.png);
   mask-image: url(../images/form_logo.png);
+  -webkit-mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210135988.png);
+  mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210135988.png);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   overflow: hidden;
@@ -2473,6 +2503,8 @@
     left: 38vw;
     -webkit-mask-image: url(../images/form_logo@2x.png);
     mask-image: url(../images/form_logo@2x.png);
+    -webkit-mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210142990.png);
+    mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210142990.png);
   }
 }
 .form-new .right-box .form-logo-box .light {

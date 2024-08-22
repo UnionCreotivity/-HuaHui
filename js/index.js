@@ -1,30 +1,123 @@
 window.onload = function () {
 
+
+
+
+
+    let form_ajax = form_template_new("form.html?1", ".contact_us_div");
+
+    form_ajax.done(() => {
+        console.log("test");
+        $(".twzipcode").twzipcode();
+        if (window.innerWidth <= 500) {
+            $(".cut-3-left").remove();
+        } else {
+            $(".cut-4-phone").remove();
+        }
+
+        function formAni() {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".form-new",
+                    start: "top 50%",
+                    end: '+=50%',
+                    scrub: 3,
+                },
+            });
+
+            tl.from('.form-logo-box,.form-text1,.form-text2,.form-text3,.form-text4', {
+                opacity: 0,
+                filter: "blur(15px)",
+                y: 100,
+                stagger: 0.6,
+                duration: 2.5,
+                scale: 1.1
+            })
+        }
+        formAni()
+
+    });
+    //-- 表單送出 --
+    $(".contact_us_div").on("click", "#sub_btn1", function (event) {
+        event.preventDefault();
+        let err_arr = [
+            { DOM_id: "#ca_name", txt: "姓名，" },
+            { DOM_id: "#ca_phone", txt: "電話，" },
+            { DOM_id: '[name="ca_city"]', txt: "居住縣市，" },
+            { DOM_id: '[name="ca_area"]', txt: "居住城市，" },
+            { DOM_id: "#ca_square", txt: "坪數，" },
+
+        ];
+        let ajax_data = {
+            name: $("#ca_name").val(),
+            phone: $("#ca_phone").val(),
+            mail: $("#ca_mail").val(),
+            msg: `留言：${$("#ca_memo").val()}｜坪數:${$(
+                "#ca_square"
+            ).val()}`,
+            adds_city: $('[name="ca_city"]').val(),
+            adds_area: $('[name="ca_area"]').val(),
+            case_name: document.title,
+            case_id: $("#case_id").val(),
+            case_aes_id: $("#case_aes_id").val(),
+            //'g-recaptcha-response': grecaptcha.getResponse(g_grecaptcha),
+            test: $("#test").val(),
+            send_list: $("#send_list").val(),
+        };
+        const error_msg = [];
+        console.log($("#ca_phone").val());
+        function checkPhone(phone) {
+            const regP = new RegExp(/^09[0-9]{8}$/);
+            const regC = new RegExp(/^(0)([0-9]{1})([-]?)([0-9]{8})$/);
+            if (regP.test(phone) || regC.test(phone)) {
+                return true;
+            } else {
+                error_msg.push("請輸入正確電話號碼");
+            }
+        }
+        checkPhone(ajax_data.phone);
+        if (!(check_email("#ca_mail") || $("#ca_mail").val() == "")) {
+            error_msg.push("請輸入正確信箱");
+        }
+        if (error_msg.length == 0) {
+            form_submit(err_arr, ajax_data);
+        } else {
+            alert(`${error_msg}`);
+        }
+    });
+
+
+
+
+
+
+
+
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     var window_width = window.innerWidth;
-    gsap.registerPlugin(DrawSVGPlugin)
+
     Fancybox.bind("[data-fancybox]", {
 
     });
 
 
-    // var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
-    // var card1HalfHeight = window.innerHeight * 1.45;
-    // setTimeout(() => {
-    //     $(nowDiv).animate({
+    var nowDiv = $(window).width() > 1024 ? 'html,body' : 'html,body';
+    var card1HalfHeight = window.innerHeight * 1.45;
+    setTimeout(() => {
+        $(nowDiv).animate({
 
-    //         scrollTop: card1HalfHeight
-    //     }, 5000);
+            scrollTop: card1HalfHeight
+        }, 5000);
 
-    // }, 1200);
+    }, 1200);
 
 
-    // $(nowDiv).bind('mousewheel', function (e) {
-    //     if ($(nowDiv).scrollTop() < 5000) {
-    //         $(nowDiv).stop();
-    //     }
-    // });
+    $(nowDiv).bind('mousewheel', function (e) {
+        if ($(nowDiv).scrollTop() < 5000) {
+            $(nowDiv).stop();
+        }
+    });
 
     function c1Ani() {
         let tl = gsap.timeline({
@@ -446,25 +539,25 @@ window.onload = function () {
     newCardAni();
 
 
-    function formAni() {
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".form-new",
-                start: "top 50%",
-                end: '+=50%',
-                scrub: 3,
+    // function formAni() {
+    //     let tl = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: ".form-new",
+    //             start: "top 50%",
+    //             end: '+=50%',
+    //             scrub: 3,
 
-            },
-        });
+    //         },
+    //     });
 
-        tl.from('.form-logo-box,.form-text1,.form-text2,.form-text3,.form-text4', {
-            opacity: 0,
-            filter: "blur(15px)",
-            y: 100,
-            stagger: 0.6,
-            duration: 2.5,
-            scale: 1.1
-        })
-    }
-    formAni()
+    //     tl.from('.form-logo-box,.form-text1,.form-text2,.form-text3,.form-text4', {
+    //         opacity: 0,
+    //         filter: "blur(15px)",
+    //         y: 100,
+    //         stagger: 0.6,
+    //         duration: 2.5,
+    //         scale: 1.1
+    //     })
+    // }
+    // formAni()
 }

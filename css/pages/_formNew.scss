@@ -7,11 +7,21 @@
   padding-bottom: 2vw;
   overflow: hidden;
   padding-top: 7vw;
-  @media all and (max-width: 1440px) {
-    flex-direction: column-reverse;
+  input[name="zipcode"] {
+    display: none !important;
+  }
+  select[name="ca_area"],
+  select[name="ca_city"] {
+    width: 100% !important;
+  }
+  div[data-name="ca_area"],
+  div[data-name="ca_city"] {
+    display: flex;
+    width: 81%;
   }
   @media all and (max-width: 1024px) {
     padding-top: 0vw;
+    flex-direction: column-reverse;
   }
   .left-box {
     display: flex;
@@ -82,6 +92,7 @@
           padding-bottom: 0.8vw;
           display: flex;
           justify-content: space-between;
+
           .text-danger {
             position: absolute;
             font-weight: 500;
@@ -188,13 +199,16 @@
           .checkbox-box {
             display: flex;
             label {
-              letter-spacing: 0.44em;
+              letter-spacing: 0.465em;
               font-size: 0.63vw;
               font-weight: 600;
               line-height: 1.5;
               margin-bottom: 0;
               color: #595757;
               cursor: pointer;
+              @media all and (max-width: 1440px) {
+                letter-spacing: 0.44em;
+              }
             }
 
             input#ca_privacy {
@@ -347,6 +361,8 @@
       );
       -webkit-mask-image: url(../images/form_logo.png);
       mask-image: url(../images/form_logo.png);
+      -webkit-mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210135988.png);
+      mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210135988.png);
       mask-repeat: no-repeat;
       overflow: hidden;
       height: 5vw;
@@ -362,6 +378,8 @@
         left: 38vw;
         -webkit-mask-image: url(../images/form_logo@2x.png);
         mask-image: url(../images/form_logo@2x.png);
+        -webkit-mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210142990.png);
+        mask-image: url(https://ws.srl.tw/cs/2024071915082268/img/img2024082210142990.png);
       }
       .light {
         position: relative;

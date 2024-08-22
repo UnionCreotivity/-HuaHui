@@ -9,7 +9,8 @@
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    mix-blend-mode: overlay;
+    opacity: 0.85;
+    // mix-blend-mode: overlay;
     width: 34.5%;
     z-index: 1;
   }

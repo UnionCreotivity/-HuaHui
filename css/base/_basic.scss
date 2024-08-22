@@ -26,6 +26,13 @@
 #top_navbar {
   background-color: #080925d1;
 }
+.loading_div {
+  z-index: 999 !important;
+}
+#top_navbar {
+  z-index: 998;
+}
+
 .loading_div .left_div {
   background-color: #0f1037 !important;
 }
@@ -44,4 +51,8 @@
 
 .loading_div .box {
   background-color: #080925 !important;
+}
+
+.nav-link {
+  color: white !important;
 }

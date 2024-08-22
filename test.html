@@ -1,57 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="card3">
+    <div class="c3-slider">
+        <div class="c3-content-box">
+            <div class="c3-content c3-content1">
+                <div class="hint">情境示意圖</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            height: 356px;
-            width: 634px;
-        }
+                <div class="c3-slide c3-slide1"><img alt="紐約" class="c3-slide-img"
+                        src="https://ws.srl.tw/cs/2024071915082268/img/img202408220943037.webp" />
+                    <div class="overflow img-text-mix1"><img alt="紐約字1"
+                            src="https://ws.srl.tw/cs/2024071915082268/img/img2024082209432110.png" srcset="" /></div>
 
-        .bg {
-            position: absolute;
-            top: 100px;
-            left: 300px;
-            height: 356px;
-            width: 634px;
-            background-image: url("./images/img.png");
-        }
+                    <div class="overflow img-text1"><img alt="紐約字2"
+                            src="https://ws.srl.tw/cs/2024071915082268/img/img2024082209433573.svg" srcset="" /></div>
+                </div>
+            </div>
 
-        .bg .water {
-            position: absolute;
-            background-image: url("./images/img.png");
-            background-size: cover;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            filter: url("#turbulence");
-        }
-    </style>
-</head>
+            <div class="c3-content c3-content2">
+                <div class="hint">情境示意圖</div>
 
-<body>
-    <div class="bg">
-        <div class="water"></div>
+                <div class="c3-slide c3-slide-absolute2"><img alt="倫敦" class="c3-slide-img"
+                        src="https://ws.srl.tw/cs/2024071915082268/img/img2024082209434418.webp" />
+                    <div class="overflow img-text-mix2"><img alt="倫敦1"
+                            src="https://ws.srl.tw/cs/2024071915082268/img/img2024082209440831.png" srcset="" /></div>
+
+                    <div class="overflow img-text2"><img alt="倫敦2"
+                            src="https://ws.srl.tw/cs/2024071915082268/img/img2024082209442082.svg" srcset="" /></div>
+                </div>
+            </div>
+
+            <div class="c3-content c3-content3">
+                <div class="hint">實景合成示意圖</div>
+
+                <div class="c3-slide c3-slide-absolute3"><img alt="基隆new" class="c3-slide-img"
+                        src="https://ws.srl.tw/cs/2024071915082268/img/img2024082209443522.webp" />
+                    <div class="overflow img-text-mix3"><img alt="北市科1"
+                            src="https://ws.srl.tw/cs/2024071915082268/img/img2024082209444632.png" srcset="" /></div>
+
+                    <div class="overflow img-text3"><img alt="北市科2"
+                            src="https://ws.srl.tw/cs/2024071915082268/img/img2024082209445793.svg" srcset="" /></div>
+                    <img alt="北市科3" class="img-text3-2"
+                        src="https://ws.srl.tw/cs/2024071915082268/img/img2024082209450529.png" srcset="" />
+                    <video autoplay="" class="light-video" loop="" muted="" playsinline="">
+                        <source src="https://ws.srl.tw/cs/2024071915082268/img/img2024082210163488.mp4"
+                            type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <svg>
-        <filter id="turbulence" x="0" y="0" width="100%" height="100%">
-            <feTurbulence id="sea-filter" numOctaves="3" seed="1" baseFrequency="0.02 0.05"></feTurbulence>
-            <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
-            <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1"
-                values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
-        </filter>
-    </svg>
-
-    <script>
-
-
-    </script>
-</body>
-
-</html>
+</div>
