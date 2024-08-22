@@ -45,6 +45,10 @@
       top: 16.5vw;
       left: 36vw;
       mix-blend-mode: luminosity;
+      @media all and (max-width: 1920px) {
+        top: 15.5vw;
+      }
+
       @media all and (max-width: 1680px) {
         top: 30vw;
       }
@@ -56,6 +60,10 @@
 
       @media all and (max-width: 1366px) {
         top: 16vw;
+      }
+
+      @media all and (max-width: 1280px) {
+        top: 20vw;
       }
 
       @media all and (max-width: 1024px) {
