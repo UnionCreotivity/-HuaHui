@@ -11,10 +11,16 @@
   .card5-swiper {
     position: relative;
     width: 80%;
-
+    @media all and (max-width: 1024px) {
+      display: flex;
+      width: 90%;
+    }
     .hint {
       @include hint();
       z-index: 20;
+      @media all and (max-width: 1024px) {
+        bottom: 1%;
+      }
     }
     .swiper-slide {
       width: 100%;
@@ -46,6 +52,10 @@
         height: 6.5%;
         padding-left: 1.5vw;
       }
+      @media all and (max-width: 1024px) {
+        padding-left: 2.5vw;
+        padding-right: 3vw;
+      }
       img {
         height: 100%;
       }
@@ -63,6 +73,10 @@
       @media all and (max-width: 1440px) {
         height: 6.5%;
         padding-right: 1.5vw;
+      }
+      @media all and (max-width: 1024px) {
+        padding-left: 3vw;
+        padding-right: 2.5vw;
       }
       img {
         height: 100%;

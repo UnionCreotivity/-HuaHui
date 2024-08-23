@@ -8,10 +8,12 @@
   margin-top: 8vw;
   overflow: hidden;
   padding-bottom: 5vw;
+
   .swiper-box {
     position: relative;
     width: 100%;
     display: flex;
+
     .card10-swiper {
       position: relative;
       width: 100%;
@@ -22,12 +24,23 @@
         display: flex;
         overflow: hidden;
         justify-content: center;
+        @media all and (max-width: 1024px) {
+          flex-direction: column;
+        }
         .left-box {
           display: flex;
           flex-direction: column;
           margin-right: 5vw;
+          @media all and (max-width: 1024px) {
+            margin-right: 0vw;
+            width: 90%;
+            align-self: center;
+          }
           img {
             width: 45vw;
+            @media all and (max-width: 1024px) {
+              width: 100%;
+            }
           }
         }
         .right-box {
@@ -36,11 +49,23 @@
           align-items: center;
           justify-content: center;
           padding-top: 3vw;
+          @media all and (max-width: 1024px) {
+            width: 100%;
+            padding-top: 7vw;
+          }
+
           .top-text {
             display: flex;
             margin-bottom: 2vw;
+            @media all and (max-width: 1024px) {
+              width: 100%;
+              justify-content: center;
+            }
             img {
               width: 28vw;
+              @media all and (max-width: 1024px) {
+                width: 75vw;
+              }
             }
           }
 
@@ -59,18 +84,47 @@
 
             .button {
               margin-right: 0.8vw;
+              @media all and (max-width: 1024px) {
+                margin-right: 2.5vw;
+              }
               a {
                 .btn-img-box {
                   display: block;
                   width: 7vw;
                   height: 7vw;
                   overflow: hidden;
+                  @media all and (max-width: 1024px) {
+                    width: 21vw;
+                    height: 21vw;
+                  }
                 }
                 img {
                   display: block;
                   width: 100%;
                 }
               }
+
+              .fancybox-a-pc {
+                @media all and (max-width: 1024px) {
+                  display: none;
+                }
+              }
+              .fancybox-a-mobile {
+                display: none;
+                @media all and (max-width: 1024px) {
+                  display: flex;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .banner4 {
+        .top-text {
+          img {
+            @media all and (max-width: 1024px) {
+              width: 64vw !important;
             }
           }
         }
@@ -81,6 +135,9 @@
           margin-bottom: 1vw !important;
           img {
             width: 25.5vw !important;
+            @media all and (max-width: 1024px) {
+              width: 63vw !important;
+            }
           }
         }
         .center-line {
@@ -107,6 +164,15 @@
         @media all and (max-width: 1440px) {
           height: 7%;
         }
+        @media all and (max-width: 1024px) {
+          height: 4.5%;
+          top: 62%;
+          left: 5%;
+        }
+        @media all and (max-width: 500px) {
+          height: 5.5%;
+          padding-left: 2vw;
+        }
         img {
           height: 100%;
         }
@@ -123,6 +189,15 @@
         padding-right: 1vw;
         @media all and (max-width: 1440px) {
           height: 7%;
+        }
+        @media all and (max-width: 1024px) {
+          height: 4.5%;
+          top: 62%;
+          right: 5%;
+        }
+        @media all and (max-width: 500px) {
+          height: 5.5%;
+          padding-right: 2vw;
         }
         img {
           height: 100%;

@@ -12,12 +12,19 @@
     display: flex;
     position: relative;
     overflow: hidden;
+    @media all and (max-width: 1024px) {
+      display: flex;
+      width: 90%;
+    }
     img {
       width: 100%;
     }
     .hint {
       @include hint();
       z-index: 10;
+      @media all and (max-width: 1024px) {
+        bottom: 2%;
+      }
     }
   }
 }

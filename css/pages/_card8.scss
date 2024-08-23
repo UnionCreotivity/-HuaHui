@@ -16,6 +16,9 @@
       z-index: 20;
       right: 0.8vw;
       bottom: 0.8vw;
+      @media all and (max-width: 1024px) {
+        bottom: 1.5%;
+      }
     }
     .bg {
       width: 100%;
@@ -28,6 +31,12 @@
     width: 10%;
     top: 34%;
     left: 8%;
+    @media all and (max-width: 1024px) {
+      transform: translate(-50%, -50%);
+      width: 30%;
+      top: 15%;
+      left: 50%;
+    }
   }
 
   .c8-text {
@@ -35,5 +44,11 @@
     width: 16%;
     top: 36%;
     right: 6%;
+    @media all and (max-width: 1024px) {
+      transform: translate(-50%, -50%);
+      width: 44%;
+      top: 34%;
+      left: 50%;
+    }
   }
 }

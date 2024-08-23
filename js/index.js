@@ -416,7 +416,7 @@ window.onload = function () {
             .fromTo('.c6-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
 
     }
-    c6Ani();
+    // c6Ani();
 
     const c7swiper = new Swiper(".card7-swiper", {
         speed: 1500,
@@ -507,7 +507,7 @@ window.onload = function () {
             .fromTo('.c9-bg-earth-circle', { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, }, '<-1')
 
     }
-    c9Ani();
+    // c9Ani();
 
 
     const c10swiper = new Swiper(".card10-swiper", {
